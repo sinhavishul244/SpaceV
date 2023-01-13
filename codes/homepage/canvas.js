@@ -59,7 +59,7 @@ let particles
 function init() {
     particles = []
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 1500; i++) {
         const canvasWidth = canvas.width + 1000
         const canvasHeight = canvas.height + 2000
 
