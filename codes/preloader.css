@@ -1,0 +1,34 @@
+#preloader {
+    /* transition: all 2s ease; */
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    /* border: 2px solid yellow; */
+    background-color: #000000;
+    /* color: blueviolet; */
+    z-index: 10000;
+
+}
+
+.loadingscreenstuff {
+    /* border: 2px solid blue; */
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* display: flex; */
+}
+
+.preloader_loader_img {
+    height: 40vh;
+    /* width: 40vh; */
+    position: absolute;
+
+
+}

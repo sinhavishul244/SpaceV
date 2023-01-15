@@ -5,6 +5,11 @@
     /* overflow: hidden; */
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 /* font-family: 'Bree Serif', serif;
 font-family: 'Work Sans', sans-serif; */
 
@@ -110,7 +115,7 @@ h2 {
 }
 
 
-/* text behind main logo */
+/* text behind main logo - tighten your seatbelt */
 .text-below-mainh {
     position: relative;
     width: 33.5rem;
@@ -150,7 +155,7 @@ h2 {
     cursor: pointer;
     /* transition: background-position 0.5s, box-shadow 0.5s; */
     transition: background 0.5s, box-shadow 0.5s;
-    transition: height 0.5s, width 0.5s;
+    /* transition: height 0.5s, width 0.5s; */
 
 }
 
@@ -160,7 +165,7 @@ h2 {
     /* background: linear-gradient(93.37deg, #FBC1D9 -5.31%, #66E5F3 -5.31%, #F060D3 119.49%); */
     box-shadow: 0px 0px 1.875rem rgba(255, 254, 254, 0.81);
     background-color: #66E5F3;
-    background-position: right;
+    /* background-position: right; */
 }
 
 
@@ -202,6 +207,7 @@ h2 {
     line-height: 6.875rem;
 
     /* white */
+    /* transform: scale(1); */
 
     color: var(--main-white-color);
 
@@ -291,4 +297,34 @@ h2 {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+}
+
+/* code for preloader 
+    (use in every page)
+*/
+
+/* making things responsive!  */
+
+@media screen and (max-height : 650px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-height : 580px) and (min-height : 0px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 643px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    :root {
+        font-size: 7px;
+    }
 }
