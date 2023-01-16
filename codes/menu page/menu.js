@@ -11,7 +11,7 @@ const mouse = {
 
 const colors = ['#2185C5', '#7ECEFD', '#FFF6E5', '#FF7F66']
 
-// let button = document.getElementById('btn1');
+// let button = document.querySelector(".anchor");
 
 
 let mouseIn = false
@@ -59,7 +59,7 @@ let particles
 function init() {
     particles = []
 
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 3; i++) {
         const canvasWidth = canvas.width + 1000
         const canvasHeight = canvas.height + 2000
 
@@ -99,3 +99,36 @@ function animate() {
 
 init()
 animate()
+
+// script for swiper
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    mousewheel: true,
+    speed: 600,
+    // preventInteractionOnTransition: true,
+    // autoHeight: true,
+    preloadImages: false,
+    // Enable lazy loading
+    lazy: true,
+    keyboard: {
+        enabled: true,
+    },
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 3,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

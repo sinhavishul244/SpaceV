@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to spaceV</title>
+    <title>spaceV : choose destination</title>
 
     <!-- css link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="menu.css">
 
     <!-- link for google fonts  -->
@@ -21,41 +22,204 @@
 </head>
 
 <body>
-    <!-- main top text and logo - weclome to space V -->
-    <div class="main_logo_with_main_title">
-        <!-- main space V logo html : copied from home html -->
-        <div class="heading_with_logo">
-            <img src="images/main_logo_img.svg" class="img main_logo_img">
-            <div class="heading_container">
-                <h2 class="h2"> Welcome to</h2>
-                <h1 class="h1">space V</h1>
+    <!-- main body div  -->
+    <div class="mainBody">
+        <!-- main top text and logo - weclome to space V -->
+        <div class="main_logo_with_main_title">
+            <!-- main space V logo html : copied from home html -->
+            <div class="heading_with_logo">
+                <img src="images/main_logo_img.svg" class="img main_logo_img">
+                <div class="heading_container">
+                    <h2 class="h2"> Welcome to</h2>
+                    <h1 class="h1">space V</h1>
+                </div>
             </div>
+            <!--end main space V of main logo html : copied from home html -->
+            <h1 class="main_title">Choose your destination</h1>
         </div>
-        <!--end main space V of main logo html : copied from home html -->
-        <h1 class="main_title">Choose your destination</h1>
+        <!-- end of main top text and logo - welcome to space V  -->
+
+
+
+
+        <!-- top home button  -->
+        <a href="../homepage/home.html" class="home-button-container">
+
+            <button id="homebtn">
+                <img id="homeicon" src="images/home.svg" alt="">
+            </button>
+            <div class="extenedbtn">
+                Home
+            </div>
+
+        </a>
+        <!-- end of top home button  -->
+
+        <!-- start of swiper js -->
+        <div class="swiper mySwiper"> <!-- my swiper start  -->
+            <!-- swiper-wrapper start  -->
+            <div class="swiper-wrapper">
+                <!-- start of sun  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="sunh1">Sun</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/burning-sun.png" id="sunimg">
+
+                    </a>
+                    <span class="planet_text" id="suntext">
+                        <p> The star that powers</p>
+                        <p>our solar system</p>
+                    </span>
+                </div>
+                <!-- end of sun  -->
+
+                <!-- start of mercury -->
+
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="mercuryh1">Mercury</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/mercury.png" id="mercury">
+                    </a>
+                    <span class="planet_text" id="mercurytext">
+                        <p>The planet closest</p>
+                        <p>to the sun</p>
+                    </span>
+                </div>
+                <!-- end of mercury -->
+
+                <!-- start of venus  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="venush1">Venus</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/venus.png" id="venus">
+                    </a>
+                    <span class="planet_text" id="venustext">
+                        <p>Named after Roman</p>
+                        <p>Goddess of beauty</p>
+                    </span>
+                </div>
+                <!-- end of venus  -->
+
+                <!-- start of earth  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="earthh1">Earth</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/earth.png" id="earth">
+                    </a>
+                    <span class="planet_text" id="earthtext">
+                        <p>Our beautiful blue</p>
+                        <p>home planet</p>
+                    </span>
+                </div>
+                <!-- end of earth  -->
+
+                <!-- start of mars  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="marsh1">Mars</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/mars.png" id="marsimg">
+                    </a>
+                    <span class="planet_text" id="marstext">
+                        <p>The red planet</p>
+                        <p>containing iron oxide</p>
+                    </span>
+                </div>
+                <!-- end of mars  -->
+
+                <!-- start of jupiter  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="jupiterh1">Jupiter</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/jupiter.png" id="jupiter">
+                    </a>
+                    <span class="planet_text" id="jupitertext">
+                        <p>The biggest planet</p>
+                        <p>in our solar system</p>
+                    </span>
+                </div>
+                <!-- end of jupiter  -->
+
+                <!-- start of staurn  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="saturnh1">Saturn</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/saturn1.png" id="saturn">
+                    </a>
+                    <span class="planet_text" id="saturntext">
+                        <p>The planet with</p>
+                        <p>beautiful rings</p>
+                    </span>
+                </div>
+                <!-- end of staurn  -->
+
+                <!-- start of uranus  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="uranush1">Uranus</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/uranus.png" id="uranus">
+                    </a>
+                    <span class="planet_text" id="uranustext">
+                        <p>The coldest planet</p>
+                        <p>in solar system</p>
+                    </span>
+                </div>
+                <!-- end of uranus  -->
+
+                <!-- start of neptune  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="neptuneh1">Neptune</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/Neptune.png" id="neptune">
+                    </a>
+                    <span class="planet_text" id="neptunetext">
+                        <p>Ice giant Dark blue</p>
+                        <p>because of methane</p>
+                    </span>
+                </div>
+                <!-- end of neptune  -->
+
+                <!-- start of pluto  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="plutoh1">Pluto</h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/pluto.png" id="pluto">
+                    </a>
+                    <span class="planet_text" id="plutotext">
+                        <p>Dwarf planet found</p>
+                        <p>in Kuiper belt</p>
+                    </span>
+                </div>
+                <!-- end of pluto  -->
+
+                <!-- start of moon  -->
+                <div class="swiper-slide">
+                    <h1 class="planetname" id="moonh1">
+                        Moon
+                    </h1>
+                    <a href="https://www.google.com" class="anchor">
+                        <img src="images/planets/moon.png" id="moon">
+                    </a>
+                    <span class="planet_text" id="moontext">
+                        <p>Our closest </p>
+                        <p>celestial neighbor</p>
+                    </span>
+                </div>
+                <!-- end of moon  -->
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- end of swiper js -->
+
     </div>
-    <!-- end of main top text and logo - welcome to space V  -->
-
-    <!-- top home button  -->
-    <a href="../homepage/home.html" class="home-button-container">
-
-        <button id="homebtn">
-            <img id="homeicon" src="images/home.svg" alt="">
-        </button>
-        <div class="extenedbtn">
-            Home
-        </div>
-
-    </a>
-    <!-- end of top home button  -->
-
-
-
+    <!-- end of main body  -->
 
     <!-- script for canvas : star background -->
-    <canvas class="canvas">
-
-    </canvas>
+    <canvas class="canvas"></canvas>
     <!--end of script for canvas  :star background -->
 
     <!-- preloader div-->
@@ -66,12 +230,24 @@
         </div> <!-- loadingscreenstuff ends -->
     </div><!-- preloader end -->
 
+
+    <!-- start of slider script  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- end of slider script  -->
+
     <!-- script for preloader -->
-    <script src="../preloader.js">
+    <script>var loader = document.getElementById("preloader");
+
+        const loading_func = () => {
+            loader.style.display = "none";
+        }
+
+        const temp = setTimeout(loading_func, 2000);
+
+        window.addEventListener("load", temp);
 
     </script>
     <!-- script for preloader ends -->
-
 </body>
 <script src="menu.js"></script>
 
