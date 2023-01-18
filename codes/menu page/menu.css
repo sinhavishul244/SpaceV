@@ -47,7 +47,8 @@ font-family: 'Work Sans', sans-serif; */
 }
 
 
-/* main logo with main title (choose your destination) css */
+/* main logo with main title (choose your destination) css 
+**********************************************************/
 .main_logo_with_main_title {
     /* Frame 3 */
 
@@ -70,7 +71,8 @@ font-family: 'Work Sans', sans-serif; */
 
 }
 
-/* css for main logo */
+/* css for main logo 
+***********************/
 
 
 .heading_with_logo {
@@ -228,7 +230,8 @@ h2 {
     flex-grow: 0;
 }
 
-/* home button css  */
+/* home button css 
+*****************  */
 
 .home-button-container:hover {
     /* overflow: hidden; */
@@ -488,6 +491,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
+}
+
+.swiper-slide-active .anchor {
+    pointer-events: all;
 }
 
 /* planet imgs  */
