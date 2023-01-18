@@ -112,7 +112,7 @@ var swiper = new Swiper(".mySwiper", {
     // autoHeight: true,
     preloadImages: true,
     // Enable lazy loading
-    lazy: false,
+    lazy: true,
     keyboard: {
         enabled: true,
     },
