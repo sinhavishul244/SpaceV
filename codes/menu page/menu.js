@@ -103,7 +103,7 @@ animate()
 // script for swiper
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
-    grabCursor: true,
+    grabCursor: false,
     centeredSlides: true,
     slidesPerView: "auto",
     mousewheel: true,
@@ -132,3 +132,16 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+
+// code for pressing of enter key to select the given site
+// let active_planet = document.querySelector(".swiper-slide-active")
+window.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        console.log("enter is pressed");
+        event.preventDefault();
+
+        this.document.querySelector(".swiper-slide-active .anchor").click();
+
+    }
+})

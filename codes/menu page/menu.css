@@ -541,6 +541,7 @@ h2 {
     font-style: normal;
     font-weight: 500;
     font-size: min(10vh, 17vw);
+    cursor: default;
     /* line-height: 122px; */
 
     /* Mercury Primary */
@@ -717,6 +718,7 @@ h2 {
     /* z-index: 200; */
     /* width: 297px;
     height: 49px; */
+    cursor: default;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;

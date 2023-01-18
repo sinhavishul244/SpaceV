@@ -247,7 +247,7 @@
             loader.style.display = "none";
         }
 
-        const temp = setTimeout(loading_func, 2000);
+        const temp = () => { setTimeout(loading_func, 2000); }
 
         window.addEventListener("load", temp);
 
