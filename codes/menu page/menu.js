@@ -59,7 +59,7 @@ let particles
 function init() {
     particles = []
 
-    for (let i = 0; i < 300; i++) {
+    for (let i = 0; i < 50; i++) {
         const canvasWidth = canvas.width + 1000
         const canvasHeight = canvas.height + 2000
 
@@ -110,9 +110,9 @@ var swiper = new Swiper(".mySwiper", {
     speed: 600,
     // preventInteractionOnTransition: true,
     // autoHeight: true,
-    preloadImages: false,
+    preloadImages: true,
     // Enable lazy loading
-    lazy: true,
+    lazy: false,
     keyboard: {
         enabled: true,
     },

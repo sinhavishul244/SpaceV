@@ -154,7 +154,7 @@ h2 {
     border: none;
     cursor: pointer;
     /* transition: background-position 0.5s, box-shadow 0.5s; */
-    transition: background 0.5s, box-shadow 0.5s;
+    transition: background 0.5s, box-shadow 0.5s, tranform 1s;
     /* transition: height 0.5s, width 0.5s; */
 
 }
@@ -179,6 +179,34 @@ h2 {
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+#btn1:hover .buttonimg {
+    animation: rocket linear 2s infinite;
+
+}
+
+@keyframes rocket {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    75% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+
+    }
 }
 
 .lowerWrapper {
