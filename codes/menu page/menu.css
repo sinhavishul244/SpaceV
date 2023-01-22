@@ -805,6 +805,11 @@ h2 {
     .main_logo_with_main_title {
         transform: scale(0.5) translateY(-12%);
     }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
 }
 
 @media screen and (max-height : 650px) {
