@@ -317,6 +317,8 @@ h2 {
 }
 
 /* canvas background */
+
+
 .canvas {
     position: fixed;
     top: 0;
@@ -348,6 +350,13 @@ h2 {
 @media screen and (max-width : 643px) {
     :root {
         font-size: 10px;
+    }
+
+    .canvascontainer {
+        /* background-color: #0a0a0a; */
+        height: 100vh;
+        background-image: url(../../Resources/mobilebg.png);
+        background-size: cover;
     }
 }
 
