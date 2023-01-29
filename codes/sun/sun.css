@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    /* font-size: small; */
+    --mainfont: 'Bree Serif', serif;
+    --secondaryfont: 'Work Sans', sans-serif;
+    --main-white-color: #FFFEFE;
+    --main-white-75: rgba(255, 254, 254, 0.75);
+    --main-white-25: rgba(255, 254, 254, 0.25);
+    --primary-yellow: #F3ED66;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
+
+/* navigation bar 
+################### */
+.topnav {
+    /* outline: 2px solid yellow;
+    outline-offset: -2px; */
+    height: 54px;
+    width: 98%;
+    position: absolute;
+    margin: 0px 1%;
+    top: 10px;
+    /* left: 10px; */
+    /* right: 10px; */
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    /* gap: 708px; */
+}
+
+.leftmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 29.27px;
+}
+
+.leftmenu img {
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 3.13px;
+}
+
+.logo h3 {
+    font-family: var(--mainfont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.6706px;
+    line-height: 27px;
+    color: var(--main-white-color);
+
+}
+
+.rightmenu h3 {
+    font-family: var(--mainfont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--main-white-color);
+}
+
+.rightmenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 34px;
+}
+
+.home,
+.destinations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    text-decoration: none;
+    transition: border 700ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+
+.home:hover,
+.destinations:hover {
+    border-bottom: 1px solid var(--primary-yellow);
+}
+
+/* end of navigation bar  */
+
+/* pagepiling sections 
+########################## */
+/* #pagepiling {} */
+
+/* right
+ side navigation 
+########################## */
+#pp-nav span {
+    /* color: yellow; */
+    width: 0.75rem !important;
+    height: 0.75rem !important;
+    background: var(--main-white-25) !important;
+}
+
+#pp-nav .active span {
+    /* color: yellow; */
+    width: 0.75rem !important;
+    height: 0.75rem !important;
+    background: var(--main-white-75) !important;
+}
+
+
+
+
+/* .section {
+    background-color: aqua;
+} */
+
+
+/* sun overview 
+############################### */
+.overview-page {
+    background-color: #0a0a0a;
+    background-image: url(../../Resources/mobilebg.png);
+    /* background-size: 100%;   */
+    background-size: cover;
+
+    /* background-position: center; */
+    /* outline: 3px solid blue;
+    outline-offset: -3px; */
+}
+
+.overview-page .hero1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all 1s;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    /* width: 1021.61px;
+    height: 550px; */
+}
+
+.overview-page .hero1 .text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+}
+
+.text1 .headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.text1 h1 {
+    font-family: var(--mainfont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 121px;
+    /* line-height: 140px; */
+    /* or 116% */
+    /* width: 471.61px; */
+    margin-bottom: -24px;
+
+    /* Primary + sun primary */
+
+    color: var(--primary-yellow);
+
+    text-shadow: 0px 0px 6.93548px #FC7F07;
+}
+
+.text1 h2 {
+    font-family: var(--mainfont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 81px;
+    line-height: 110px;
+    /* identical to box height */
+
+
+    /* white */
+
+    color: var(--main-white-color);
+}
+
+.post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 0px 11px;
+    gap: 8px;
+}
+
+.post-text p {
+    font-family: var(--secondaryfont);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    /* or 128% */
+
+
+    color: var(--main-white-color);
+}
+
+
+
+.sec2 {
+    background-color: yellow;
+
+}
+
+.sec3 {
+    background-color: green;
+
+}
+
+.sec4 {
+    background-color: aqua;
+
+}
+
+/* ###########################
+end of pagepiling section  */
+
+
+/* media queries
+############################### */
+
+@media screen and (max-width :682px) {
+
+    .overview-page .hero1 {
+        flex-direction: column-reverse;
+    }
+
+    .overview-page .hero1 img {
+        width: 100%;
+    }
+
+    .rightmenu h3 {
+        display: none;
+    }
+
+    .text1 .headings {
+        align-items: center;
+    }
+
+    .text1 h1 {
+        /* width: 400px; */
+        font-size: 90px;
+    }
+
+    .text1 h2 {
+        width: auto;
+        font-size: 64px;
+    }
+
+    .overview-page .hero1 .text1 {
+        gap: 0px;
+    }
+
+    .post-text {
+        align-items: center;
+    }
+
+
+    .post-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
