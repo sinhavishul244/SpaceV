@@ -270,6 +270,7 @@ end of pagepiling section  */
 
     .overview-page .hero1 img {
         width: 100%;
+        margin-bottom: -45px;
     }
 
     .rightmenu h3 {
@@ -283,6 +284,7 @@ end of pagepiling section  */
     .text1 h1 {
         /* width: 400px; */
         font-size: 90px;
+        margin-bottom: -44px;
     }
 
     .text1 h2 {
