@@ -266,6 +266,8 @@ end of pagepiling section  */
 
     .overview-page .hero1 {
         flex-direction: column-reverse;
+        transform: translate(-50%, -50%);
+        opacity: 1;
     }
 
     .overview-page .hero1 img {
