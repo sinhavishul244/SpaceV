@@ -114,7 +114,9 @@ html {
 
 /* pagepiling sections 
 ########################## */
-/* #pagepiling {} */
+/* #pagepiling {
+    filter: blur(1px);
+} */
 
 /* right
  side navigation 
@@ -136,9 +138,13 @@ html {
 
 
 
-/* .section {
-    background-color: aqua;
-} */
+.section {
+    /* background-color: aqua; */
+    /* filter: blur(30px); */
+    /* transition: all 0.5s ; */
+    transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+
+}
 
 
 /* sun overview 
@@ -209,11 +215,6 @@ html {
     font-weight: 400;
     font-size: 81px;
     line-height: 110px;
-    /* identical to box height */
-
-
-    /* white */
-
     color: var(--main-white-color);
 }
 
@@ -232,9 +233,6 @@ html {
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
-    /* or 128% */
-
-
     color: var(--main-white-color);
 }
 
@@ -257,6 +255,99 @@ html {
 
 /* ###########################
 end of pagepiling section  */
+
+
+/* query for sidenavigation 
+########################### */
+.sidenav {
+    background-color: var(--primary-yellow);
+    height: 100vh;
+    width: 55vw;
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    z-index: 12;
+    opacity: 1;
+    overflow-y: scroll;
+    /* margin-top: 5vh; */
+    transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.sidenav[aria-checked="true"] {
+    transform: translateX(0%);
+}
+
+.sidenav[aria-checked="false"] {
+    transform: translateX(-100%);
+}
+
+.sidenav::-webkit-scrollbar {
+    display: none;
+}
+
+.sidenav .cross-btn {
+    cursor: pointer;
+    position: sticky;
+    top: 21px;
+    left: 21px;
+}
+
+.sidenav ul {
+    margin-top: 40px;
+}
+
+.sidenav ul li {
+    padding: 1.2vh 10vw;
+    list-style: none;
+}
+
+.sidenav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.10);
+}
+
+.side-list-subheading:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.sidenav ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.sidenav ul li a p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31.0741px;
+    line-height: 36px;
+    color: #0A0A0A;
+}
+
+.sidenav-planet-img {
+    width: 5vh;
+}
+
+.side-list-subheading {
+    /* position: absolute; */
+    /* left: 46.66px;
+        top: 92px; */
+
+    font-family: var(--secondaryfont);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 31.0741px;
+    line-height: 36px;
+
+    /* black 50% */
+
+    color: rgba(10, 10, 10, 0.5);
+}
+
+.active-sublist-item {
+    background-color: rgba(0, 0, 0, 0.25);
+}
 
 
 /* media queries
@@ -306,5 +397,90 @@ end of pagepiling section  */
     .post-text p {
         font-size: 14px;
         text-align: center;
+    }
+
+    /* query for sidenavigation
+    ############################ */
+    .sidenav {
+        background-color: var(--primary-yellow);
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 12;
+        opacity: 1;
+        overflow: scroll;
+        /* margin-top: 5vh; */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    }
+
+    .sidenav[aria-checked="true"] {
+        transform: translateX(0%);
+    }
+
+    .sidenav[aria-checked="false"] {
+        transform: translateX(-100%);
+    }
+
+    .sidenav .cross-btn {
+        position: sticky;
+        top: 21px;
+        left: 3px;
+    }
+
+    .sidenav ul {
+        margin-top: 60px;
+    }
+
+    .sidenav ul li {
+        padding: 1.2vh 10vw;
+        list-style: none;
+    }
+
+    .sidenav ul li a {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .sidenav ul li a p {
+        /* width: 135.95px;
+        height: 40.14px; */
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 31.0741px;
+        line-height: 36px;
+
+        /* Dark */
+
+        color: #0A0A0A;
+
+    }
+
+    .sidenav-planet-img {
+        width: 5vh;
+    }
+
+    .side-list-subheading {
+        /* position: absolute; */
+        /* left: 46.66px;
+        top: 92px; */
+
+        font-family: var(--secondaryfont);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 31.0741px;
+        line-height: 36px;
+
+        /* black 50% */
+
+        color: rgba(10, 10, 10, 0.5);
+    }
+
+    .active-sublist-item {
+        background-color: rgba(0, 0, 0, 0.25);
     }
 }
