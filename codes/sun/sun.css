@@ -40,6 +40,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
     /* gap: 708px; */
 }
 
@@ -239,7 +240,12 @@ html {
 
 
 .sec2 {
-    background-color: yellow;
+    /* background-color: #f3ed66; */
+
+    background-color: #0a0a0a;
+    /* background-image: url(../../Resources/mobilebg.png); */
+    /* background-size: 100%;   */
+    /* background-size: cover; */
 
 }
 
@@ -270,6 +276,7 @@ end of pagepiling section  */
     overflow-y: scroll;
     /* margin-top: 5vh; */
     transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    /* box-shadow: 10px 10px #ffffff; */
 }
 
 .sidenav[aria-checked="true"] {

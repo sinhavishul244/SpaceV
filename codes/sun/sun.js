@@ -18,11 +18,6 @@ $(document).ready(function () {
 });
 
 
-// code for blurring 
-var sidenavstatus = document.querySelector(".sidenav").getAttribute("aria-checked");
-if (sidenavstatus === false) {
-    document.getElementById('pagepiling').style.filter = "blur(0.5)";
-}
 
 // code for side menu 
 
@@ -39,7 +34,24 @@ function buttonopener() {
         }
         else {
             document.querySelector(".section").style.filter = "blur(10px)";
+            document.querySelector(".section").style.opacity = "0.2";
             document.querySelector(".topnav").style.filter = "blur(10px)";
+            document.querySelector(".topnav").style.opacity = "0.2";
+            // to close the sidemenu when button is clicked 
+            document.getElementById("pagepiling").onclick = buttoncloser;
+
+            // disabling the navbar anchor links 
+            document.querySelector(".home").style.pointerEvents = "none";
+            document.querySelector(".destinations").style.pointerEvents = "none";
+
+            document.querySelector(".home").onclick = buttoncloser;
+            document.querySelector(".destinations").onclick = buttoncloser;
+
+            $.fn.pagepiling.setAllowScrolling(false);
+            $.fn.pagepiling.setKeyboardScrolling(false);
+
+
+
         }
         document.getElementById('pp-nav').style.display = 'none';
     }
@@ -59,7 +71,16 @@ function buttoncloser() {
         }
         else {
             document.querySelector(".section").style.filter = "blur(0px)";
+            document.querySelector(".section").style.opacity = "1";
             document.querySelector(".topnav").style.filter = "blur(0px)";
+            document.querySelector(".topnav").style.opacity = "1";
+
+            document.querySelector(".home").style.pointerEvents = "auto";
+            document.querySelector(".destinations").style.pointerEvents = "auto";
+
+
+            $.fn.pagepiling.setAllowScrolling(true);
+            $.fn.pagepiling.setKeyboardScrolling(true);
         }
 
         sidenav.setAttribute('aria-checked', 'false');
