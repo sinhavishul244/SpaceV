@@ -449,6 +449,10 @@ end of pagepiling section  */
 
 @media screen and (max-width :682px) {
 
+    #pp-nav {
+        margin-right: -1rem !important;
+    }
+
     .overview-page .hero1 {
         flex-direction: column-reverse;
         transform: translate(-50%, -50%);
@@ -614,6 +618,56 @@ end of pagepiling section  */
         line-height: 38px;
     }
 
+
+    /* media for even smaller screen phones  */
+    @media screen and (max-height : 810px) {
+
+        .sec2-maincontainer {
+            margin-top: 10px;
+        }
+
+        .sec2-headings h1 {
+            font-size: 32.929px;
+            line-height: 27px;
+            margin-top: 0px;
+        }
+
+
+        .sec2-headings h2 {
+            font-size: 24.929px;
+            line-height: 38px;
+        }
+
+        .sec2-image {
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-height : 728px) {
+
+        .sec2-maincontainer {
+            margin-top: 10px;
+        }
+
+        .sec2-headings h1 {
+            font-size: 32.929px;
+            line-height: 27px;
+            margin-top: 0px;
+        }
+
+
+        .sec2-headings h2 {
+            font-size: 24.929px;
+            line-height: 38px;
+        }
+
+        .sec2-image {
+            width: 80%;
+        }
+    }
+
+
+
     .sec2-text {
         font-size: 11.8355px;
         line-height: 18px;
@@ -623,4 +677,14 @@ end of pagepiling section  */
         text-align: center;
     }
 
+}
+
+@media screen and (max-height :682px) and (orientation : landscape) {
+    * {
+        font-size: 3px;
+    }
+
+    body {
+        font-size: 4px;
+    }
 }
