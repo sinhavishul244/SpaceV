@@ -4,7 +4,7 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'section2', 'section3', 'section4']
+            'tooltips': ['Overview', 'Orbit and Rotation', 'section3', 'section4']
         },
         easing: 'linear',
         afterLoad: function (anchorLink, index) {
@@ -33,12 +33,13 @@ function buttonopener() {
             // console.log("hello there");
         }
         else {
-            document.querySelector(".section").style.filter = "blur(10px)";
-            document.querySelector(".section").style.opacity = "0.2";
+            document.querySelector(".blackscreen").style.visibility = "visible";
+            document.querySelector(".blackscreen").style.opacity = "0.98";
+            // document.querySelector(".section").style.opacity = "0.2";
             document.querySelector(".topnav").style.filter = "blur(10px)";
             document.querySelector(".topnav").style.opacity = "0.2";
             // to close the sidemenu when button is clicked 
-            document.getElementById("pagepiling").onclick = buttoncloser;
+            document.querySelector(".blackscreen").onclick = buttoncloser;
 
             // disabling the navbar anchor links 
             document.querySelector(".home").style.pointerEvents = "none";
@@ -70,8 +71,10 @@ function buttoncloser() {
             // console.log("hello there");
         }
         else {
-            document.querySelector(".section").style.filter = "blur(0px)";
-            document.querySelector(".section").style.opacity = "1";
+            // document.querySelector(".section").style.filter = "blur(0px)";
+            document.querySelector(".blackscreen").style.visibility = "hidden";
+            document.querySelector(".blackscreen").style.opacity = "0";
+            // document.querySelector(".section").style.opacity = "1";
             document.querySelector(".topnav").style.filter = "blur(0px)";
             document.querySelector(".topnav").style.opacity = "1";
 
