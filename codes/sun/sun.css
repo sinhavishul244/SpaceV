@@ -261,6 +261,9 @@ html {
 /* start of section 2 - orbit and rotation
 ######################### */
 
+/******************************************
+ note that section2 main container css is also being used for other sections as well  */
+
 
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
@@ -335,14 +338,22 @@ html {
     color: #FFFFFF;
 }
 
-.sec3 {
-    background-color: green;
+/* code for section 3 - formation
+######################################### */
 
+.formation {
+    background-color: #0A0A0A;
 }
 
-.sec4 {
-    background-color: aqua;
+.sec3-maincontainer {
+    margin-top: 1.5rem;
+}
 
+/* code for section 4 - formation
+######################################### */
+
+.sec4 {
+    background-color: #f3ed66;
 }
 
 /* ###########################
@@ -449,10 +460,14 @@ end of pagepiling section  */
 
 @media screen and (max-width :682px) {
 
+    /* moving the side navigation by 24 pixels  */
     #pp-nav {
         margin-right: -1rem !important;
     }
 
+
+    /* code for first section 
+    ########################################## */
     .overview-page .hero1 {
         flex-direction: column-reverse;
         transform: translate(-50%, -50%);
@@ -616,6 +631,13 @@ end of pagepiling section  */
     .sec2-headings h2 {
         font-size: 32.929px;
         line-height: 38px;
+    }
+
+
+    /* code for section 3 
+    ############################ */
+    .sec3-image {
+        width: 110%;
     }
 
 

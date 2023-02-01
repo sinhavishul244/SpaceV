@@ -4,7 +4,7 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'Orbit and Rotation', 'section3', 'section4']
+            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation', 'section4']
         },
         easing: 'linear',
         afterLoad: function (anchorLink, index) {
