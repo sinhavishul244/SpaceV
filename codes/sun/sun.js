@@ -25,6 +25,7 @@ var swiper = new Swiper(".imageSwiper", {
     loop: true,
     centeredSlides: true,
     loop: true,
+    zoom: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

@@ -754,7 +754,18 @@ end of pagepiling section  */
 
     .sec6-headings {
         margin-bottom: 50px;
+        /* transform: scale(); */
+
     }
+
+    .sec6-headings h2 {
+        font-size: 3rem;
+    }
+
+    .sec6-headings h1 {
+        font-size: 4.5rem;
+    }
+
 
     .swiper-slide-active {
         overflow: visible;
