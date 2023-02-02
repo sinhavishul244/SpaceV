@@ -348,11 +348,109 @@ html {
     margin-top: 1.5rem;
 }
 
-/* code for section 4 - formation
+/* code for section 4 - structure
 ######################################### */
 
-.sec4 {
-    background-color: #f3ed66;
+.structure {
+    background-color: #000000;
+}
+
+
+/* code for section 5 - surface 
+######################################### */
+.surface {
+    background-color: #0d0502;
+}
+
+.sec5-image {
+    width: 110%;
+}
+
+
+/* code for section 6 - images  */
+.images-of-sun {
+    background-color: #0a0a0a;
+}
+
+.sec6-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0px; */
+}
+
+.sec6-headings h1 {
+    /* line-height: 60px; */
+    margin-top: -35px;
+}
+
+.images-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.imageSwiper {
+    height: 80vh;
+    width: 90vw;
+    /* outline: 2px solid white; */
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.2;
+    filter: blur(5px);
+    overflow: hidden;
+    /* transition: all 3s ease; */
+}
+
+.swiper-slide p {
+    position: absolute;
+    bottom: 0;
+    font-family: var(--secondaryfont);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2738px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(10, 10, 10, 0.49);
+    backdrop-filter: blur(7px);
+    padding: 30px;
+    padding-top: 16px;
+    transform: translateY(100%);
+    transition: all 500ms;
+}
+
+.swiper-slide-active p {
+    transform: translateY(0%);
+
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.swiper-slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--main-white-75) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-white-75) !important;
+
 }
 
 /* ###########################
@@ -455,7 +553,7 @@ end of pagepiling section  */
 
 
 /* media queries
-############################### */
+################################################################################# */
 
 @media screen and (max-width :682px) {
 
@@ -638,6 +736,34 @@ end of pagepiling section  */
     ############################ */
     .sec3-image {
         width: 110%;
+    }
+
+
+    /* query for section 6 - images 
+    ############################################## */
+    .imageSwiper {
+        height: 32vh;
+        width: 86vw;
+        overflow: visible;
+        /* outline: 2px solid white; */
+    }
+
+    /* .swiper-wrapper {
+        overflow: visible;
+    } */
+
+    .sec6-headings {
+        margin-bottom: 50px;
+    }
+
+    .swiper-slide-active {
+        overflow: visible;
+    }
+
+    .swiper-slide-active p {
+        overflow: visible;
+        transform: translateY(100%);
+
     }
 
 

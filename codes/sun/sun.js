@@ -4,7 +4,7 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation', 'section4']
+            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation', 'Structure', 'Surface', 'Images']
         },
         easing: 'linear',
         afterLoad: function (anchorLink, index) {
@@ -15,6 +15,33 @@ $(document).ready(function () {
         },
 
     });
+});
+
+
+// code for images swiper 
+var swiper = new Swiper(".imageSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 4000,
+    },
+    breakpoints: {
+        1000: {
+            slidesPerView: 1.75
+        }
+
+    }
 });
 
 
