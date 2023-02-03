@@ -1,3 +1,6 @@
+//code for pagepiling 
+//#########################################################
+
 $(document).ready(function () {
     $('#pagepiling').pagepiling({
         navigation: {
@@ -18,7 +21,9 @@ $(document).ready(function () {
 });
 
 
-// code for images swiper 
+// code for images swiper - section 6 image 
+//###################################################
+
 var swiper = new Swiper(".imageSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -29,13 +34,16 @@ var swiper = new Swiper(".imageSwiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        // dynamicBullets: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 4000,
+        delay: 5000,
+        disableOnInteraction: false,
+
     },
     breakpoints: {
         1000: {
@@ -46,8 +54,49 @@ var swiper = new Swiper(".imageSwiper", {
 });
 
 
+// code for image information in mobile devices 
+//###########################################################################
+
+function moreinfromation() {
+    swiper.autoplay.stop();
+    let button_text = document.querySelector(".mobile-info-btn").textContent;
+    // console.log(button_text);
+    if (button_text === "show information") {
+        document.querySelector(".mobile-info-btn").textContent = "hide information";
+        document.querySelector(".swiper-slide p").style.transform = "translateY(0%)";
+        document.querySelector(".swiper-slide-active p").style.transform = "translateY(0%)";
+    }
+    else {
+        swiper.autoplay.start();
+        document.querySelector(".mobile-info-btn").textContent = "show information";
+        document.querySelector(".swiper-slide-active p").style.transform = "translateY(100%)";
+        document.querySelector(".swiper-slide p").style.transform = "translateY(100%)";
+
+    }
+}
+
+
+swiper.on('realIndexChange', () => {
+    let button_text = document.querySelector(".mobile-info-btn").textContent;
+
+    if (button_text == "hide information") {
+        document.querySelector(".mobile-info-btn").textContent = "show information";
+        document.querySelector(".swiper-slide-active p").style.transform = "translateY(100%)";
+        document.querySelector(".swiper-slide p").style.transform = "translateY(100%)";
+        swiper.autoplay.start();
+    }
+    // else if (button_text == "show information") {
+    //     document.querySelector(".mobile-info-btn").textContent = "hide information";
+    //     document.querySelector(".swiper-slide p").style.transform = "translateY(0%)";
+    //     document.querySelector(".swiper-slide-active p").style.transform = "translateY(0%)";
+    // }
+});
+
+
+
 
 // code for side menu 
+//#####################################################################################
 
 function buttonopener() {
     var sidenav = document.querySelector(".sidenav");
@@ -127,10 +176,8 @@ let cross = document.querySelector(".cross-btn");
 cross.onclick = buttoncloser;
 
 
-
-
-
 // code for animating the hero element 
+//#####################################################################################
 document.addEventListener('DOMContentLoaded', starter);
 function starter() {
     let q = window.matchMedia("(max-width : 682px)");
@@ -145,4 +192,6 @@ function starter() {
         })
     }
 }
+
+
 

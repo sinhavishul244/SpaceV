@@ -423,7 +423,7 @@ html {
     background: rgba(10, 10, 10, 0.49);
     backdrop-filter: blur(7px);
     padding: 30px;
-    padding-top: 16px;
+    padding-top: 1rem;
     transform: translateY(100%);
     transition: all 500ms;
 }
@@ -441,6 +441,7 @@ html {
 .swiper-slide img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .swiper-button-prev,
@@ -451,6 +452,10 @@ html {
 .swiper-pagination-bullet-active {
     background: var(--main-white-75) !important;
 
+}
+
+.mobile-info-btn {
+    display: none;
 }
 
 /* ###########################
@@ -766,15 +771,40 @@ end of pagepiling section  */
         font-size: 4.5rem;
     }
 
-
-    .swiper-slide-active {
-        overflow: visible;
+    .swiper-slide p {
+        transform: translateY(100%);
     }
 
+    /* 
+    .swiper-slide-active {
+    overflow: visible;
+    } */
+
     .swiper-slide-active p {
-        overflow: visible;
+        /* overflow: visible; */
         transform: translateY(100%);
 
+    }
+
+    .mobile-info-btn {
+        display: block;
+        background: #F3ED66;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+        margin: 2rem 0px;
+        border: none;
+
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.5rem;
+        /* line-height: 33px; */
+        /* identical to box height */
+
+
+        /* Dark */
+
+        color: #0A0A0A;
     }
 
 
