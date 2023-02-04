@@ -119,17 +119,17 @@ function buttonopener() {
             document.querySelector(".blackscreen").style.visibility = "visible";
             document.querySelector(".blackscreen").style.opacity = "0.98";
             // document.querySelector(".section").style.opacity = "0.2";
-            document.querySelector(".topnav").style.filter = "blur(10px)";
-            document.querySelector(".topnav").style.opacity = "0.2";
+            // document.querySelector(".topnav").style.filter = "blur(10px)";
+            // document.querySelector(".topnav").style.opacity = "0.2";
             // to close the sidemenu when button is clicked 
             document.querySelector(".blackscreen").onclick = buttoncloser;
 
             // disabling the navbar anchor links 
-            document.querySelector(".home").style.pointerEvents = "none";
-            document.querySelector(".destinations").style.pointerEvents = "none";
+            // document.querySelector(".home").style.pointerEvents = "none";
+            // document.querySelector(".destinations").style.pointerEvents = "none";
 
-            document.querySelector(".home").onclick = buttoncloser;
-            document.querySelector(".destinations").onclick = buttoncloser;
+            // document.querySelector(".home").onclick = buttoncloser;
+            // document.querySelector(".destinations").onclick = buttoncloser;
 
             $.fn.pagepiling.setAllowScrolling(false);
             $.fn.pagepiling.setKeyboardScrolling(false);
@@ -158,11 +158,11 @@ function buttoncloser() {
             document.querySelector(".blackscreen").style.visibility = "hidden";
             document.querySelector(".blackscreen").style.opacity = "0";
             // document.querySelector(".section").style.opacity = "1";
-            document.querySelector(".topnav").style.filter = "blur(0px)";
-            document.querySelector(".topnav").style.opacity = "1";
+            // document.querySelector(".topnav").style.filter = "blur(0px)";
+            // document.querySelector(".topnav").style.opacity = "1";
 
-            document.querySelector(".home").style.pointerEvents = "auto";
-            document.querySelector(".destinations").style.pointerEvents = "auto";
+            // document.querySelector(".home").style.pointerEvents = "auto";
+            // document.querySelector(".destinations").style.pointerEvents = "auto";
 
 
             $.fn.pagepiling.setAllowScrolling(true);
