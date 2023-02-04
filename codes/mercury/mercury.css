@@ -19,6 +19,7 @@ html {
     --main-white-25: rgba(255, 254, 254, 0.25);
     --primary-yellow: #F3ED66;
     --planet-primary: #A78162;
+    --planet-primary-shadow: #B48F6F;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -206,6 +207,36 @@ html {
     gap: 0rem;
 }
 
+.overview-page .hero1 img {
+    animation: planet-main-animation 8s infinite linear;
+}
+
+@keyframes planet-main-animation {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(1%);
+
+    }
+
+    50% {
+        transform: translateY(0%);
+
+    }
+
+    75% {
+        transform: translateY(-1%);
+
+    }
+
+    100% {
+        transform: translateY(0%);
+
+    }
+}
+
 .text1 .headings {
     display: flex;
     flex-direction: column;
@@ -229,7 +260,26 @@ html {
     color: var(--planet-primary);
 
     /* text-shadow: 0rem 0rem 0.4334675rem #FC7F07; */
-    text-shadow: 0px 0px 3.25737px #B48F6F;
+    text-shadow: 0px 0px 0.4334675rem var(--planet-primary-shadow);
+    animation: planet-main-heading 8s infinite linear;
+
+}
+
+@keyframes planet-main-heading {
+    0% {
+        text-shadow: 0rem 0rem 0.4334675rem var(--planet-primary-shadow);
+
+    }
+
+    50% {
+        text-shadow: 0rem 0rem 0.7rem var(--planet-primary-shadow);
+
+    }
+
+    100% {
+        text-shadow: 0rem 0rem 0.4334675rem var(--planet-primary-shadow);
+
+    }
 }
 
 .text1 h2 {
@@ -305,7 +355,7 @@ html {
     line-height: 2.6875rem;
     color: var(--planet-primary);
     /* text-shadow: 0rem 0rem 0.1321425rem #FC7F07; */
-    text-shadow: 0px 0px 3.25737px #B48F6F;
+    text-shadow: 0px 0px 3.25737px var(--planet-primary-shadow);
 }
 
 .sec2-headings h1 {
@@ -613,7 +663,7 @@ end of pagepiling section  */
     }
 
     .overview-page .hero1 img {
-        width: 100%;
+        width: 95%;
         margin-bottom: -2.8125rem;
     }
 
@@ -627,13 +677,13 @@ end of pagepiling section  */
 
     .text1 h1 {
         /* width: 400px; */
-        font-size: 5.625rem;
+        font-size: 5rem;
         margin-bottom: -2.75rem;
     }
 
     .text1 h2 {
         width: auto;
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin-top: -2px;
     }
 

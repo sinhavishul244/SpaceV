@@ -205,6 +205,36 @@ html {
     gap: 1.5rem;
 }
 
+.overview-page .hero1 img {
+    animation: planet-main-animation 8s infinite linear;
+}
+
+@keyframes planet-main-animation {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(1%);
+
+    }
+
+    50% {
+        transform: translateY(0%);
+
+    }
+
+    75% {
+        transform: translateY(-1%);
+
+    }
+
+    100% {
+        transform: translateY(0%);
+
+    }
+}
+
 .text1 .headings {
     display: flex;
     flex-direction: column;
@@ -228,6 +258,24 @@ html {
     color: var(--primary-yellow);
 
     text-shadow: 0rem 0rem 0.4334675rem #FC7F07;
+    animation: planet-main-heading 8s infinite linear;
+}
+
+@keyframes planet-main-heading {
+    0% {
+        text-shadow: 0rem 0rem 0.4334675rem #FC7F07;
+
+    }
+
+    50% {
+        text-shadow: 0rem 0rem 0.9rem #FC7F07;
+
+    }
+
+    100% {
+        text-shadow: 0rem 0rem 0.4334675rem #FC7F07;
+
+    }
 }
 
 .text1 h2 {
