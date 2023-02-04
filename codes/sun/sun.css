@@ -173,6 +173,9 @@ html {
 .overview-page {
     background-color: #0a0a0a;
     background-image: url(../../Resources/mobilebg.png);
+    /* background-blend-mode: color-dodge; */
+    /* background-repeat: repeat; */
+
     /* background-size: 100%;   */
     background-size: cover;
 
