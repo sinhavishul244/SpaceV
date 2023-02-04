@@ -206,6 +206,7 @@ html {
 }
 
 .overview-page .hero1 img {
+    /* transform: scale(5); */
     animation: planet-main-animation 8s infinite linear;
 }
 

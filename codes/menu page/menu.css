@@ -24,6 +24,10 @@ font-family: 'Work Sans', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
 
+body {
+    background-color: #000000;
+}
+
 .mainBody {
     display: flex;
     flex-direction: column;
@@ -34,6 +38,7 @@ font-family: 'Work Sans', sans-serif; */
     /* border: 2px solid yellow; */
     height: 100vh;
     width: 100vw;
+    /* background-color: #000000; */
 }
 
 /* might end up using keep it  */
@@ -818,8 +823,17 @@ h2 {
         width: 100vw;
         position: absolute;
         top: 0;
-        background-image: url(../../Resources/mobilebg.png);
+        background-image: url(../../Resources/mobile-menu-background.gif);
+        opacity: 0.6;
+        /* background-blend-mode: difference; */
+        filter: blur(3px);
+        border: none;
+
+
+        /* in case you want image, uncomment the following line  */
+        /* background-image: url(../../Resources/mobilebg.png); */
         background-size: cover;
+        background-position: center center;
     }
 
     .home-button-container:hover .extenedbtn {

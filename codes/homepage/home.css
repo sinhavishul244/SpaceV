@@ -355,7 +355,13 @@ h2 {
     .canvascontainer {
         /* background-color: #0a0a0a; */
         height: 100vh;
-        background-image: url(../../Resources/mobilebg.png);
+        /* background-image: url(../../Resources/mobile-moving-bg.gif); */
+        background-image: url(../../Resources/mobile-menu-background.gif);
+        background-position: center center;
+
+
+        /* in case you want image, uncomment the following line  */
+        /* background-image: url(../../Resources/mobilebg.png); */
         background-size: cover;
     }
 }
