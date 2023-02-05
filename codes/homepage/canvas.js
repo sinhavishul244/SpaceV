@@ -4,8 +4,12 @@
 document.addEventListener('DOMContentLoaded', starter);
 
 function starter() {
-    let q = window.matchMedia("(max-width : 643px)");
-    if (q.matches) {
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
+
+
+    if (isMobileDevice) {
         document.querySelector(".canvascontainer").innerHTML = " ";
     }
     else {
