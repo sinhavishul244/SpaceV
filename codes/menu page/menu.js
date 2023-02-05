@@ -9,6 +9,7 @@ function starter() {
 
     if (isMobileDevice) {
         document.querySelector(".canvascontainer").innerHTML = " ";
+        // console.log(details);
     }
     else {
         const canvas = document.querySelector('canvas')
