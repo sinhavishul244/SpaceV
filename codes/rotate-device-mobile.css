@@ -10,12 +10,11 @@
         width: 100%;
         top: 0;
         left: 0;
-        background-image: url(../../Resources/rotate-phone.gif);
-        /* background-image: url(../../Resources/mobile-menu-background.gif); */
+        background-image: url(../Resources/rotate-phone.gif);
         background-color: #0A0A0A;
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 14%;
+        background-size: 20%;
         z-index: 10000;
     }
 
