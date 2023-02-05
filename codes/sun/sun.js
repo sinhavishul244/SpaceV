@@ -119,8 +119,8 @@ function buttonopener() {
             document.querySelector(".blackscreen").onclick = buttoncloser;
 
             // disabling the navbar anchor links 
-            document.querySelector(".home").style.pointerEvents = "none";
-            document.querySelector(".destinations").style.pointerEvents = "none";
+            // document.querySelector(".home").style.pointerEvents = "none";
+            // document.querySelector(".destinations").style.pointerEvents = "none";
 
             // document.querySelector(".home").onclick = buttoncloser;
             // document.querySelector(".destinations").onclick = buttoncloser;

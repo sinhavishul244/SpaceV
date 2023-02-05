@@ -206,7 +206,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 0rem;
     /* width: 1021.61px;
     height: 550px; */
@@ -877,6 +877,32 @@ end of pagepiling section  */
     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
     @media screen and (max-height : 810px) {
 
+        /* section 1 
+        ###################################### */
+        .text1 h1 {
+            /* width: 400px; */
+            font-size: 4.5rem;
+            margin-bottom: -2.75rem;
+        }
+
+        .text1 h2 {
+            width: auto;
+            font-size: 3rem;
+            margin-top: -2px;
+        }
+
+        .post-text {
+            margin-top: -1.8rem;
+        }
+
+        .post-text p {
+            font-size: 0.7rem;
+            text-align: center;
+        }
+
+        /* section 2 
+        ######################################## */
+
         .sec2-maincontainer {
             margin-top: 0.625rem;
         }
@@ -906,6 +932,17 @@ end of pagepiling section  */
 
         .sec2-image {
             width: 80%;
+        }
+
+        .sec2-text p {
+            font-size: 0.7rem;
+
+        }
+
+        /* section 6 
+        ################################*/
+        .swiper-slide p {
+            font-size: 0.7125rem;
         }
     }
 
