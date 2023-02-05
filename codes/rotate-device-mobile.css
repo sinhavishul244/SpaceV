@@ -1,7 +1,7 @@
 /* for phone landscape mode 
 ########################################################################################### */
 
-@media screen and (max-height :450px) and (max-width : 860px) and (orientation : landscape) {
+@media screen and (max-height :450px) and (max-width : 900px) and (orientation : landscape) {
     body::before {
         content: "";
         color: var(--main-white-color);
