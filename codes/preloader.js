@@ -20,10 +20,13 @@ let details = navigator.userAgent;
 containing some mobile devices keywords
 to search it in details string*/
 let regexp = /android|iphone|kindle|ipad/i;
+let regexp_ipad = /ipad|iPad/i;
 
 /* Using test() method to search regexp in details
 it returns boolean value*/
+// console.log(details);
 let isMobileDevice = regexp.test(details);
+let isIPad = regexp_ipad.test(details);
 
 if (isMobileDevice) {
     // Get HTML head element
@@ -44,4 +47,23 @@ if (isMobileDevice) {
 
 } else {
 
+}
+
+if (isIPad) {
+    // console.log(details);
+    // console.log("the device is i pad : " + isIPad);
+    var head = document.getElementsByTagName('HEAD')[0];
+
+    // Create new link Element
+    var link = document.createElement('link');
+
+    // set the attributes for link element
+    link.rel = 'stylesheet';
+
+    link.type = 'text/css';
+
+    link.href = '../ipad.css';
+
+    // Append link element to HTML head
+    head.appendChild(link);
 }

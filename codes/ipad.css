@@ -1,0 +1,97 @@
+@media screen and (orientation : portrait) {
+    .overview-page .hero1 {
+        flex-direction: column-reverse;
+        transform: scale(0.9) translate(-57%, -54%) !important;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .overview-page .hero1 .text1 {
+        align-items: center;
+        gap: 0px;
+    }
+
+    .text1 .headings {
+        align-items: center;
+    }
+
+    .text1 h1 {
+        margin-top: -4rem;
+    }
+
+    .sec2-maincontainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        display: grid;
+        grid-template-areas:
+            "heading "
+            "text"
+            "image";
+        grid-gap: 0.425rem;
+        /* transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); */
+
+
+    }
+
+    .sec2-image {
+        width: 90%;
+        justify-self: center;
+    }
+
+    .sec2-headings h1 {
+        font-size: 2.5rem;
+        line-height: 103.8%;
+        margin-top: 0rem;
+    }
+
+
+    .sec2-headings h2 {
+        font-size: 2.0580625rem;
+        line-height: 2.375rem;
+    }
+
+    .sec2-text {
+        gap: 0.5rem;
+    }
+
+    .sec2-text p {
+        font-size: 1.15rem;
+    }
+
+
+    .post-text {
+        align-items: center;
+    }
+
+    .post-text p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (orientation : landscape) {
+
+    .text1 h1 {
+        font-size: 5.6rem;
+    }
+
+    .text1 h2 {
+        font-size: 4.0625rem;
+    }
+
+    .post-text p {
+        font-size: 0.9rem;
+    }
+
+
+    .sec2-text p {
+        font-size: 0.9rem;
+    }
+}
