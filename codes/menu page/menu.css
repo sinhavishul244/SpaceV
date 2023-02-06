@@ -28,6 +28,23 @@ body {
     background-color: #000000;
 }
 
+/* code for video 
+######################### */
+.overview-bg-video {
+    /* border: 2px solid white; */
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.2;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .mainBody {
     display: flex;
     flex-direction: column;
@@ -417,7 +434,7 @@ h2 {
     /* transform: translate(-50%, -50%); */
     /* transform: scale(0.5) !important; */
     /* border: 2px solid yellow; */
-    filter: blur(6px);
+    filter: blur(4px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -807,6 +824,12 @@ h2 {
 }
 
 @media screen and (max-width :682px) {
+
+    .overview-bg-video {
+        display: none;
+    }
+
+
     .main_logo_with_main_title {
         transform: scale(0.5) translateY(-12%);
     }

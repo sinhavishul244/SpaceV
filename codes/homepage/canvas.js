@@ -10,7 +10,24 @@ function starter() {
 
 
     if (isMobileDevice) {
-        document.querySelector(".canvascontainer").innerHTML = " ";
+        let canvascontainer = document.querySelector(".canvascontainer");
+        canvascontainer.innerHTML = " ";
+        var head = document.getElementsByTagName('HEAD')[0];
+
+        // Create new link Element
+        var link = document.createElement('link');
+
+        // set the attributes for link element
+        link.rel = 'stylesheet';
+
+        link.type = 'text/css';
+
+        link.href = './mobile-bg.css';
+
+        // Append link element to HTML head
+        head.appendChild(link);
+        // canvascontainer.style.background - image = "url(../../Resources/mobile-menu-background.gif)";
+
     }
     else {
         const canvas = document.querySelector('canvas')

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+    <!-- link for icon  -->
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAZZ5EAAAAAACuIugBEmccAJZHMABhzowAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERETMzERERERFVRDMzERERFVVUQzMxEREVVVRDMzERERERERERERERAAIlVURDEREAAiVVREMREQAAIlVUQxEREAACJVVREREQAAAiVVEREREAAAJVEREREREAAhERERERERERERERERERERERERH//wAA//8AAPw/AADwDwAA4AcAAOAHAADAAwAAgAEAAEACAACAAQAA4AcAAOAHAADwDwAA/D8AAP//AAD//wAA"
+        rel="icon" type="image/x-icon" />
+
+
+    <!-- main css file  -->
+    <link rel="stylesheet" href="./venus.css">
+    <!-- link for google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- pagepiling css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css"
+        integrity="sha512-xbp9DExL/1FLDKhQIJNwoCaBjPytQcPMg82UsbBq02kckLcVzQms0+Ot54jXwuBjR6M91vaYHSmqrZlQ/nOEAQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css for swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- css for preloader - include in each page! -->
+    <link rel="stylesheet" href="../preloader.css">
+
+</head>
+
+<body>
+
+    <nav class="topnav">
+        <div class="leftmenu">
+            <img src="./planet-resources/hamburger.svg" alt="" class="hamburger-btn">
+            <div class="logo">
+                <img src="./planet-resources/saturnlogo.svg" alt="">
+                <h3>Space V</h3>
+            </div>
+        </div> <!-- end of leftmenu -->
+        <div class="rightmenu">
+            <a href="../homepage/home.html" class="home">
+                <img src="./planet-resources/home.svg" alt="">
+                <h3>Home</h3>
+            </a> <!-- end of home -->
+            <a href="../menu page/menu.html" class="destinations">
+                <img src="./planet-resources/destination.svg" alt="">
+                <h3>Destinations</h3>
+            </a> <!-- end of destinations -->
+        </div> <!-- end of right menu -->
+    </nav> <!-- end of top navigation -->
+
+    <div class="sidenav" aria-checked="false">
+        <img src="./planet-resources/cross.svg" alt="" class="cross-btn">
+        <ul>
+            <li class="side-list-subheading">stars</li>
+            <li><a href="../sun/sun.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/burning-sun.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Sun</p>
+                </a></li> <!-- end of sun li -->
+            <li class="side-list-subheading">planets</li>
+            <li><a href="../mercury/mercury.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/mercury.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Mercury</p> <!-- end of mercury li -->
+                </a></li>
+            <li class="active-sublist-item"><a href="../venus/venus.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/venus.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Venus</p> <!-- end of venus li -->
+                </a></li>
+            <li><a href="../earth/earth.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/earth.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Earth</p>
+                </a></li> <!-- end of earth li -->
+            <li><a href="../mars/mars.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/mars.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Mars</p>
+                </a></li> <!-- end of mars li -->
+            <li><a href="../jupiter/jupiter.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/jupiter.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Jupiter</p>
+                </a></li> <!-- end of jupiter li -->
+            <li><a href="../saturn/saturn.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/saturn1.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Saturn</p> <!-- end of saturn li -->
+                </a></li>
+            <li><a href="../uranus/uranus.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/uranus.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Uranus</p>
+                </a></li> <!-- end of uranus li -->
+            <li><a href="../neptune/neptune.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/Neptune.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Neptune</p> <!-- end of neptune list item -->
+                </a></li>
+            <li class="side-list-subheading">dwarf planets</li>
+            <li><a href="../pluto/pluto.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/pluto.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Pluto</p>
+                </a></li> <!-- end of pluto list item -->
+            <li class="side-list-subheading">moons</li>
+            <li><a href="../moon/moon.html">
+                    <img src="../menu page/images/planets/small-image-sidemenu/moon.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>Moon</p>
+                </a></li> <!-- end of moon list item -->
+            <li class="side-list-subheading">information source</li>
+            <li><a href="https://www.nasa.gov/">
+                    <img src="../menu page/images/planets/small-image-sidemenu/nasalogo.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>NASA</p>
+                </a></li>
+            <li><a href="https://www.isro.gov.in/">
+                    <img src="../menu page/images/planets/small-image-sidemenu/isrologo.png" alt=""
+                        class="sidenav-planet-img">
+                    <p>ISRO</p>
+                </a></li>
+        </ul>
+    </div> <!-- end of sidenav -->
+
+    <div class="blackscreen"></div>
+
+    <div id="pagepiling">
+
+        <div class="section overview-page">
+            <div class="hero1">
+                <div class="text1">
+                    <div class="headings">
+                        <h1>Venus</h1>
+                        <h2>Overview</h2>
+                    </div> <!-- end of headings -->
+                    <div class="post-text">
+                        <p>Composition : mainly made of silicate rocks
+                            or metals</p>
+                        <p>Surface Temperature : Sunny side reaches
+                            750 to 800 degrees F while nighttime temperature
+                            is nearly -330 degrees F</p>
+                        <p>Circumference : 15,329 km</p>
+                        <p>Mean Radius : 2,440 km</p>
+                        <p>Mass : 3.285 × 10<sup>23</sup> kg</p>
+                        <p>Type : Terrestrial Planet</p>
+                        <p>Day : About 59 Earth days</p>
+                        <p>Year : 88 Earth days</p>
+                        <p>Moons : 0</p>
+                    </div> <!-- end of post-text -->
+                </div> <!-- end of text -->
+                <img src="./mercury-resources/mercury-main.png" alt="">
+            </div> <!-- end of container -->
+
+            <!-- code for video  -->
+            <video autoplay muted loop src="../../Resources/starfield-bg-overview.webm"
+                class="overview-bg-video"></video> <!-- end of video - make sure to add css for video as well -->
+
+        </div> <!-- end of section 1- sun overview -->
+
+        <div class="section orbit-and-rotation">
+            <div class="sec2-maincontainer">
+                <div class="sec2-headings">
+                    <h2>Venus</h2>
+                    <h1>Orbit and Rotation</h1>
+                </div> <!-- end of sec2 - heading -->
+                <img class="sec2-image" src="./mercury-resources/mercury-orbit-and-rotation.png" alt="">
+                <div class="sec2-text">
+                    <p>
+                        Mercury's highly eccentric, egg-shaped orbit takes the
+                        planet as close as 47 million kilometers and as far as
+                        70 million kilometers from the Sun.
+                    </p>
+                    <p>
+                        It speeds around the Sun every 88 days, traveling through
+                        space at nearly 29 miles (47 kilometers) per second,
+                        faster than any other planet.
+                    </p>
+                    <p>
+                        Mercury spins slowly on its axis and completes one
+                        rotation every 59 Earth days.
+                    </p>
+                    <p>
+                        But when Mercury is moving fastest in its elliptical orbit
+                        around the Sun (and it is closest to the Sun), each rotation
+                        is not accompanied by sunrise and sunset like it is on most
+                        other planets.
+                    </p>
+                    <p>
+                        Mercury's axis of rotation is tilted just 2 degrees with
+                        respect to the plane of its orbit around the Sun.
+                    </p>
+                    <p>
+                        That means it spins nearly perfectly upright and so does
+                        not experience seasons as many other planets do.
+                    </p>
+                </div> <!-- end of sec2 -text -->
+            </div> <!-- end of sec2 main container -->
+        </div> <!-- end of section 2 = orbit and rotation -->
+
+        <div class="section formation-and-structure">
+            <div class="sec2-maincontainer sec3-maincontainer">
+                <div class="sec2-headings">
+                    <h2>Venus</h2>
+                    <h1>Formation and Structure</h1>
+                </div> <!-- end of sec3 - heading -->
+                <img class="sec2-image sec3-image" src="./mercury-resources/formation-and-structure-mercury.png" alt="">
+                <div class="sec2-text sec3-text">
+                    <p>
+                        Mercury formed about <strong>4.5 billion years</strong> ago when gravity
+                        pulled swirling gas and dust together to form this small
+                        planet nearest the Sun.
+                    </p>
+                    <p>
+                        Mercury has a central core, a rocky mantle, and a solid crust.
+                    </p>
+                    <p>
+                        Mercury is the second densest planet, after Earth.
+                    </p>
+                    <p>
+                        It has a large metallic core with a radius of about 1,289 miles
+                        (2,074 kilometers), about 85 percent of the planet's radius.
+                    </p>
+                    <p>
+                        There is evidence that it is partly molten or liquid.
+                    </p>
+                    <p>
+                        Mercury's outer shell, comparable to Earth's outer shell
+                        (called the mantle and crust), is only about 400 kilometers
+                        (250 miles) thick.
+                    </p>
+                </div> <!-- end of sec3 -text -->
+            </div> <!-- end of sec3 main container -->
+        </div> <!-- end of formation -->
+
+        <div class="section atmosphere-and-magnetosphere">
+            <div class="sec2-maincontainer sec4-maincontainer">
+                <div class="sec2-headings sec4-headings">
+                    <h2>Venus</h2>
+                    <h1>Atmosphere & Magnetosphere</h1>
+                </div> <!-- end of sec4 - heading -->
+                <img class="sec2-image sec4-image" src="./mercury-resources/mercury-atmosphere-and-magnetosphere.png"
+                    alt="">
+                <div class="sec2-text">
+                    <p>
+                        Instead of an atmosphere, Mercury possesses a thin
+                        exosphere made up of atoms blasted off the surface
+                        by the solar wind and striking meteoroids.
+                    </p>
+                    <p>
+                        Mercury's exosphere is composed mostly of oxygen,
+                        sodium, hydrogen, helium, and potassium.
+                    </p>
+                    <p>
+                        Mercury's magnetic field is offset relative to the
+                        planet's equator.
+                    </p>
+                    <p>
+                        Mercury's magnetic field at the surface has just 1%
+                        the strength of Earth's
+                    </p>
+                    <p>
+                        It interacts with the magnetic field of the solar wind
+                        to sometimes create intense magnetic tornadoes that
+                        funnel the fast, hot solar wind plasma down to the
+                        surface of the planet.
+                    </p>
+                    <p>
+                        When the ions strike the surface, they knock off
+                        neutrally charged atoms and send them on a loop high
+                        into the sky.
+                    </p>
+                </div> <!-- end of sec4 -text -->
+            </div> <!-- end of sec4 main container -->
+        </div> <!-- end of section4 - structure -->
+
+        <div class="section surface">
+            <div class="sec2-maincontainer sec5-maincontainer">
+                <div class="sec2-headings sec5-headings">
+                    <h2>Venus</h2>
+                    <h1>Surface</h1>
+                </div> <!-- end of sec5 - heading -->
+                <img class="sec2-image sec5-image" src="./mercury-resources/mercury-surface.png" alt="">
+                <div class="sec2-text">
+                    <p>
+                        Mercury's surface resembles that of Earth's Moon, scarred
+                        by many impact craters resulting from collisions with
+                        meteoroids and comets.
+                    </p>
+                    <p>
+                        Very large impact basins were created by asteroid impacts
+                        on the planet's surface early in the solar system's history.
+                    </p>
+                    <p>
+                        While there are large areas of smooth terrain, there are also
+                        cliffs, some hundreds of miles long and soaring up to a mile high.
+                    </p>
+                    <p>
+                        Most of Mercury's surface would appear greyish-brown to
+                        the human eye.
+                    </p>
+                    <p>
+                        Temperatures on Mercury are extreme
+                    </p>
+                    <p>
+                        Mercury may have water ice at its north and south poles
+                        inside deep craters, but only in regions in permanent shadows.
+                    </p>
+                </div> <!-- end of sec4 -text -->
+            </div> <!-- end of sec4 main container -->
+        </div> <!-- end of section 5 - surface -->
+
+        <div class="section images-of-sun">
+            <div class="images-main-container">
+                <div class="sec2-headings sec6-headings">
+                    <h2>Venus</h2>
+                    <h1>Images</h1>
+                </div> <!-- end of sec6 - heading -->
+                <div class="swiper imageSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/1-mercury'Caloris-basin.jpg" alt="">
+                            <p>
+                                Mercury does not have a thick atmosphere to protect it from space debris. The small
+                                planet is riddled with craters, but none as spectacular as the Caloris Basin.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/2-The-Impressive-Rays-of-Hokusai.jpg" alt="">
+                            <p>
+                                This mosaic of images from NASA's MESSENGER spacecraft shows the impact crater Hokusai,
+                                located on Mercury at a latitude of 58°N. The crater has an impressive system of rays,
+                                which extend as much as a thousand kilometers (more than 600 miles) across the planet
+                                and are the longest that have yet been identified on Mercury.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/3-Cat'sEyeCrater.jpg" alt=""
+                                class="img3-section6">
+                            <p>
+                                Centered in this stunning image lies Eminescu crater on the planet Mercury, illuminated
+                                by a bright halo of material around its edge.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/4-Lowlands-in-mercury's-north.jpg" alt="">
+                            <p>
+                                This image shows a perspective view, looking towards Mercury's north and colorized by
+                                the topographic height of the surface.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/5-Colors of the Innermost Planet.jpg" alt="">
+                            <p>
+                                This colorful view of Mercury was produced by using images from the color base map
+                                imaging campaign during MESSENGER's primary mission.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/8-odin-platina.jpg" alt=""
+                                class="img8-section6">
+                            <p>
+                                This area east of Mercury's giant Caloris Basin is thought to be related to ejecta from
+                                the basin impact event.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/6-Degas and Friends.png" alt="">
+                            <p>
+                                Located near the center of the image, the distinctive blue color of the low-reflectance
+                                material associated with Degas contrasts with the surrounding terrain and neighboring
+                                craters.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./mercury-resources/images-section/7-Van Eyck and the Formation.jpg" alt=""
+                                class="img8-section6">
+                            <p>
+                                The low Sun elevation in this scene emphasizes the topography of Van Eyck crater. The
+                                rim of Van Eyck has been profoundly cratered by material ejected from the Caloris basin.
+                                Smooth plains fill the floor of Van Eyck, but they too have been affected by cratering,
+                                from large primary impacts to deep, linear incisions by secondary crater chains.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div> <!-- end of images swiper section -->
+
+                <!-- button for phone -->
+                <button class="mobile-info-btn" onclick="moreinfromation()">show information</button>
+                <!-- end of button for phone -->
+
+            </div> <!-- end of image main container -->
+
+        </div> <!-- end of section 6 - images -->
+
+    </div> <!-- end of pagepiling -->
+    <!--NOTE #####################################################################
+         to add extra pages in pagepiling, just add extra divs with class section  -->
+
+    <!-- preloader div-->
+    <div id="preloader">
+        <div class="center_stuff loadingscreenstuff">
+            <!-- <h2>spaceV is loading</h2> -->
+            <img src="../../Resources/loader4.gif" class="preloader_loader_img" alt="" srcset="  ">
+        </div> <!-- loadingscreenstuff ends -->
+    </div><!-- preloader end -->
+
+    <!-- script for swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- script for preloader -->
+    <script src="../preloader.js"></script>
+    <!-- script for preloader ends -->
+    <!-- script for jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- end of script for jquery  -->
+    <!-- script for pagepiling  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.js"
+        integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- end of script for pagepiling  -->
+
+    <!-- my js file  -->
+    <script type="text/javascript" src="./venus.js"></script>
+</body>
+
+</html>

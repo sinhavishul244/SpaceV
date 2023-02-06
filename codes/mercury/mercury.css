@@ -170,7 +170,7 @@ html {
 } */
 
 
-/* sun overview 
+/* mercury overview 
 ############################### */
 .overview-page {
     background-color: #000000;
@@ -181,11 +181,12 @@ html {
     background-size: cover;
 
     background-position: center;
+    overflow: hidden;
     /* outline: 3px solid blue;
     outline-offset: -3px; */
 }
 
-.overview-page::before {
+/* .overview-page::before {
     content: "";
     background-image: url(../../Resources/starfield-bg-overview.gif);
     min-height: 100%;
@@ -195,6 +196,21 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.4;
+} */
+
+.overview-bg-video {
+    /* border: 2px solid white; */
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.45;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .overview-page .hero1 {

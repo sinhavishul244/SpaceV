@@ -47,7 +47,12 @@ var swiper = new Swiper(".imageSwiper", {
     },
     breakpoints: {
         1000: {
-            slidesPerView: 1.75
+            slidesPerView: 1.75,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: true,
+
+            }
         }
 
     }

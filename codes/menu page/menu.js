@@ -41,7 +41,7 @@ function starter() {
             canvas.width = innerWidth
             canvas.height = innerHeight
 
-            init()
+            // init()
         })
 
         // Objects
@@ -73,7 +73,7 @@ function starter() {
         function init() {
             particles = []
 
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 0; i++) {
                 const canvasWidth = canvas.width + 1000
                 const canvasHeight = canvas.height + 2000
 
@@ -111,8 +111,8 @@ function starter() {
             }
         }
 
-        init()
-        animate()
+        // init()
+        // animate()
     }
 }
 
@@ -127,9 +127,9 @@ var swiper = new Swiper(".mySwiper", {
     speed: 600,
     // preventInteractionOnTransition: true,
     // autoHeight: true,
-    preloadImages: true,
+    preloadImages: false,
     // Enable lazy loading
-    lazy: false,
+    lazy: true,
     keyboard: {
         enabled: true,
     },
