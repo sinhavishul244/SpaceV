@@ -28,7 +28,7 @@ body {
     background-color: #000000;
 }
 
-/* code for video 
+/* code for video  
 ######################### */
 .overview-bg-video {
     /* border: 2px solid white; */
@@ -37,7 +37,7 @@ body {
     min-height: 100%;
     background-size: cover;
     overflow: hidden;
-    opacity: 0.2;
+    opacity: 0.2 !important;
 
     top: 50%;
     left: 50%;

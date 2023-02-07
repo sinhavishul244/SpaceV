@@ -20,20 +20,18 @@ html {
     --primary-yellow: #F3ED66;
     --planet-primary: #C98728;
     --planet-primary-shadow: #E5B54B;
+    --side-nav-gradient: linear-gradient(45deg, #a35b30, #c98728);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
 
-/* code for black screen 
-######################## */
-.blackscreen {
+/* code for black screen ( now in preloader.css )
+############################################################### */
+
+/* .blackscreen {
     background-color: black;
     height: 100vh;
     width: 100vw;
-    /* opacity: 0.95; */
-    filter: bac;
-    backdrop-filter: blur(0.625rem);
-    -webkit-backdrop-filter: blur(34.375rem);
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -42,7 +40,7 @@ html {
     transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
 
 
-}
+} */
 
 
 /* navigation bar 
@@ -136,6 +134,8 @@ html {
 }
 
 /* end of navigation bar  */
+
+
 
 /* pagepiling sections 
 ##################################################################### */
@@ -285,6 +285,7 @@ html {
     /* or 116% */
     /* width: 471.61px; */
     margin-bottom: -1.5rem;
+    margin-right: 6rem;
 
     /* Primary + sun primary */
 
@@ -350,7 +351,7 @@ html {
 
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
-    background-color: #04192e;
+    background-color: #000606;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -406,12 +407,20 @@ html {
     width: 110%;
 }
 
+.sec2-image-onlySec2 {
+    padding-right: 3rem;
+    justify-self: center;
+    align-self: center;
+}
+
+
 .sec2-text {
     grid-area: text;
     display: flex;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-self: center;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
@@ -423,11 +432,11 @@ html {
     color: #FFFFFF;
 }
 
-/* code for section 3 - formation and structure
+/* code for section 3 
 ######################################### */
 
-.formation-and-structure {
-    background-color: #000000;
+.formation {
+    background-color: #060606;
 }
 
 .sec3-maincontainer {
@@ -445,25 +454,25 @@ html {
 
 /* code for section 4 - atmosphere and magnetosphere
 ######################################### */
+.structure {
+    background-image: linear-gradient(to right top, #422904, #503713, #5f4521, #6e532e, #7d623c);
 
-.atmosphere-and-magnetosphere {
-    background-color: #140526;
 }
 
+
+
 .sec4-image {
-    width: 100%;
+    width: 95%;
     margin-right: 7rem;
     padding-right: 1rem;
 }
 
 
-/* code for section 5 - surface 
+/* code for section 5 - structure 
 ######################################### */
 
 
-.surface {
-    background-color: #000000;
-}
+
 
 .sec5-maincontainer {
     grid-gap: 1.625rem;
@@ -479,6 +488,7 @@ html {
 ###################################################################*/
 .images-of-sun {
     background-color: #0a0a0a;
+    /* background: linear-gradient(to right, #000000, #A55C1B) */
 }
 
 .sec6-headings {
@@ -579,100 +589,6 @@ html {
 end of pagepiling section  */
 
 
-/* query for sidenavigation 
-########################### */
-.sidenav {
-    background-color: var(--planet-primary);
-    height: 100vh;
-    width: 55vw;
-    clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
-    position: absolute;
-    z-index: 12;
-    opacity: 1;
-    overflow-y: scroll;
-    /* margin-top: 5vh; */
-    transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
-    /* box-shadow: 10px 10px #ffffff; */
-    z-index: 101;
-}
-
-.sidenav[aria-checked="true"] {
-    transform: translateX(0%);
-}
-
-.sidenav[aria-checked="false"] {
-    transform: translateX(-100%);
-}
-
-.sidenav::-webkit-scrollbar {
-    display: none;
-}
-
-.sidenav .cross-btn {
-    cursor: pointer;
-    position: sticky;
-    top: 1.3125rem;
-    left: 1.3125rem;
-}
-
-.sidenav ul {
-    margin-top: 2.5rem;
-}
-
-.sidenav ul li {
-    padding: 1.2vh 10vw;
-    list-style: none;
-}
-
-.sidenav ul li:hover {
-    background-color: rgba(0, 0, 0, 0.10);
-}
-
-.side-list-subheading:hover {
-    background-color: rgba(0, 0, 0, 0) !important;
-}
-
-.sidenav ul li a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-decoration: none;
-    gap: 0.625rem;
-}
-
-.sidenav ul li a p {
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.94213125rem;
-    line-height: 2.25rem;
-    color: #0A0A0A;
-}
-
-.sidenav-planet-img {
-    width: 2.9rem;
-}
-
-.side-list-subheading {
-    /* position: absolute; */
-    /* left: 46.66px;
-        top: 92px; */
-
-    font-family: var(--secondaryfont);
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.94213125rem;
-    line-height: 2.25rem;
-
-    /* black 50% */
-
-    color: rgba(10, 10, 10, 0.5);
-}
-
-.active-sublist-item {
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
 
 /* media queries
 ################################################################################# */
@@ -694,7 +610,8 @@ end of pagepiling section  */
     }
 
     .overview-page .hero1 img {
-        width: 95%;
+        /* width: 105%; */
+        width: 17.5rem;
         margin-bottom: -2.8125rem;
     }
 
@@ -708,8 +625,10 @@ end of pagepiling section  */
 
     .text1 h1 {
         /* width: 400px; */
-        font-size: 5rem;
+        /* font-size: 5rem; */
+        font-size: 7.4375rem;
         margin-bottom: -2.75rem;
+        margin-right: 0rem;
     }
 
     .text1 h2 {
@@ -719,6 +638,7 @@ end of pagepiling section  */
     }
 
     .overview-page .hero1 .text1 {
+        align-items: center;
         gap: 0rem;
     }
 
@@ -734,91 +654,7 @@ end of pagepiling section  */
         text-align: center;
     }
 
-    /* query for sidenavigation
-    ############################ */
-    .sidenav {
-        background-color: var(--planet-primary);
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        z-index: 101;
-        opacity: 1;
-        overflow: scroll;
-        /* margin-top: 5vh; */
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
-    }
 
-    /* for position of sidenav  */
-    .sidenav[aria-checked="true"] {
-        transform: translateX(0%);
-    }
-
-    .sidenav[aria-checked="false"] {
-        transform: translateX(-100%);
-    }
-
-    .sidenav .cross-btn {
-        position: sticky;
-        top: 1.3125rem;
-        left: 0.1875rem;
-    }
-
-    .sidenav ul {
-        margin-top: 3.75rem;
-    }
-
-    .sidenav ul li {
-        padding: 1.2vh 10vw;
-        list-style: none;
-    }
-
-    .sidenav ul li a {
-        display: flex;
-        flex-direction: row;
-        /* justify-content: center; */
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .sidenav ul li a p {
-        /* width: 135.95px;
-        height: 40.14px; */
-        font-family: 'Work Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.94213125rem;
-        line-height: 2.25rem;
-
-        /* Dark */
-
-        color: #0A0A0A;
-
-    }
-
-    .sidenav-planet-img {
-        width: 2.9rem;
-    }
-
-    .side-list-subheading {
-        /* position: absolute; */
-        /* left: 46.66px;
-        top: 92px; */
-
-        font-family: var(--secondaryfont);
-        font-style: normal;
-        font-weight: 300;
-        font-size: 1.94213125rem;
-        line-height: 2.25rem;
-
-        /* black 50% */
-
-        color: rgba(10, 10, 10, 0.5);
-    }
-
-    .active-sublist-item {
-        background-color: rgba(0, 0, 0, 0.25);
-    }
 
     /* query for section 2 - orbit and rotation
     ####################### */
@@ -865,6 +701,8 @@ end of pagepiling section  */
 
     /* code for section 4 
     ################################## */
+
+
     .sec4-image {
         width: 100%;
         margin-right: 0rem;
@@ -949,6 +787,7 @@ end of pagepiling section  */
             /* width: 400px; */
             font-size: 4.5rem;
             margin-bottom: -2.75rem;
+            margin-right: 0rem;
         }
 
         .text1 h2 {
@@ -1001,7 +840,7 @@ end of pagepiling section  */
         }
 
         .sec2-text p {
-            font-size: 0.7rem;
+            font-size: 0.68rem;
 
         }
 
@@ -1032,6 +871,10 @@ end of pagepiling section  */
 
         .sec2-image {
             width: 80%;
+        }
+
+        .sec4-image {
+            width: 65%;
         }
     }
 

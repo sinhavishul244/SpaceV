@@ -24,16 +24,16 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
 
-/* code for black screen 
+/* code for black screen - !!!!!use preloader css to change - this won't work!!!!!
 ######################## */
 .blackscreen {
     background-color: black;
     height: 100vh;
     width: 100vw;
     /* opacity: 0.95; */
-    filter: bac;
+    /* filter: bac;
     backdrop-filter: blur(0.625rem);
-    -webkit-backdrop-filter: blur(34.375rem);
+    -webkit-backdrop-filter: blur(34.375rem); */
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -578,7 +578,7 @@ html {
 end of pagepiling section  */
 
 
-/* query for sidenavigation 
+/* query for sidenavigation - !!!!!use preloader css to change - this won't work!!!!!
 ########################### */
 .sidenav {
     background-color: var(--planet-primary);
@@ -733,8 +733,8 @@ end of pagepiling section  */
         text-align: center;
     }
 
-    /* query for sidenavigation
-    ############################ */
+    /* query for sidenavigation - !!!!!use preloader css to change - this won't work!!!!!
+    #################################################################################### */
     .sidenav {
         background-color: var(--planet-primary);
         height: 100vh;

@@ -18,6 +18,11 @@ html {
     --main-white-75: rgba(255, 254, 254, 0.75);
     --main-white-25: rgba(255, 254, 254, 0.25);
     --primary-yellow: #F3ED66;
+    --planet-primary: #F3ED66;
+    --planet-primary-shadow: rgba(252, 127, 7, 0.7);
+    --side-nav-gradient: linear-gradient(110deg, #fbdf2a, #f3ed66);
+
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -29,9 +34,9 @@ html {
     height: 100vh;
     width: 100vw;
     /* opacity: 0.95; */
-    filter: bac;
+    /* filter: bac;
     backdrop-filter: blur(0.625rem);
-    -webkit-backdrop-filter: blur(34.375rem);
+    -webkit-backdrop-filter: blur(34.375rem); */
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -239,6 +244,13 @@ html {
 .overview-page .hero1 img {
     /* transform: scale(5); */
     animation: planet-main-animation 8s infinite linear;
+}
+
+model-viewer {
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    animation: planet-main-animation 8s infinite linear;
+
 }
 
 @keyframes planet-main-animation {

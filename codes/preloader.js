@@ -49,6 +49,9 @@ if (isMobileDevice) {
 
 }
 
+// fixing the website for ipad 
+//################################################################
+
 if (isIPad) {
     // console.log(details);
     // console.log("the device is i pad : " + isIPad);
@@ -67,3 +70,9 @@ if (isIPad) {
     // Append link element to HTML head
     head.appendChild(link);
 }
+
+//adding code for active list item is sidenav
+let active_li = document.querySelector(".active-sublist-item");
+active_li.addEventListener("click", () => {
+    setTimeout(buttoncloser, 100);
+})
