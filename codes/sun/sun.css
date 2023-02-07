@@ -246,7 +246,7 @@ html {
     animation: planet-main-animation 8s infinite linear;
 }
 
-model-viewer {
+.sun_3d_model {
     height: min(80vh, 80vw);
     width: min(80vh, 80vw);
     animation: planet-main-animation 8s infinite linear;
