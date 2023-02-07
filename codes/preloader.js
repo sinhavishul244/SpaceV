@@ -46,7 +46,7 @@ if (isMobileDevice) {
     head.appendChild(link);
 
     document.querySelector(".sun_3d_model").addEventListener("touchstart", () => {
-        console.log("touching sun of phone");
+        // console.log("touching sun of phone");
         $.fn.pagepiling.setAllowScrolling(false);
         $.fn.pagepiling.setKeyboardScrolling(false);
     });
