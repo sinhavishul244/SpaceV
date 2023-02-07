@@ -45,6 +45,18 @@ if (isMobileDevice) {
     // Append link element to HTML head
     head.appendChild(link);
 
+    document.querySelector(".sun_3d_model").addEventListener("touchstart", () => {
+        console.log("touching sun of phone");
+        $.fn.pagepiling.setAllowScrolling(false);
+        $.fn.pagepiling.setKeyboardScrolling(false);
+    });
+
+    document.querySelector(".sun_3d_model").addEventListener("touchend", () => {
+
+        $.fn.pagepiling.setAllowScrolling(true);
+        $.fn.pagepiling.setKeyboardScrolling(true);
+    });
+
 } else {
 
 }
