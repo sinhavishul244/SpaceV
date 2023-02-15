@@ -307,15 +307,15 @@ const materialSun = new THREE.ShaderMaterial({
         p0.yz=rot*p0.yz;
         vLayer0=p0;
         
-        mat2 rot1=rotate(t*.2+10.);
-       // mat2 rot1=rotate(.2+10.);
+        //mat2 rot1=rotate(t*.2+10.);
+       mat2 rot1=rotate(.2+10.);
         
         vec3 p1=position;
         p1.xz=rot1*p1.xz;
         vLayer1=p1;
         
-        mat2 rot2=rotate(t*.75+30.);
-       // mat2 rot2=rotate(.75+30.);
+        //mat2 rot2=rotate(t*.75+30.);
+        mat2 rot2=rotate(.75+30.);
         vec3 p2=position;
         p2.xy=rot2*p2.xy;
         vLayer2=p2;
