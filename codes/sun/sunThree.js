@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 // import { VRButton } from './VRbutton.js';
 
-
+//grab button code
 const canvas = document.querySelector(".sun_3d_model");
 canvas.addEventListener("mousedown", () => {
     canvas.style.cursor = "grabbing";
@@ -300,8 +300,8 @@ const materialSun = new THREE.ShaderMaterial({
         eyeVector=normalize(worldPosition.xyz-cameraPosition);
         
         float t=time*.000005;
-        mat2 rot=rotate(t*1.5+20.);
-       // mat2 rot=rotate(1.5+20.);
+       // mat2 rot=rotate(t*1.5+20.);
+        mat2 rot=rotate(1.5+20.);
         
         vec3 p0=position;
         p0.yz=rot*p0.yz;
@@ -529,11 +529,11 @@ window.addEventListener("resize", () => {
     renderer.setSize(width, height);
 })
 
+
+
+
+
 let overviewpage = document.querySelector(".overview-page");
-
-
-
-
 
 function animate() {
     let onscreen = overviewpage.getAttribute('aria-hidden');

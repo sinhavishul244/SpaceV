@@ -214,9 +214,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -234,8 +234,15 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -716,6 +723,7 @@ end of pagepiling section  */
 
     .overview-page .hero1 .text1 {
         gap: 0rem;
+        margin-top: -2.1875rem;
     }
 
     .post-text {
@@ -729,6 +737,14 @@ end of pagepiling section  */
         font-size: 0.875rem;
         text-align: center;
     }
+
+    .sun_3d_model {
+        border: 2px solid red;
+        height: min(80vh, 75vw) !important;
+        width: min(80vh, 75vw) !important;
+        cursor: grab;
+    }
+
 
     /* query for sidenavigation - !!!!!use preloader css to change - this won't work!!!!!
     ############################ */
