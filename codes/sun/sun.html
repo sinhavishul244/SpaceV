@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="../preloader.css">
 
     <!-- script for model viewer  -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
     <!-- end of script for model viewer  -->
 
 </head>
@@ -137,7 +137,7 @@
 
     <div id="pagepiling">
 
-        <div class="section overview-page">
+        <div class="section overview-page" aria-hidden="true">
             <div class="hero1">
                 <div class="text1">
                     <div class="headings">
@@ -157,11 +157,18 @@
                     </div> <!-- end of post-text -->
                 </div> <!-- end of text -->
                 <!-- <img src="./sun resources/burning-sun 1.png" alt=""> -->
-                <model-viewer class="sun_3d_model" alt="sun" src="./sun resources/3d-model/sun.gltf" ar ar-modes="webxr scene-viewer quick-look"
-                    style="background-color: unset;" environment-image=" ./sun resources/burning-sun 1.png"
-                    poster="./sun resources/burning-sun 1.png" shadow-intensity="1" camera-controls touch-action="pan-y"
-                    disable-zoom interaction-prompt-threshold="3000" auto-rotate
-                    interaction-prompt-style="basic"></model-viewer>
+
+                <!-- three js 3D model of sun  -->
+                <canvas class="sun_3d_model"></canvas>
+                <!-- end of three js 3D model -->
+
+                <!-- <model-viewer class="sun_3d_model" alt="sun" src="./sun resources/3d-model/solarsystem_unpacked.glb" ar
+                    ar-modes="webxr scene-viewer quick-look" style="background-color: unset;"
+                    environment-image=" ./sun resources/burning-sun 1.png" poster="./sun resources/burning-sun 1.png"
+                    shadow-intensity="1" camera-controls touch-action="pan-y" disable-zoom
+                    interaction-prompt-threshold="3000" auto-rotate interaction-prompt-style="basic"></model-viewer> -->
+
+
             </div> <!-- end of container -->
 
             <!-- code for video  -->
@@ -431,8 +438,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- end of script for pagepiling  -->
 
+    <!-- script for three js  -->
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://unpkg.com/three/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three/examples/jsm/"
+        }
+    }
+    </script>
 
+    <script type="module" src="./sunThree.js"></script>
+    <!-- end of three js -->
 
     <!-- my js file  -->
     <script type="text/javascript" src="sun.js"></script>

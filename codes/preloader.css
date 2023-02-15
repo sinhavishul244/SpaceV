@@ -98,11 +98,15 @@
 }
 
 .sidenav[aria-checked="true"] {
-    transform: translateX(0%);
+    /* transform: translateX(0%); */
+    transform: translate3d(0%, 0%, 0px);
+
 }
 
 .sidenav[aria-checked="false"] {
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
+    transform: translate3d(-100%, 0%, 0px);
+
 }
 
 .sidenav::-webkit-scrollbar {
@@ -199,11 +203,14 @@
 
     /* for position of sidenav  */
     .sidenav[aria-checked="true"] {
-        transform: translateX(0%);
+        transform: translate3d(0%, 0%, 0px);
+        /* transform: translateX(0%); */
     }
 
     .sidenav[aria-checked="false"] {
-        transform: translateX(-100%);
+        /* transform: translateX(-100%); */
+        transform: translate3d(-100%, 0%, 0px);
+
     }
 
     .sidenav .cross-btn {

@@ -221,9 +221,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -247,10 +247,10 @@ html {
 }
 
 .sun_3d_model {
+    /* border: 2px solid red; */
     height: min(80vh, 80vw);
     width: min(80vh, 80vw);
-    /* animation: planet-main-animation 8s infinite linear; */
-
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -573,11 +573,11 @@ end of pagepiling section  */
 }
 
 .sidenav[aria-checked="true"] {
-    transform: translateX(0%);
+    transform: translate3d(0%, 0%, 0%);
 }
 
 .sidenav[aria-checked="false"] {
-    transform: translateX(-100%);
+    transform: translate3d(-100%, 0%, 0%);
 }
 
 .sidenav::-webkit-scrollbar {
