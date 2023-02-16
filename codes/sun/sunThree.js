@@ -1,7 +1,15 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import * as THREE from 'three';
+import * as THREE from '../../Resources/three/build/three.module.js';
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OrbitControls } from '../../Resources/three/examples/jsm/controls/OrbitControls.js';
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 // import { VRButton } from './VRbutton.js';
+// import { RenderPass } from '../../Resources/three/examples/jsm/postprocessing/RenderPass.js';
+// import { EffectComposer } from '../../Resources/three/examples/jsm/postprocessing/EffectComposer.js';
+// import { UnrealBloomPass } from '../../Resources/three/examples/jsm/postprocessing/UnrealBloomPass.js';
+
+
+
 
 //grab button code
 const canvas = document.querySelector(".sun_3d_model");
@@ -42,6 +50,21 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableZoom = false;
 controls.enablePan = false;
 
+
+
+// // code for bloom effect 
+// //##########################################################################
+// const renderScene = new RenderPass(scene, camera);
+// const composer = new EffectComposer(renderer);
+// composer.addPass(renderScene);
+
+// const bloomPass = new UnrealBloomPass(
+//     new THREE.Vector2(height, width),
+//     1.6,
+//     0.1,
+//     0.1)
+
+// composer.addPass(bloomPass);
 
 // cube camera 
 //##########################################################################
@@ -556,8 +579,11 @@ function animate() {
         // console.log("time is :" + material.uniforms.time.value);
         // camera.updateProjectionMatrix();
 
+
+        // bloom effect rendering 
         renderer.render(scene, camera);
-        // renderer.render(scene2, camera);
+        // composer.render();
+
     }
     else {
         // console.log(" not rendering")

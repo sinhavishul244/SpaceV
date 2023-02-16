@@ -436,16 +436,22 @@
     <!-- end of script for pagepiling  -->
 
     <!-- script for three js  -->
-    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
 
     <script type="importmap">
-      {
-          "imports": {
-          "three": "https://unpkg.com/three/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three/examples/jsm/"
-          }
-      }
-      </script>
+        {
+            "imports": {
+            
+            "three": "../../Resources/three/build/three.module.js"
+          
+            }
+        }
+        </script>
+
+    <!-- These were used earlier from unpkg  -->
+    <!-- "three": "https://unpkg.com/three/build/three.module.js", -->
+    <!-- "three/addons/": "https://unpkg.com/three/examples/jsm/" -->
+
 
     <script type="module" src="./MercuryThree.js"></script>
     <!-- end of three js -->

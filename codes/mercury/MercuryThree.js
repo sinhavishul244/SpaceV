@@ -1,9 +1,8 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import * as THREE from 'three';
+import * as THREE from '../../Resources/three/build/three.module.js';
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OrbitControls } from '../../Resources/three/examples/jsm/controls/OrbitControls.js';
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { ARButton } from '../../Resources/ARbutton.js';
-// import texture from '';
-
 
 
 
@@ -64,8 +63,8 @@ Mercury.rotateZ(358);
 
 // AR button 
 // renderer.xr.enabled = true;
-const arbtn = ARButton.createButton(renderer);
-let ov1 = document.querySelector('.hero1');
+// const arbtn = ARButton.createButton(renderer);
+// let ov1 = document.querySelector('.hero1');
 // ov1.appendChild(arbtn);
 
 // reszie fix 
