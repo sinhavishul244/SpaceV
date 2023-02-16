@@ -10,6 +10,8 @@ import { ARButton } from '../../Resources/ARbutton.js';
 
 const canvas = document.querySelector(".sun_3d_model");
 // const canvas = document.querySelector(".sun_3d_model");
+
+
 // code for grab mouse button 
 canvas.addEventListener("mousedown", () => {
     canvas.style.cursor = "grabbing";
@@ -26,7 +28,7 @@ let height = canvas.offsetHeight;
 // const scene = new THREE.Scene();
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, width / height, 0.01, 1000);
 camera.position.set(0, 0, 5);
 
 // const renderer = new THREE.WebGLRenderer();
@@ -61,10 +63,10 @@ Mercury.rotateZ(358);
 
 
 // AR button 
+// renderer.xr.enabled = true;
 const arbtn = ARButton.createButton(renderer);
 let ov1 = document.querySelector('.hero1');
-renderer.xr.enabled = true;
-ov1.appendChild(arbtn);
+// ov1.appendChild(arbtn);
 
 // reszie fix 
 window.addEventListener("resize", () => {
@@ -83,7 +85,24 @@ window.addEventListener("resize", () => {
 
 let overviewpage = document.querySelector(".overview-page");
 
-function animate() {
+// function animate() {
+//     let onscreen = overviewpage.getAttribute('aria-hidden');
+
+
+//     if (onscreen === "true") {
+//         Mercury.rotateY(0.0005);
+//         // console.log("rendering");
+//         renderer.render(scene, camera);
+//     }
+//     else {
+//         // console.log("no rendering");
+//     }
+//     requestAnimationFrame(animate);
+// }
+// animate();
+
+renderer.setAnimationLoop(function () {
+
     let onscreen = overviewpage.getAttribute('aria-hidden');
 
 
@@ -95,7 +114,5 @@ function animate() {
     else {
         // console.log("no rendering");
     }
-    requestAnimationFrame(animate);
-}
-animate();
 
+});
