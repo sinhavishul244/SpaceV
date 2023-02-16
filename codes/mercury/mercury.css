@@ -238,6 +238,7 @@ html {
     animation: planet-main-animation 8s infinite linear;
 } */
 
+/* class name is copied from sun's file model so named sun 3d model  */
 .sun_3d_model {
     /* border: 2px solid red; */
     height: min(80vh, 80vw);
@@ -739,8 +740,10 @@ end of pagepiling section  */
         text-align: center;
     }
 
+    /* class name is copied from sun's file model so named sun 3d model  */
+
     .sun_3d_model {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         height: min(80vh, 75vw) !important;
         width: min(80vh, 75vw) !important;
         cursor: grab;
