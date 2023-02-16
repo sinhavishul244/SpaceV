@@ -18,9 +18,11 @@ html {
     --main-white-75: rgba(255, 254, 254, 0.75);
     --main-white-25: rgba(255, 254, 254, 0.25);
     --primary-yellow: #F3ED66;
-    --planet-primary: #C98728;
+    /* --planet-primary: #C98728; */
+    --planet-primary: #d37f2b;
     --planet-primary-shadow: #E5B54B;
-    --side-nav-gradient: linear-gradient(45deg, #a35b30, #c98728);
+    /* --side-nav-gradient: linear-gradient(45deg, #a35b30, #c98728); */
+    --side-nav-gradient: linear-gradient(45deg, #a35b30, #d37f2b);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -170,7 +172,7 @@ html {
 } */
 
 
-/* sun overview 
+/* venus overview 
 ############################### */
 .overview-page {
     background-color: #000000;
@@ -218,9 +220,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -238,8 +240,15 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -470,7 +479,9 @@ html {
 
 /* code for section 5 - structure 
 ######################################### */
-
+.surface {
+    background-color: red;
+}
 
 
 
@@ -640,6 +651,7 @@ end of pagepiling section  */
     .overview-page .hero1 .text1 {
         align-items: center;
         gap: 0rem;
+        margin-top: -2.8rem;
     }
 
     .post-text {

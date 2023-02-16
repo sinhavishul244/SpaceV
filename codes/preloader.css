@@ -58,6 +58,12 @@
 
 }
 
+/* query for pagepiling section's 
+######################################################## */
+.section {
+    overflow: hidden;
+}
+
 /* query for overview page bg video 
 ######################################################## */
 
@@ -69,12 +75,49 @@
     min-height: 100%;
     background-size: cover;
     overflow: hidden;
-    opacity: 0.55;
+    opacity: 0.50;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+}
+
+/* code for overview page bold colors  */
+strong {
+    color: var(--planet-primary);
+}
+
+/* .overview-page strong {
+    color: var(--planet-primary);
+} */
+
+/* code for colors of text
+######################################## */
+.white60 {
+    color: rgba(255, 254, 254, 0.75);
+}
+
+.textgreen {
+    color: #92ca91;
+}
+
+.textred {
+    /* color: #d14348; */
+    color: #dc7175;
+}
+
+.textyellow {
+    color: #f2f3e2;
+}
+
+.textpurple {
+    color: #c5c0e7;
+    /* color: #ca8dfd; */
+}
+
+.textblue {
+    color: #73e6ff;
 }
 
 /* query for sidenavigation 

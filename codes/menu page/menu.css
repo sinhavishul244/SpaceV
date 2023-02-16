@@ -895,7 +895,11 @@ h2 {
     }
 }
 
-@media screen and (max-height : 650px) {
+@media screen and (max-height : 650px) and (max-width : 600px) {
+    :root {
+        font-size: 6px;
+    }
+
     .main_logo_with_main_title {
         transform: scale(0.8) translateY(-12%);
         ;

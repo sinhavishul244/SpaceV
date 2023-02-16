@@ -135,7 +135,7 @@
 
     <div id="pagepiling">
 
-        <div class="section overview-page">
+        <div class="section overview-page" aria-hidden="true">
             <div class="hero1">
                 <div class="text1">
                     <div class="headings">
@@ -143,21 +143,26 @@
                         <h2>Overview</h2>
                     </div> <!-- end of headings -->
                     <div class="post-text">
-                        <p>Atmospheric Composition : more than 96 percent
+                        <p> <strong> Atmospheric Composition :</strong> more than 96 percent
                             carbon dioxide and 3.5 percent molecular nitrogen
                             with other gases</p>
-                        <p>Surface Temperature : Ranges from about 820
+                        <p> <strong>Surface Temperature :</strong> Ranges from about 820
                             degrees to nearly 900 degrees F</p>
-                        <p>Circumference : 38,025 km</p>
-                        <p>Mean Radius : 6,051.8 km</p>
-                        <p>Mass : 4.867 × 10<sup>24</sup> kg</p>
-                        <p>Type : Terrestrial Planet</p>
-                        <p>Day : About 243 Earth days</p>
-                        <p>Year : 225 Earth days</p>
-                        <p>Moons : 0</p>
+                        <p> <strong>Circumference :</strong> 38,025 km</p>
+                        <p> <strong>Mean Radius :</strong> 6,051.8 km</p>
+                        <p> <strong>Mass :</strong> 4.867 × 10<sup>24</sup> kg</p>
+                        <p> <strong>Type :</strong> Terrestrial Planet</p>
+                        <p> <strong>Day :</strong> About 243 Earth days</p>
+                        <p> <strong>Year :</strong> 225 Earth days</p>
+                        <p> <strong>Moons :</strong> 0</p>
                     </div> <!-- end of post-text -->
                 </div> <!-- end of text -->
-                <img src="./planet-resources/venus.png" alt="">
+                <!-- <img src="./planet-resources/venus.png" alt=""> -->
+
+                <!-- 3d model container  -->
+                <canvas class="sun_3d_model"></canvas>
+                <!-- end of 3d model container -->
+
             </div> <!-- end of container -->
 
             <!-- code for video  -->
@@ -178,32 +183,36 @@
                 <!-- </a> -->
                 <div class="sec2-text">
                     <p>
-                        Venus orbits the Sun at an average distance of about 0.72 AU
-                        (astronomical unit - mean distance between Earth and Sun)
-                        and completes an orbit every 224.7 days.
+                        Venus orbits the Sun at an average distance of about <strong>0.72 AU</strong>
+                        <span class="white60">(astronomical unit - mean distance between Earth
+                            and Sun)</span>
+                        and completes an orbit every <strong>224.7 days.</strong>
                     </p>
                     <p>
                         Though most planetary orbits are elliptical, Venus’s orbit is
-                        the closest to circular with an eccentricity of less than 0.01.
+                        the <span class="textgreen"><b>closest to circular</b></span> with an eccentricity of
+                        less than
+                        <strong>0.01</strong>.
                     </p>
                     <p>
-                        When Venus lies between Earth and the Sun in inferior
-                        conjunction, it makes the closest approach to Earth of any
-                        planet at a distance of 41 million km or 25 million miles.
+                        When Venus lies between Earth and the Sun in <span class="textpurple"><b>inferior
+                                conjunction</b></span>, it makes the closest approach to Earth of any
+                        planet at a distance of <strong>41 million km</strong> or <strong>25 million miles</strong>.
                     </p>
                     <p>
-                        Venus has a retrograde rotation, moving in the opposite
+                        Venus has a <strong>retrograde rotation</strong>, moving in the <span
+                            class="textyellow">opposite</span>
                         direction than most planets, only Uranus also does this.
-                        They both move from East to West, clockwise.
+                        They both move from <span class="textyellow">East to West, clockwise</span>.
                     </p>
                     <p>
-                        Venus does this rotation once every 243 Earth days, having
-                        the slowest rotation out of all the planets in the solar system
+                        Venus does this rotation once every <strong>243 Earth days</strong>, having
+                        the <span class="textyellow">slowest</span> rotation out of all the planets in the solar system
                     </p>
                     <p>
                         This slow rotation also influences its shape, making Venus
-                        very spherical. One Venusian day is longer than one
-                        Venusian year – 225 Earth days.
+                        very <span class="textgreen">spherical</span>. One Venusian day is longer than one
+                        Venusian year – <strong>225 Earth days</strong>.
                     </p>
                 </div> <!-- end of sec2 -text -->
             </div> <!-- end of sec2 main container -->
@@ -435,6 +444,27 @@
         integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- end of script for pagepiling  -->
+
+    <!-- script for three js  -->
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            
+            "three": "../../Resources/three/build/three.module.js"
+          
+            }
+        }
+        </script>
+
+    <!-- These were used earlier from unpkg  -->
+    <!-- "three": "https://unpkg.com/three/build/three.module.js", -->
+    <!-- "three/addons/": "https://unpkg.com/three/examples/jsm/" -->
+
+
+    <script type="module" src="./VenusThree.js"></script>
+    <!-- end of three js -->
 
     <!-- my js file  -->
     <script type="text/javascript" src="./venus.js"></script>

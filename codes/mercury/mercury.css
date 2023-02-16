@@ -18,9 +18,11 @@ html {
     --main-white-75: rgba(255, 254, 254, 0.75);
     --main-white-25: rgba(255, 254, 254, 0.25);
     --primary-yellow: #F3ED66;
-    --planet-primary: #A78162;
+    /* --planet-primary: #A78162; */
+    --planet-primary: #b99149;
     --planet-primary-shadow: #B48F6F;
-    --side-nav-gradient: linear-gradient(45DEG, #513f30, #a78162);
+    /* --side-nav-gradient: linear-gradient(45DEG, #513f30, #a78162); */
+    --side-nav-gradient: linear-gradient(45DEG, #513f30, #b99149);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
