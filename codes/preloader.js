@@ -45,17 +45,41 @@ if (isMobileDevice) {
     // Append link element to HTML head
     head.appendChild(link);
 
-    document.querySelector(".sun_3d_model").addEventListener("touchstart", () => {
-        // console.log("touching sun of phone");
-        $.fn.pagepiling.setAllowScrolling(false);
-        $.fn.pagepiling.setKeyboardScrolling(false);
-    });
+    let threeD_model_canvas = document.querySelector(".sun_3d_model");
 
-    document.querySelector(".sun_3d_model").addEventListener("touchend", () => {
+    if (threeD_model_canvas != null) {
+        threeD_model_canvas.addEventListener("touchstart", () => {
+            // console.log("touching sun of phone");
+            $.fn.pagepiling.setAllowScrolling(false);
+            $.fn.pagepiling.setKeyboardScrolling(false);
+        });
 
-        $.fn.pagepiling.setAllowScrolling(true);
-        $.fn.pagepiling.setKeyboardScrolling(true);
-    });
+        threeD_model_canvas.addEventListener("touchend", () => {
+
+            $.fn.pagepiling.setAllowScrolling(true);
+            $.fn.pagepiling.setKeyboardScrolling(true);
+        });
+    }
+
+    let image_swiper = document.querySelector(".swiper");
+
+    if (image_swiper != null) {
+        image_swiper.addEventListener("touchstart", () => {
+            // console.log("touching sun of phone");
+            $.fn.pagepiling.setAllowScrolling(false);
+            $.fn.pagepiling.setKeyboardScrolling(false);
+        });
+
+        image_swiper.addEventListener("touchend", () => {
+
+            $.fn.pagepiling.setAllowScrolling(true);
+            $.fn.pagepiling.setKeyboardScrolling(true);
+        });
+    }
+
+
+
+
 
 } else {
 
@@ -85,6 +109,8 @@ if (isIPad) {
 
 //adding code for active list item is sidenav
 let active_li = document.querySelector(".active-sublist-item");
-active_li.addEventListener("click", () => {
-    setTimeout(buttoncloser, 100);
-})
+if (active_li != null) {
+    active_li.addEventListener("click", () => {
+        setTimeout(buttoncloser, 100);
+    })
+}
