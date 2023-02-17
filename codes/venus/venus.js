@@ -15,7 +15,7 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation', 'Structure', 'Surface', 'Images']
+            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation', 'Structure', 'Surface', 'Atmosphere', 'Images']
         },
         easing: 'linear',
         afterRender: function () {
