@@ -4,6 +4,7 @@ let hamburgerbtn = document.querySelector(".hamburger-btn");
 let blackscreen = document.querySelector(".blackscreen");
 let crossbtn = document.querySelector(".cross-btn");
 let active = document.querySelector(".active-sublist-item");
+const earth_life_video = document.querySelector(".earth-life-video");
 
 
 
@@ -16,7 +17,7 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation and Structure', 'Atmosphere and Magnetosphere', 'Surface', 'Images']
+            'tooltips': ['Overview', 'Potential for life', 'Orbit and Rotation', 'Formation and Structure', 'Atmosphere and Magnetosphere', 'Surface', 'Images']
         },
         easing: 'linear',
         afterRender: function () {
@@ -83,10 +84,26 @@ $(document).ready(function () {
                 })
             }
 
+
+            //code for video - section 1a - potential for life
+            //####################################################
+            if ((index == 1 || index == 3) && nextIndex == 2) {
+                earth_life_video.play();
+                // console.log("video should play!")
+                // earth_life_video.muted = true;
+            }
+            if (index == 2) {
+                earth_life_video.pause();
+                // earth_life_video.muted = false;
+            }
+
         },
 
     });
 });
+
+
+
 
 
 // code for images swiper - section 6 image 
@@ -175,6 +192,8 @@ swiper.on('realIndexChange', () => {
 function buttonopener() {
     var sidenav = document.querySelector(".sidenav");
     var btnstatus = sidenav.getAttribute("aria-checked");
+    earth_life_video.pause();
+
     // console.log("checking");
     if (btnstatus === 'false') {
         sidenav.setAttribute('aria-checked', 'true');
@@ -215,6 +234,8 @@ function buttonopener() {
 function buttoncloser() {
     var sidenav = document.querySelector(".sidenav");
     var btnstatus = sidenav.getAttribute("aria-checked");
+    earth_life_video.play();
+
 
     if (btnstatus === 'true') {
         let q1 = window.matchMedia("(max-width : 682px)");

@@ -353,6 +353,99 @@ html {
     color: var(--main-white-color);
 }
 
+/* code for section 1a - potential for life
+############################################## */
+.potential-for-life {
+    background-color: #0053d6;
+
+
+}
+
+.earth-life-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    /* height: min(60vh, 60vw);
+    width: min(100vw, 60vh); */
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+}
+
+.topblackgradient {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 15vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #0a0a0a, rgba(10, 10, 10, 0));
+}
+
+.sec1a-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+}
+
+.sec1a-headings h2 {
+    font-family: var(--mainfont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.6875rem;
+    color: var(--planet-primary);
+    /* text-shadow: 0rem 0rem 0.1321425rem #FC7F07; */
+    text-shadow: 0px 0px 3.25737px var(--planet-primary-shadow);
+}
+
+.sec1a-headings h1 {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.0625rem;
+    /* line-height: 110px; */
+    margin-top: -1.3125rem;
+    color: var(--main-white-color);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+
+}
+
+.sec1a-text {
+    /* border: 4px solid var(--planet-primary); */
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.212);
+
+    backdrop-filter: blur(10px);
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.205625rem;
+    line-height: 1.5625rem;
+    /* or 128% */
+    /* width: min(100vh, 100vw); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #FFFFFF;
+}
+
+.sec1a-text p+p {
+    padding-top: 1rem;
+}
+
 /* start of section 2 - orbit and rotation
 ######################### */
 
@@ -835,6 +928,41 @@ end of pagepiling section  */
 
     .active-sublist-item {
         background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    /* query for section 1a - potential for life
+############################################## */
+    .sec1a-headings {
+        top: 3.3rem;
+        width: 100%;
+    }
+
+    .sec1a-headings h2 {
+        font-size: 2rem;
+
+    }
+
+    .sec1a-headings h1 {
+        padding-top: 1rem;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 3rem;
+
+
+    }
+
+    .sec1a-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        padding: 1rem;
+        /* margin: 10px; */
+        border-radius: 2rem;
+        width: 90vw;
+        height: 60vh;
     }
 
     /* query for section 2 - orbit and rotation
