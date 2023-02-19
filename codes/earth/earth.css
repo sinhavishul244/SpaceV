@@ -247,8 +247,8 @@ html {
 
 .sun_3d_model {
     /* border: 2px solid red; */
-    height: min(80vh, 80vw);
-    width: min(80vh, 80vw);
+    height: min(80vh, 75vw);
+    width: min(80vh, 75vw);
     cursor: grab;
 }
 
@@ -712,6 +712,8 @@ end of pagepiling section  */
 
     .overview-page .hero1 .text1 {
         align-items: center;
+        margin-top: -1.8rem;
+        gap: 0rem;
     }
 
     .rightmenu h3 {
@@ -736,9 +738,6 @@ end of pagepiling section  */
         margin-top: -2px;
     }
 
-    .overview-page .hero1 .text1 {
-        gap: 0rem;
-    }
 
     .post-text {
         align-items: center;
@@ -963,6 +962,11 @@ end of pagepiling section  */
 
         /* section 1 
         ###################################### */
+
+        .overview-page .hero1 .text1 {
+            margin-top: -2.5rem;
+        }
+
         .text1 h1 {
             /* width: 400px; */
             font-size: 4.5rem;

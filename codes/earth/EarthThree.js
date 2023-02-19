@@ -241,11 +241,11 @@ renderer.setAnimationLoop(function () {
     if (onscreen === "true") {
         Cloud_mesh.rotateY(0.00037);
         Earth.rotateY(0.0005);
-        console.log("rendering");
+        // console.log("rendering");
         renderer.render(scene, camera);
     }
     else {
-        console.log("no rendering");
+        // console.log("no rendering");
     }
 
 });
