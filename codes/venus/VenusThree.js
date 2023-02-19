@@ -120,7 +120,7 @@ let overviewpage = document.querySelector(".overview-page");
 
 
 //     if (onscreen === "true") {
-//         Mercury.rotateY(0.0005);
+//         Mercury.rotateY(0.0005); 
 //         // console.log("rendering");
 //         renderer.render(scene, camera);
 //     }

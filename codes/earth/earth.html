@@ -136,7 +136,7 @@
 
     <div id="pagepiling">
 
-        <div class="section overview-page">
+        <div class="section overview-page" aria-hidden="true">
             <div class="hero1">
                 <div class="text1">
                     <div class="headings">
@@ -144,21 +144,26 @@
                         <h2>Overview</h2>
                     </div> <!-- end of headings -->
                     <div class="post-text">
-                        <p>Composition : mainly made of silicate rocks
-                            or metals</p>
-                        <p>Surface Temperature : Sunny side reaches
-                            750 to 800 degrees F while nighttime temperature
-                            is nearly -330 degrees F</p>
-                        <p>Circumference : 15,329 km</p>
-                        <p>Mean Radius : 2,440 km</p>
-                        <p>Mass : 3.285 × 10<sup>23</sup> kg</p>
-                        <p>Type : Terrestrial Planet</p>
-                        <p>Day : About 59 Earth days</p>
-                        <p>Year : 88 Earth days</p>
-                        <p>Moons : 0</p>
+                        <p><strong>Atmospheric Composition :</strong> consists of 78 percent
+                            nitrogen, 21 percent oxygen, 0.9 percent argon, and
+                            0.1 percent other gases</p>
+                        <p><strong>Surface Temperature :</strong> Averages around 57 degrees
+                            Fahrenheit (13.9 degrees Celsius)</p>
+                        <p><strong>Circumference :</strong> 40,075 km</p>
+                        <p><strong>Mean Radius : </strong> 6,371 km</p>
+                        <p><strong>Mass :</strong> 5.97219 × 10<sup>24</sup> kg</p>
+                        <p><strong>Type :</strong> Terrestrial Planet</p>
+                        <p><strong>Day :</strong> About 24 hours</p>
+                        <p><strong>Year : </strong> 365 days, plus approximately 6 hours </p>
+                        <p><strong>Moons :</strong> 1</p>
                     </div> <!-- end of post-text -->
                 </div> <!-- end of text -->
-                <img src="./mercury-resources/mercury-main.png" alt="">
+                <!-- <img src="./mercury-resources/mercury-main.png" alt=""> -->
+
+                <!-- 3d model container  -->
+                <canvas class="sun_3d_model"></canvas>
+                <!-- end of 3d model container -->
+
             </div> <!-- end of container -->
 
             <!-- code for video  -->
@@ -432,6 +437,28 @@
         integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- end of script for pagepiling  -->
+
+
+    <!-- script for three js  -->
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            
+            "three": "../../Resources/three/build/three.module.js"
+          
+            }
+        }
+        </script>
+
+    <!-- These were used earlier from unpkg  -->
+    <!-- "three": "https://unpkg.com/three/build/three.module.js", -->
+    <!-- "three/addons/": "https://unpkg.com/three/examples/jsm/" -->
+
+
+    <script type="module" src="./EarthThree.js"></script>
+    <!-- end of three js -->
 
     <!-- my js file  -->
     <script type="text/javascript" src="./earth.js"></script>
