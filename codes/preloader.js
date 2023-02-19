@@ -80,7 +80,6 @@ if (isMobileDevice) {
 
 
 
-
 } else {
 
 }
