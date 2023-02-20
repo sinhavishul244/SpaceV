@@ -362,7 +362,7 @@ html {
 }
 
 .sec1a-maincontainer {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100vh;
     width: 60vw;
     display: flex;
@@ -1034,7 +1034,7 @@ end of pagepiling section  */
 
     .sec1a-maincontainer {
         /* border: 2px solid red; */
-        height: calc(100vh - 3.375rem);
+        height: 95%;
         width: 100vw;
         display: flex;
         flex-direction: column;

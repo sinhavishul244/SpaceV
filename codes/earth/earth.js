@@ -114,13 +114,13 @@ function life_buttoncloser() {
 
     if (text === "hide information") {
         // console.log("text is hide information");
-        document.querySelector(".sec1a-text").style.transform = 'translateY(50%) scale(0.6)';
+        // document.querySelector(".sec1a-text").style.transform = 'translateY(50%) scale(0.6)';
         document.querySelector(".sec1a-text").style.opacity = 0;
         document.querySelector(".bbclogo-and-button button").textContent = "show information";
         document.querySelector(".sec1a-text").style.visibility = 'hidden';
     }
     else {
-        document.querySelector(".sec1a-text").style.transform = 'translateY(0%) scale(1)';
+        // document.querySelector(".sec1a-text").style.transform = 'translateY(0%) scale(1)';
         document.querySelector(".bbclogo-and-button button").textContent = "hide information";
         document.querySelector(".sec1a-text").style.opacity = 1;
         document.querySelector(".sec1a-text").style.visibility = 'visible';
