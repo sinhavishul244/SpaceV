@@ -82,6 +82,18 @@
     z-index: -1;
 }
 
+/* query for all sections image hover effect 
+##############################################*/
+.sec2-image {
+    transition: all 0.3s ease-in-out;
+
+}
+
+.sec2-image:hover {
+    transform: scale(1.04);
+
+}
+
 /* code for overview page bold colors  */
 strong {
     color: var(--planet-primary);

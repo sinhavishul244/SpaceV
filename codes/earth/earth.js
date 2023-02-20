@@ -18,7 +18,7 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'Potential for life', 'Orbit and Rotation', 'Formation and Structure', 'Atmosphere and Magnetosphere', 'Surface', 'Images']
+            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation and Structure', 'Atmosphere', 'Magnetosphere', 'Surface', 'Potential for life', 'Images']
         },
         easing: 'linear',
         afterRender: function () {
@@ -88,13 +88,13 @@ $(document).ready(function () {
 
             //code for video - section 1a - potential for life
             //####################################################
-            if ((index == 1 || index == 3) && nextIndex == 2) {
+            if (nextIndex == 7) {
                 earth_life_video.play();
                 vidIsPlayable = true;
                 // console.log("video should play!")
                 // earth_life_video.muted = true;
             }
-            if (index == 2) {
+            if (index == 7) {
                 earth_life_video.pause();
                 vidIsPlayable = false;
                 // earth_life_video.muted = false;

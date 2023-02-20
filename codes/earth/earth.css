@@ -467,6 +467,7 @@ html {
     font-size: 1.205625rem;
     line-height: 1.5625rem;
     transition: all 0.5s ease-in-out;
+    text-shadow: 1px 1px 3px black;
     /* or 128% */
     /* width: min(100vh, 100vw); */
     /* position: absolute; */
@@ -554,7 +555,7 @@ html {
 
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
-    background-color: #04192e;
+    background-color: #0a0a0a;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -580,6 +581,7 @@ html {
     grid-area: heading;
     display: flex;
     flex-direction: column;
+    margin-bottom: -1rem;
 }
 
 .sec2-headings h2 {
@@ -607,7 +609,7 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 100%;
 }
 
 .sec2-text {
@@ -621,6 +623,8 @@ html {
     font-weight: 500;
     font-size: 1.105625rem;
     line-height: 1.5625rem;
+    margin-left: 1.5rem;
+    align-self: center;
     /* or 128% */
 
 
@@ -631,7 +635,9 @@ html {
 ######################################### */
 
 .formation-and-structure {
-    background-color: #000000;
+    /* background-color: #000000; */
+    /* background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%); */
+    background: linear-gradient(to right, #7474bf, #348ac7);
 }
 
 .sec3-maincontainer {
@@ -645,19 +651,45 @@ html {
 
 .sec3-text {
     align-self: center;
+    margin-left: 0;
 }
 
-/* code for section 4 - atmosphere and magnetosphere
+.sec3-text p {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.71);
+}
+
+/* .sec3-image {
+    transition: all 0.2s ease-in-out;
+} */
+
+/* .sec3-image:hover {
+    transform: scale(1.05);
+
+} */
+
+/* code for section 4 - atmosphere 
 ######################################### */
 
-.atmosphere-and-magnetosphere {
-    background-color: #140526;
+.atmosphere {
+    /* background-color: #140526; */
+    /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 90%;
+    /* margin-right: 7rem; */
+    /* padding-right: 1rem; */
+}
+
+.sec4-text {
+    margin-left: 0;
 }
 
 
@@ -1100,9 +1132,18 @@ end of pagepiling section  */
 
     }
 
+    .sec2-text {
+
+        margin-left: 0rem;
+    }
+
     .sec2-image {
-        width: 90%;
+        width: 80%;
         justify-self: center;
+    }
+
+    .sec2-headings {
+        margin-bottom: 0rem;
     }
 
     .sec2-headings h1 {
@@ -1118,16 +1159,16 @@ end of pagepiling section  */
     }
 
 
-    /* code for section 3 
+    /* query for section 3 
     ############################ */
     .sec3-image {
-        width: 110%;
+        width: 90%;
     }
 
     /* code for section 4 
     ################################## */
     .sec4-image {
-        width: 100%;
+        width: 80%;
         margin-right: 0rem;
         padding-right: 0rem;
     }
@@ -1279,7 +1320,11 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 70%;
+        }
+
+        .sec4-image {
+            width: 60%;
         }
 
         .sec2-text p {
@@ -1313,9 +1358,28 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 60%;
+        }
+
+        .sec3-heading h1 {
+            font-size: 1.4rem;
+            margin-top: -0.55rem;
+        }
+
+
+        .sec3-image {
+            width: 50%;
+        }
+
+        .sec4-image {
+            width: 48%;
+        }
+
+        .sec4-text p {
+            font-size: 0.69rem;
         }
     }
+
 
 
 
@@ -1327,6 +1391,8 @@ end of pagepiling section  */
         align-items: center;
         text-align: center;
     }
+
+
 
 }
 

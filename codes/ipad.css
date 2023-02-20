@@ -46,6 +46,10 @@
         justify-self: center;
     }
 
+    .sec2-headings {
+        margin-bottom: 0.2rem;
+    }
+
     .sec2-headings h1 {
         font-size: 2.5rem;
         line-height: 103.8%;
