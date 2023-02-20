@@ -361,6 +361,20 @@ html {
 
 }
 
+.sec1a-maincontainer {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .earth-life-video {
     position: absolute;
     top: 50%;
@@ -385,15 +399,33 @@ html {
     background: linear-gradient(180deg, #0a0a0a, rgba(10, 10, 10, 0));
 }
 
+.bottomblackgradient {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    height: 15vh;
+    width: 100vw;
+    background: linear-gradient(0deg, #0a0a0a, rgba(10, 10, 10, 0));
+}
+
+.muteicon {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    transition: all 0.2s;
+}
+
 .sec1a-headings {
+    margin-top: 0.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    /* position: absolute; */
     top: 3%;
     left: 50%;
-    transform: translate(-50%, -3%);
+    /* transform: translate(-50%, -3%); */
 }
 
 .sec1a-headings h2 {
@@ -421,29 +453,96 @@ html {
 }
 
 .sec1a-text {
-    /* border: 4px solid var(--planet-primary); */
+    border: 0.5rem solid var(--main-white-25);
     padding: 2rem;
+    flex-grow: 1;
     border-radius: 2rem;
     background-color: rgba(0, 0, 0, 0.212);
-
+    align-self: center;
+    justify-self: center;
     backdrop-filter: blur(10px);
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 1.205625rem;
     line-height: 1.5625rem;
+    transition: all 0.5s ease-in-out;
     /* or 128% */
     /* width: min(100vh, 100vw); */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
 
     color: #FFFFFF;
 }
 
 .sec1a-text p+p {
     padding-top: 1rem;
+}
+
+.bbclogo-and-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.6; */
+}
+
+.bbcearthlogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bbcearthlogo p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+    /* identical to box height, or 135% */
+
+
+    color: var(--main-white-75);
+
+}
+
+.bbclogo-and-button button {
+    display: block;
+    /* background: var(--planet-primary); */
+    background: #3579df77;
+    /* opacity: 0.5; */
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    /* margin: 0.2rem 0px; */
+    margin-bottom: -0.425rem;
+    border: none;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    /* line-height: 33px; */
+    /* identical to box height */
+
+
+    /* Dark */
+
+    color: #0A0A0A;
+    color: var(--main-white-75);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.bbclogo-and-button button:hover {
+    background: var(--planet-primary);
+    color: var(--main-white-color);
+    box-shadow: 0 0 5px 1px var(--main-white-75);
+    transform: scale(1.01);
+
 }
 
 /* start of section 2 - orbit and rotation
@@ -932,6 +1031,22 @@ end of pagepiling section  */
 
     /* query for section 1a - potential for life
 ############################################## */
+
+    .sec1a-maincontainer {
+        /* border: 2px solid red; */
+        height: calc(100vh - 3.375rem);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
     .sec1a-headings {
         top: 3.3rem;
         width: 100%;
@@ -943,8 +1058,8 @@ end of pagepiling section  */
     }
 
     .sec1a-headings h1 {
-        padding-top: 1rem;
-        font-size: 3rem;
+        padding-top: 0.6rem;
+        font-size: 2.5rem;
         text-align: center;
         line-height: 3rem;
 
@@ -952,6 +1067,7 @@ end of pagepiling section  */
     }
 
     .sec1a-text {
+        /* visibility: hidden; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1114,6 +1230,22 @@ end of pagepiling section  */
         .post-text p {
             font-size: 0.7rem;
             text-align: center;
+        }
+
+        /* section 1a 
+        ######################################### */
+
+        .sec1a-headings h1 {
+            font-size: 2rem;
+        }
+
+        .sec1a-headings h2 {
+            font-size: 1.5rem;
+        }
+
+        .sec1a-text {
+            font-size: 0.8rem;
+            line-height: 0.9rem;
         }
 
         /* section 2 

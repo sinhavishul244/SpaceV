@@ -5,6 +5,7 @@ let blackscreen = document.querySelector(".blackscreen");
 let crossbtn = document.querySelector(".cross-btn");
 let active = document.querySelector(".active-sublist-item");
 const earth_life_video = document.querySelector(".earth-life-video");
+let vidIsPlayable = false;
 
 
 
@@ -89,11 +90,13 @@ $(document).ready(function () {
             //####################################################
             if ((index == 1 || index == 3) && nextIndex == 2) {
                 earth_life_video.play();
+                vidIsPlayable = true;
                 // console.log("video should play!")
                 // earth_life_video.muted = true;
             }
             if (index == 2) {
                 earth_life_video.pause();
+                vidIsPlayable = false;
                 // earth_life_video.muted = false;
             }
 
@@ -102,8 +105,44 @@ $(document).ready(function () {
     });
 });
 
+// code for hide information 
+// earth potential for life
+//####################################################
+function life_buttoncloser() {
+    let text = document.querySelector(".bbclogo-and-button button").textContent;
+    // console.log(text);
+
+    if (text === "hide information") {
+        // console.log("text is hide information");
+        document.querySelector(".sec1a-text").style.transform = 'translateY(50%) scale(0.6)';
+        document.querySelector(".sec1a-text").style.opacity = 0;
+        document.querySelector(".bbclogo-and-button button").textContent = "show information";
+        document.querySelector(".sec1a-text").style.visibility = 'hidden';
+    }
+    else {
+        document.querySelector(".sec1a-text").style.transform = 'translateY(0%) scale(1)';
+        document.querySelector(".bbclogo-and-button button").textContent = "hide information";
+        document.querySelector(".sec1a-text").style.opacity = 1;
+        document.querySelector(".sec1a-text").style.visibility = 'visible';
 
 
+    }
+}
+
+
+// console.log("mute property : " + earth_life_video.muted);
+// code for muting video 
+let mutebtn = document.querySelector(".muteicon");
+mutebtn.addEventListener('click', () => {
+    if (!earth_life_video.muted) {
+        earth_life_video.muted = true;
+        mutebtn.style.opacity = "0.2"
+    }
+    else {
+        earth_life_video.muted = false;
+        mutebtn.style.opacity = "1"
+    }
+})
 
 
 // code for images swiper - section 6 image 
@@ -192,7 +231,8 @@ swiper.on('realIndexChange', () => {
 function buttonopener() {
     var sidenav = document.querySelector(".sidenav");
     var btnstatus = sidenav.getAttribute("aria-checked");
-    earth_life_video.pause();
+    if (vidIsPlayable == true)
+        earth_life_video.pause();
 
     // console.log("checking");
     if (btnstatus === 'false') {
@@ -234,7 +274,8 @@ function buttonopener() {
 function buttoncloser() {
     var sidenav = document.querySelector(".sidenav");
     var btnstatus = sidenav.getAttribute("aria-checked");
-    earth_life_video.play();
+    if (vidIsPlayable)
+        earth_life_video.play();
 
 
     if (btnstatus === 'true') {
@@ -269,6 +310,8 @@ let hamburger = document.querySelector(".hamburger-btn");
 hamburger.onclick = buttonopener;
 let cross = document.querySelector(".cross-btn");
 cross.onclick = buttoncloser;
+
+
 
 
 // code for animating the hero element
