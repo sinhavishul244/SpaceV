@@ -49,7 +49,7 @@
                 <img src="./planet-resources/home.svg" alt="">
                 <h3>Home</h3>
             </a> <!-- end of home -->
-            <a href="../menu page/menu.html" class="destinations">
+            <a href="../menu page/menu.html?slide=3" class="destinations">
                 <img src="./planet-resources/destination.svg" alt="">
                 <h3>Destinations</h3>
             </a> <!-- end of destinations -->
@@ -313,37 +313,37 @@
                 <div class="sec2-headings sec4a-headings">
                     <h2>Earth</h2>
                     <h1>Magnetosphere</h1>
-                </div> <!-- end of sec4 - heading -->
-                <img class="sec2-image sec4a-image" src="./mercury-resources/mercury-atmosphere-and-magnetosphere.png"
-                    alt="">
+                </div> <!-- end of sec4a - heading -->
+                <img class="sec2-image sec4a-image" src="./planet-resources/earth-magnetic-field.png" alt="">
+                <img class="sec2-image sec4a-alternate-image" src="./planet-resources/aurora.png" alt="">
+                <img class="sec2-image sec4a-solar-wind-image" src="./planet-resources/solar-wind.png" alt="">
                 <div class="sec2-text">
-                    <p>
-                        Instead of an atmosphere, Mercury possesses a thin
-                        exosphere made up of atoms blasted off the surface
-                        by the solar wind and striking meteoroids.
+                    <p id="solarwind">
+                        Our planet's <span class="textgreen">rapid rotation</span> and <span class="textgreen">molten
+                            nickel-iron core</span> give rise to a <span class="textred">magnetic field</span>, which
+                        the
+                        <span class="textyellow">solar wind</span> distorts into a teardrop shape in space.
                     </p>
                     <p>
-                        Mercury's exosphere is composed mostly of oxygen,
-                        sodium, hydrogen, helium, and potassium.
+                        <span class="white60">(The solar wind is a stream of charged particles continuously ejected from
+                            the Sun.)</span>
                     </p>
                     <p>
-                        Mercury's magnetic field is offset relative to the
-                        planet's equator.
+                        When charged particles from the solar wind become trapped in Earth's magnetic field, they
+                        collide with air molecules above our planet's magnetic poles.
+                    </p>
+                    <p id="aurora">
+                        These air molecules then begin to glow and cause <strong>aurorae</strong>, or the northern and
+                        southern lights.
                     </p>
                     <p>
-                        Mercury's magnetic field at the surface has just 1%
-                        the strength of Earth's
+                        The magnetic field is what causes compass needles to point to the <span class="textred">North
+                            Pole </span> regardless of which
+                        way you turn.
                     </p>
                     <p>
-                        It interacts with the magnetic field of the solar wind
-                        to sometimes create intense magnetic tornadoes that
-                        funnel the fast, hot solar wind plasma down to the
-                        surface of the planet.
-                    </p>
-                    <p>
-                        When the ions strike the surface, they knock off
-                        neutrally charged atoms and send them on a loop high
-                        into the sky.
+                        Without the magnetosphere, the relentless action of these solar particles could strip the Earth
+                        of its protective layers, which shield us from the Sun's ultraviolet radiation.
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
@@ -355,31 +355,37 @@
                     <h2>Earth</h2>
                     <h1>Surface</h1>
                 </div> <!-- end of sec5 - heading -->
-                <img class="sec2-image sec5-image" src="./mercury-resources/mercury-surface.png" alt="">
+                <img class="sec2-image sec5-image" src="./planet-resources/surface.png" alt="">
                 <div class="sec2-text">
                     <p>
-                        Mercury's surface resembles that of Earth's Moon, scarred
-                        by many impact craters resulting from collisions with
-                        meteoroids and comets.
+                        Like Mars and Venus, Earth has <span class="textgreen">volcanoes</span>, <span
+                            class="textgreen">mountains</span>, and <span class="textgreen">valleys</span>.
                     </p>
                     <p>
-                        Very large impact basins were created by asteroid impacts
-                        on the planet's surface early in the solar system's history.
+                        Earth's <strong>lithosphere</strong>, which includes the <strong>crust</strong> <span
+                            style="color: var(--planet-primary);">(both
+                            continental and oceanic)</span> and the upper
+                        <strong>mantle</strong>, is divided into huge <strong>plates</strong> that are constantly
+                        moving.
                     </p>
                     <p>
-                        While there are large areas of smooth terrain, there are also
-                        cliffs, some hundreds of miles long and soaring up to a mile high.
+                        <span class="textred"><b>Earthquakes</b></span> result when plates grind past one another, ride
+                        up over one another, collide to make
+                        mountains, or split and separate.
                     </p>
                     <p>
-                        Most of Mercury's surface would appear greyish-brown to
-                        the human eye.
+                        Earth's global ocean, which covers nearly <strong>70%</strong> of the planet's surface, has an
+                        average depth of
+                        about <strong>2.5 miles</strong> <span style="color: var(--planet-primary);">(4
+                            kilometers)</span> and contains <strong>97%</strong> of Earth's water.
                     </p>
                     <p>
-                        Temperatures on Mercury are extreme
+                        Almost all of Earth's volcanoes are hidden under these oceans.
                     </p>
                     <p>
-                        Mercury may have water ice at its north and south poles
-                        inside deep craters, but only in regions in permanent shadows.
+                        <span class="textgreen">Hawaii's Mauna Kea volcano</span> is taller from base to summit than
+                        <span class="textyellow">Mount Everest</span>, but most of it is
+                        underwater.
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
@@ -427,11 +433,13 @@
 
                 <div class="bbclogo-and-button">
                     <button onclick="life_buttoncloser()">hide information</button>
-                    <div class="bbcearthlogo">
-                        <p>source :</p>
-                        <img src="./planet-resources/arcticons_bbcnews.svg" alt="">
-                        <p>Earth</p>
-                    </div>
+                    <a href="https://youtu.be/c8aFcHFu8QM" style="text-decoration: none;">
+                        <div class="bbcearthlogo">
+                            <p>source :</p>
+                            <img src="./planet-resources/arcticons_bbcnews.svg" alt="">
+                            <p>Earth</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -460,67 +468,70 @@
                 <div class="swiper imageSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/1-mercury'Caloris-basin.jpg" alt="">
+                            <img src="./planet-resources/image-sections/ManicouaganCrater.jpg" alt="">
                             <p>
-                                Mercury does not have a thick atmosphere to protect it from space debris. The small
-                                planet is riddled with craters, but none as spectacular as the Caloris Basin.
+                                The International Space Station was orbiting 258 miles above Canada when an Expedition
+                                59 crew member photographed Manicouagan Crater (right center) and the St. Lawrence River
+                                in Quebec.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/2-The-Impressive-Rays-of-Hokusai.jpg" alt="">
+                            <img src="./planet-resources/image-sections/apollo11.jpg" alt="">
                             <p>
-                                This mosaic of images from NASA's MESSENGER spacecraft shows the impact crater Hokusai,
-                                located on Mercury at a latitude of 58°N. The crater has an impressive system of rays,
-                                which extend as much as a thousand kilometers (more than 600 miles) across the planet
-                                and are the longest that have yet been identified on Mercury.
+                                This view from the Apollo 11 spacecraft shows the Earth rising above the Moon's horizon
+                                in July 1969. The lunar terrain pictured is in the area of Smyth's Sea on the nearside.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/3-Cat'sEyeCrater.jpg" alt=""
-                                class="img3-section6">
+                            <img src="./planet-resources/image-sections/eclipse_3.jpg" alt="" class="img3-section6">
                             <p>
-                                Centered in this stunning image lies Eminescu crater on the planet Mercury, illuminated
-                                by a bright halo of material around its edge.
+                                This photograph of an eclipse of the Sun was taken with a 16mm motion picture camera
+                                from the Apollo 12 spacecraft during its trans-Earth journey home from the Moon in
+                                November 1969. The fascinating view was created when the Earth moved directly between
+                                the Sun and the Apollo 12 spacecraft.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/4-Lowlands-in-mercury's-north.jpg" alt="">
+                            <img src="./planet-resources/image-sections/4_earth-rotation.gif" alt="">
                             <p>
-                                This image shows a perspective view, looking towards Mercury's north and colorized by
-                                the topographic height of the surface.
+                                The planet Earth on April 17, 2019. The Earth Polychromatic Imaging Camera (EPIC), a
+                                NASA camera aboard NOAA’s DSCOVR spacecraft, returns daily images of Earth from a
+                                distance of nearly 1 million miles (1.6 million kilometers).
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/5-Colors of the Innermost Planet.jpg" alt="">
+                            <img src="./planet-resources/image-sections/5_danceofplankton.jpg" alt="">
                             <p>
-                                This colorful view of Mercury was produced by using images from the color base map
-                                imaging campaign during MESSENGER's primary mission.
+                                North Atlantic phytoplankton bloom off the coast of Iceland, June 24, 2010.
+                                Phytoplankton
+                                are the autotrophic components of the plankton community and a key part of ocean and
+                                freshwater ecosystems.
+
+
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/8-odin-platina.jpg" alt=""
+                            <img src="./planet-resources/image-sections/6_earth_at_night.jpg" alt=""
                                 class="img8-section6">
                             <p>
-                                This area east of Mercury's giant Caloris Basin is thought to be related to ejecta from
-                                the basin impact event.
+                                This composite image, which has become a popular poster, shows a global view of Earth at
+                                night, compiled from over 400 satellite images. NASA researchers have used these images
+                                of nighttime lights to study weather around urban areas.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/6-Degas and Friends.png" alt="">
+                            <img src="./planet-resources/image-sections/7_moon_framed.jpg" alt="">
                             <p>
-                                Located near the center of the image, the distinctive blue color of the low-reflectance
-                                material associated with Degas contrasts with the surrounding terrain and neighboring
-                                craters.
+                                Earth and its Moon are nicely framed in this image taken from the aft windows of the
+                                Space Shuttle Discovery in 1998. Discovery—on mission STS-95—was flying over the
+                                Atlantic Ocean at the time this image was taken.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/7-Van Eyck and the Formation.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/8_dust.jpg" alt="" class="img8-section6">
                             <p>
-                                The low Sun elevation in this scene emphasizes the topography of Van Eyck crater. The
-                                rim of Van Eyck has been profoundly cratered by material ejected from the Caloris basin.
-                                Smooth plains fill the floor of Van Eyck, but they too have been affected by cratering,
-                                from large primary impacts to deep, linear incisions by secondary crater chains.
+                                Dust plumes from Iran, Afghanistan, Pakistan and India blow southward over the Arabian
+                                Sea, Dec. 28, 2012.
                             </p>
                         </div>
 

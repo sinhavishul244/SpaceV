@@ -116,6 +116,9 @@ function starter() {
     }
 }
 
+var urlParams = new URLSearchParams(window.location.search);
+var initialSlide = parseInt(urlParams.get('slide')) || 0;
+
 
 // script for swiper
 var swiper = new Swiper(".mySwiper", {
@@ -123,6 +126,7 @@ var swiper = new Swiper(".mySwiper", {
     grabCursor: false,
     centeredSlides: true,
     slidesPerView: "auto",
+    initialSlide: initialSlide,
     mousewheel: true,
     speed: 600,
     // preventInteractionOnTransition: true,

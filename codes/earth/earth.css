@@ -692,6 +692,50 @@ html {
     margin-left: 0;
 }
 
+/* section 4a - magnetospehere 
+########################################## */
+.magnetosphere {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.sec4a-alternate-image {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0 30px 40px rgba(0, 0, 0, .1); */
+}
+
+#aurora,
+#solarwind {
+    transition: all 0.3s ease-in-out;
+
+}
+
+#aurora:hover {
+    /* background-color: rgba(0, 0, 0, 0.058); */
+    /* padding: 4px; */
+    cursor: default;
+    text-shadow: 0 0 7px var(--planet-primary);
+}
+
+#solarwind:hover {
+    cursor: default;
+    text-shadow: 0 0 3px var(--primary-yellow);
+
+}
+
+.sec4a-solar-wind-image {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
 
 /* code for section 5 - surface 
 ######################################### */
@@ -699,6 +743,19 @@ html {
 
 .surface {
     background-color: #000000;
+    background: #41295a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hwb(280 3% 74%), #41295a);
+    background: linear-gradient(to right, #000000, #0a0a0a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
 }
 
 .sec5-maincontainer {
@@ -722,6 +779,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0rem;
     /* gap: 0px; */
 }
 

@@ -331,5 +331,68 @@ cross.onclick = buttoncloser;
 //     }
 // }
 
+// code for back button
+// ##############################################
+// window.onpopstate = function (event) {
+//     if (event.state !== null) {
+//         console.log('Back button pressed');
+//         let url = new URL(window.location.href);
+//         alert("back button pressed")
 
+//         // Add a new parameter to the URL
+//         url.searchParams.append('slide', '3');
 
+//         // Redirect the browser to the new URL
+//         window.location.href = url.href;
+//     }
+// };
+
+// window.onpopstate = function () {
+//     alert("Back/Forward clicked!");
+// }
+
+// jQuery(document).ready(function ($) {
+
+//     if (window.history && window.history.pushState) {
+
+//         window.history.pushState('forward', null, './#forward');
+
+//         $(window).on('popstate', function () {
+//             alert('Back button was pressed.');
+//         });
+
+//     }
+// });
+
+// animation for aurora
+let aurora = document.getElementById('aurora');
+aurora.addEventListener('mouseover', () => {
+    document.querySelector('.sec4a-alternate-image').style.opacity = 1;
+    document.querySelector('.sec4a-alternate-image').style.visibility = 'visible';
+    document.querySelector('.sec4a-image').style.opacity = 0;
+    document.querySelector('.sec4a-image').style.visibility = 'hidden';
+
+})
+aurora.addEventListener('mouseout', () => {
+    document.querySelector('.sec4a-alternate-image').style.opacity = 0;
+    document.querySelector('.sec4a-alternate-image').style.visibility = 'hidden';
+    document.querySelector('.sec4a-image').style.opacity = 1;
+    document.querySelector('.sec4a-image').style.visibility = 'visible';
+
+})
+
+let solarwind = document.getElementById('solarwind');
+solarwind.addEventListener('mouseover', () => {
+    document.querySelector('.sec4a-solar-wind-image').style.opacity = 1;
+    document.querySelector('.sec4a-solar-wind-image').style.visibility = 'visible';
+    document.querySelector('.sec4a-image').style.opacity = 0;
+    document.querySelector('.sec4a-image').style.visibility = 'hidden';
+
+})
+solarwind.addEventListener('mouseout', () => {
+    document.querySelector('.sec4a-solar-wind-image').style.opacity = 0;
+    document.querySelector('.sec4a-solar-wind-image').style.visibility = 'hidden';
+    document.querySelector('.sec4a-image').style.opacity = 1;
+    document.querySelector('.sec4a-image').style.visibility = 'visible';
+
+})
