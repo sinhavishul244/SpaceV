@@ -19,7 +19,10 @@ html {
     --main-white-25: rgba(255, 254, 254, 0.25);
     --primary-yellow: #F3ED66;
     --planet-primary: #FE7A45;
+    --planet-primary: #a9573b;
+    /* --planet-primary: #be5b33; */
     --planet-primary-shadow: #DA704A;
+    --side-nav-gradient: linear-gradient(225deg, hsla(15, 48%, 45%, 1) 0%, hsla(15, 86%, 28%, 1) 100%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -218,9 +221,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -238,8 +241,16 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+/* class name is copied from sun's file model so named sun 3d model  */
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -285,6 +296,7 @@ html {
     /* or 116% */
     /* width: 471.61px; */
     margin-bottom: -1.5rem;
+    margin-right: 8rem;
 
     /* Primary + sun primary */
 
@@ -351,6 +363,7 @@ html {
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
     background-color: #04192e;
+    background-color: #16182e;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -403,7 +416,23 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 100%;
+}
+
+.mars-rotation-animate {
+    animation: orbit 25s linear infinite;
+    width: 90%;
+    /* border: 2px solid red; */
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec2-text {
@@ -673,6 +702,16 @@ end of pagepiling section  */
     background-color: rgba(0, 0, 0, 0.25);
 }
 
+.sidemenu-vector {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    transform: translate(22rem, 30rem);
+    opacity: 0.8;
+}
+
 
 /* media queries
 ################################################################################# */
@@ -710,6 +749,8 @@ end of pagepiling section  */
         /* width: 400px; */
         font-size: 5rem;
         margin-bottom: -2.75rem;
+        margin-right: 0rem;
+
     }
 
     .text1 h2 {
@@ -720,6 +761,7 @@ end of pagepiling section  */
 
     .overview-page .hero1 .text1 {
         gap: 0rem;
+        align-items: center;
     }
 
     .post-text {
@@ -840,7 +882,7 @@ end of pagepiling section  */
     }
 
     .sec2-image {
-        width: 90%;
+        width: 80%;
         justify-self: center;
     }
 
@@ -860,7 +902,7 @@ end of pagepiling section  */
     /* code for section 3 
     ############################ */
     .sec3-image {
-        width: 110%;
+        width: 100%;
     }
 
     /* code for section 4 
@@ -1031,7 +1073,7 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 50%;
         }
     }
 

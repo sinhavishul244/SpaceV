@@ -134,6 +134,32 @@ strong {
 
 /* query for sidenavigation 
 ########################### */
+.sidenav::before {
+    content: "";
+    background: url(../Resources/sidenav-bg.png);
+    opacity: 0.2;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 70rem;
+    z-index: -2;
+}
+
+/* .sidenav ul::after {
+    content: "";
+    background: url(../Resources/sidenav-bg.png);
+    background-size: cover;
+    border: 2px solid red;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+} */
+
 .sidenav {
     background-color: var(--planet-primary);
     background-image: var(--side-nav-gradient) !important;
@@ -144,12 +170,23 @@ strong {
     z-index: 12;
     opacity: 1;
     overflow-y: scroll;
+    overflow-x: hidden;
     /* margin-top: 5vh; */
     transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
     /* box-shadow: 10px 10px #ffffff; */
     z-index: 101;
     background-size: 140%;
     BACKGROUND-POSITION: center center;
+}
+
+.sidemenu-vector {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    transform: translate(22rem, 30rem);
+    opacity: 0.3;
 }
 
 .sidenav[aria-checked="true"] {
@@ -254,6 +291,10 @@ strong {
         /* margin-top: 5vh; */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+    }
+
+    .sidemenu-vector {
+        visibility: hidden;
     }
 
     /* for position of sidenav  */
