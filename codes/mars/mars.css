@@ -447,6 +447,7 @@ html {
     font-size: 1.105625rem;
     line-height: 1.5625rem;
     /* or 128% */
+    align-self: center;
 
 
     color: #FFFFFF;
@@ -457,6 +458,17 @@ html {
 
 .formation-and-structure {
     background-color: #000000;
+    background: #200122;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6f0000, #200122);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #6f0000, #200122);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 150%;
+    background-position: left;
+
+
+
 }
 
 .sec3-maincontainer {
@@ -477,12 +489,21 @@ html {
 
 .atmosphere-and-magnetosphere {
     background-color: #140526;
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 140%;
+    background-position: left;
+
 }
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 90%;
+    /* margin-right: 7rem;
+    padding-right: 1rem; */
 }
 
 
@@ -492,6 +513,17 @@ html {
 
 .surface {
     background-color: #000000;
+    background: #1e3c72;
+    background: #572d1f;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #2a5298, #1e3c72); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top right, #000000, #A55C1B);
+    background-size: 150%;
+    background-position: left;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .sec5-maincontainer {
@@ -902,13 +934,13 @@ end of pagepiling section  */
     /* code for section 3 
     ############################ */
     .sec3-image {
-        width: 100%;
+        width: 90%;
     }
 
     /* code for section 4 
     ################################## */
     .sec4-image {
-        width: 100%;
+        width: 90%;
         margin-right: 0rem;
         padding-right: 0rem;
     }
