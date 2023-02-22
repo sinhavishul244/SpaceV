@@ -730,6 +730,8 @@ end of pagepiling section  */
 
     .overview-page .hero1 .text1 {
         gap: 0rem;
+        margin-top: -2.1875rem;
+        align-items: center;
     }
 
     .post-text {
@@ -955,6 +957,10 @@ end of pagepiling section  */
 
         /* section 1 
         ###################################### */
+        .overview-page .hero1 .text1 {
+            margin-top: -2.2rem;
+        }
+
         .text1 h1 {
             /* width: 400px; */
             font-size: 4.5rem;

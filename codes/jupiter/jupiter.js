@@ -1,3 +1,11 @@
+//variable for controling render of 3d model on screen 
+let overviewpage = document.querySelector(".overview-page");
+let hamburgerbtn = document.querySelector(".hamburger-btn");
+let blackscreen = document.querySelector(".blackscreen");
+let crossbtn = document.querySelector(".cross-btn");
+let active = document.querySelector(".active-sublist-item");
+
+
 //code for pagepiling 
 //#########################################################
 
@@ -7,14 +15,73 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation and Structure', 'Atmosphere and Magnetosphere', 'Surface', 'Images']
+            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation and Surface', 'Structure', 'Atmosphere', 'Magnetosphere', 'Images']
         },
         easing: 'linear',
+        afterRender: function () {
+            hamburgerbtn.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'false');
+            })
+
+            crossbtn.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'true');
+            })
+
+            blackscreen.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'true');
+            })
+
+            active.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'true');
+            })
+        },
         afterLoad: function (anchorLink, index) {
-            //using index
             if (index == 1) {
-                // alert("Section 3 ended loading");
+                overviewpage.setAttribute('aria-hidden', 'true');
+                //stopping rendering while 3D model is not visible
+
+
+
+
+                hamburgerbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                crossbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'true');
+                })
+
+                blackscreen.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'true');
+                })
+
+                active.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'true');
+                })
             }
+
+        },
+
+        onLeave: function (index, nextIndex, direction) {
+            if (index == 1 && direction == 'down') {
+                overviewpage.setAttribute('aria-hidden', 'false');
+                hamburgerbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                crossbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                blackscreen.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                active.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+            }
+
         },
 
     });
@@ -182,22 +249,39 @@ let cross = document.querySelector(".cross-btn");
 cross.onclick = buttoncloser;
 
 
-// code for animating the hero element 
+// code for animating the hero element
 //#####################################################################################
-document.addEventListener('DOMContentLoaded', starter);
-function starter() {
-    let q = window.matchMedia("(max-width : 682px)");
-    if (q.matches) {
-        // console.log("hello there");
-    }
-    else {
-        window.addEventListener('load', () => {
-            let ov1 = document.querySelector('.hero1');
-            ov1.style.transform = 'translate(-50%,-50%)'
-            ov1.style.opacity = 1;
-        })
-    }
-}
+// document.addEventListener('DOMContentLoaded', starter);
+// function starter() {
+//     let q = window.matchMedia("(max-width : 682px)");
+//     if (q.matches) {
+//         // console.log("hello there");
+//     }
+//     else {
+//         window.addEventListener('load', () => {
+//             let ov1 = document.querySelector('.hero1');
+//             ov1.style.transform = 'translate(-50%,-50%)'
+//             ov1.style.opacity = 1;
+//         })
+//     }
+// }
 
+
+// animation for aurora
+let aurora = document.getElementById('aurora');
+aurora.addEventListener('mouseover', () => {
+    document.querySelector('.sec5-alternate-image').style.opacity = 1;
+    document.querySelector('.sec5-alternate-image').style.visibility = 'visible';
+    document.querySelector('.sec5-main-image').style.opacity = 0;
+    document.querySelector('.sec5-main-image').style.visibility = 'hidden';
+
+})
+aurora.addEventListener('mouseout', () => {
+    document.querySelector('.sec5-alternate-image').style.opacity = 0;
+    document.querySelector('.sec5-alternate-image').style.visibility = 'hidden';
+    document.querySelector('.sec5-main-image').style.opacity = 1;
+    document.querySelector('.sec5-main-image').style.visibility = 'visible';
+
+})
 
 

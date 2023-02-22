@@ -217,13 +217,13 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 0rem;
     /* width: 1021.61px;
     height: 550px; */
@@ -232,13 +232,21 @@ html {
 .overview-page .hero1 .text1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0rem;
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+/* class name is copied from sun's file model so named sun 3d model  */
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -350,6 +358,13 @@ html {
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
     background-color: #04192e;
+    background: #41295a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #220531, #2c1c3d);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -402,7 +417,23 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 100%;
+}
+
+.rotation-animate {
+    animation: orbit 25s linear infinite;
+    width: 90%;
+    /* border: 2px solid red; */
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec2-text {
@@ -414,6 +445,7 @@ html {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 500;
+    align-self: center;
     font-size: 1.105625rem;
     line-height: 1.5625rem;
     /* or 128% */
@@ -422,10 +454,10 @@ html {
     color: #FFFFFF;
 }
 
-/* code for section 3 - formation and structure
+/* code for section 3 - formation and surface
 ######################################### */
 
-.formation-and-structure {
+.formation-and-surface {
     background-color: #000000;
 }
 
@@ -442,26 +474,43 @@ html {
     align-self: center;
 }
 
-/* code for section 4 - atmosphere and magnetosphere
+/* code for section 3a - structure
+ ############################################*/
+.structure {
+    background-color: #000000;
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3A6073, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 200%;
+    background-position: left;
+}
+
+
+/* code for section 4 - atmosphere
 ######################################### */
 
-.atmosphere-and-magnetosphere {
-    background-color: #140526;
+.atmosphere {
+    background-color: #030706;
 }
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 95%;
+    /* margin-right: 7rem;
+    padding-right: 1rem; */
 }
 
 
-/* code for section 5 - surface 
+/* code for section 5 - magnetosphere 
 ######################################### */
 
 
-.surface {
+.magnetosphere {
     background-color: #000000;
+    background-image: linear-gradient(to left, #2C3E50, #000000);
+    /* background-image: linear-gradient(to left, #04619F, #000000); */
 }
 
 .sec5-maincontainer {
@@ -471,6 +520,24 @@ html {
 .sec5-image {
     width: 100%;
     /* padding-right: 2.5rem; */
+}
+
+.sec5-alternate-image {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#aurora {
+    transition: all 0.3s ease-in-out;
+
+}
+
+#aurora:hover {
+    /* background-color: rgba(0, 0, 0, 0.058); */
+    /* padding: 4px; */
+    cursor: default;
+    text-shadow: 0 0 7px var(--planet-primary);
 }
 
 
@@ -718,6 +785,8 @@ end of pagepiling section  */
     }
 
     .overview-page .hero1 .text1 {
+        margin-top: -2.1875rem;
+        align-items: center;
         gap: 0rem;
     }
 
@@ -839,7 +908,7 @@ end of pagepiling section  */
     }
 
     .sec2-image {
-        width: 90%;
+        width: 80%;
         justify-self: center;
     }
 
@@ -859,19 +928,27 @@ end of pagepiling section  */
     /* code for section 3 
     ############################ */
     .sec3-image {
-        width: 110%;
+        width: 90%;
     }
 
     /* code for section 4 
     ################################## */
     .sec4-image {
-        width: 100%;
+        width: 80%;
         margin-right: 0rem;
         padding-right: 0rem;
+        margin-top: -2.5rem;
     }
 
     .sec4-headings h1 {
         font-size: 2.5rem;
+    }
+
+    /* code for section 5
+    ############################################## */
+    .sec5-headings h1 {
+        font-size: 2.5rem;
+
     }
 
     /* query for section 6 - images 
@@ -944,6 +1021,10 @@ end of pagepiling section  */
 
         /* section 1 
         ###################################### */
+        .overview-page .hero1 .text1 {
+            margin-top: -2.2rem;
+        }
+
         .text1 h1 {
             /* width: 400px; */
             font-size: 4.5rem;
@@ -996,7 +1077,7 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 75%;
         }
 
         .sec2-text p {
@@ -1032,6 +1113,21 @@ end of pagepiling section  */
         .sec2-image {
             width: 80%;
         }
+
+        .sec3-image,
+        .sec3a-image {
+            width: 50%;
+        }
+
+        .sec4-image {
+            margin-top: -0.5rem;
+
+            width: 40%;
+        }
+
+        .sec5-image {
+            width: 70%;
+        }
     }
 
 
@@ -1057,7 +1153,7 @@ end of pagepiling section  */
     }
 
     .sec2-image {
-        width: 100%;
+        width: 90%;
     }
 
 }

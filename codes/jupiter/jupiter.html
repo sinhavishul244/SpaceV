@@ -135,7 +135,7 @@
 
     <div id="pagepiling">
 
-        <div class="section overview-page">
+        <div class="section overview-page" aria-hidden="true">
             <div class="hero1">
                 <div class="text1">
                     <div class="headings">
@@ -143,21 +143,24 @@
                         <h2>Overview</h2>
                     </div> <!-- end of headings -->
                     <div class="post-text">
-                        <p>Composition : mainly made of silicate rocks
-                            or metals</p>
-                        <p>Surface Temperature : Sunny side reaches
-                            750 to 800 degrees F while nighttime temperature
-                            is nearly -330 degrees F</p>
-                        <p>Circumference : 15,329 km</p>
-                        <p>Mean Radius : 2,440 km</p>
-                        <p>Mass : 3.285 × 10<sup>23</sup> kg</p>
-                        <p>Type : Terrestrial Planet</p>
-                        <p>Day : About 59 Earth days</p>
-                        <p>Year : 88 Earth days</p>
-                        <p>Moons : 0</p>
+                        <p><strong>Composition :</strong> similar to that of the Sun – mostly hydrogen and helium</p>
+                        <p><strong>Surface Temperature :</strong> averages around -238 degrees F (-150 degrees Celcius)
+                        </p>
+                        <p><strong>Circumference :</strong> 439,264 km</p>
+                        <p><strong>Mean Radius :</strong> 69,911 km</p>
+                        <p><strong>Mass :</strong> 1.89813 × 10<sup>27</sup> kg</p>
+                        <p><strong>Type :</strong> Gaseous Planet</p>
+                        <p><strong>Day :</strong> 9 hours 56 minutes (Earth time)</p>
+                        <p><strong>Year :</strong> 12 Earth years</p>
+                        <p><strong>Moons :</strong> between 80 and 92 moons</p>
                     </div> <!-- end of post-text -->
                 </div> <!-- end of text -->
-                <img src="./mercury-resources/mercury-main.png" alt="">
+                <!-- <img src="./mercury-resources/mercury-main.png" alt=""> -->
+
+                <!-- 3d model container  -->
+                <canvas class="sun_3d_model"></canvas>
+                <!-- end of 3d model container -->
+
             </div> <!-- end of container -->
 
             <!-- code for video  -->
@@ -172,147 +175,199 @@
                     <h2>Jupiter</h2>
                     <h1>Orbit and Rotation</h1>
                 </div> <!-- end of sec2 - heading -->
-                <img class="sec2-image" src="./mercury-resources/mercury-orbit-and-rotation.png" alt="">
+                <img class="sec2-image rotation-animate" src="./planet-resources/jupiter_rotation.png" alt="">
                 <div class="sec2-text">
                     <p>
-                        Mercury's highly eccentric, egg-shaped orbit takes the
-                        planet as close as 47 million kilometers and as far as
-                        70 million kilometers from the Sun.
+                        Jupiter has the shortest day in the solar system.
                     </p>
                     <p>
-                        It speeds around the Sun every 88 days, traveling through
-                        space at nearly 29 miles (47 kilometers) per second,
-                        faster than any other planet.
+                        One day on Jupiter takes only about <strong>10 hours</strong> (the time it takes for Jupiter to
+                        rotate or spin
+                        around once)
                     </p>
                     <p>
-                        Mercury spins slowly on its axis and completes one
-                        rotation every 59 Earth days.
+                        Jupiter makes a complete orbit around the Sun (a year in Jovian time) in about <strong>12 Earth
+                            years
+                            (4,333 Earth days)</strong>.
                     </p>
                     <p>
-                        But when Mercury is moving fastest in its elliptical orbit
-                        around the Sun (and it is closest to the Sun), each rotation
-                        is not accompanied by sunrise and sunset like it is on most
-                        other planets.
+                        Its equator is tilted with respect to its orbital path around the Sun by just <span
+                            class="textgreen">3 degrees</span>.
                     </p>
                     <p>
-                        Mercury's axis of rotation is tilted just 2 degrees with
-                        respect to the plane of its orbit around the Sun.
+                        This means Jupiter spins nearly upright and does not have seasons as extreme as other planets
+                        do.
                     </p>
                     <p>
-                        That means it spins nearly perfectly upright and so does
-                        not experience seasons as many other planets do.
+                        Jupiter is so massive that it pulls the <span class="textyellow">center of mass</span> between
+                        it and the sun, also known as
+                        the <span class="textblue"><b>barycenter</b> (the blue dot in figure)</span> about
+                        <strong>30,000 miles</strong>
+                        above
+                        the sun's surface. Both of them rotate the barycenter.
                     </p>
                 </div> <!-- end of sec2 -text -->
             </div> <!-- end of sec2 main container -->
         </div> <!-- end of section 2 = orbit and rotation -->
 
-        <div class="section formation-and-structure">
+        <div class="section formation-and-surface">
             <div class="sec2-maincontainer sec3-maincontainer">
                 <div class="sec2-headings">
                     <h2>Jupiter</h2>
-                    <h1>Formation and Structure</h1>
+                    <h1>Formation and Surface</h1>
                 </div> <!-- end of sec3 - heading -->
-                <img class="sec2-image sec3-image" src="./mercury-resources/formation-and-structure-mercury.png" alt="">
+                <img class="sec2-image sec3-image" src="./planet-resources/jupiter-surface.png" alt="">
                 <div class="sec2-text sec3-text">
                     <p>
-                        Mercury formed about <strong>4.5 billion years</strong> ago when gravity
-                        pulled swirling gas and dust together to form this small
-                        planet nearest the Sun.
+                        Jupiter took shape when the rest of the solar system formed about <strong>4.5 billion</strong>
+                        years ago when
+                        gravity pulled swirling gas and dust in to become this gas giant.
                     </p>
                     <p>
-                        Mercury has a central core, a rocky mantle, and a solid crust.
+                        Jupiter took most of the mass left over after the formation of the Sun, ending up with more than
+                        <span class="textred">twice</span> the combined material of the other bodies in the solar
+                        system.
                     </p>
                     <p>
-                        Mercury is the second densest planet, after Earth.
+                        In fact, Jupiter has the same ingredients as a star, but it did not grow massive enough to
+                        ignite.
                     </p>
                     <p>
-                        It has a large metallic core with a radius of about 1,289 miles
-                        (2,074 kilometers), about 85 percent of the planet's radius.
+                        About 4 billion years ago, Jupiter settled into its current position in the outer solar system,
+                        where it is the fifth planet from the Sun.
                     </p>
                     <p>
-                        There is evidence that it is partly molten or liquid.
+                        As a gas giant, Jupiter doesn’t have a <span class="textyellow">true surface</span>. The planet
+                        is mostly <span class="textyellow">swirling gases and
+                            liquids</span>.
                     </p>
                     <p>
-                        Mercury's outer shell, comparable to Earth's outer shell
-                        (called the mantle and crust), is only about 400 kilometers
-                        (250 miles) thick.
+                        The extreme pressures and temperatures deep inside the planet crush, melt, and vaporize
+                        spacecraft trying to fly into the planet.
                     </p>
                 </div> <!-- end of sec3 -text -->
             </div> <!-- end of sec3 main container -->
         </div> <!-- end of formation -->
 
-        <div class="section atmosphere-and-magnetosphere">
+        <div class="section structure">
+            <div class="sec2-maincontainer sec3a-maincontainer">
+                <div class="sec2-headings">
+                    <h2>Jupiter</h2>
+                    <h1>Structure</h1>
+                </div> <!-- end of sec3 - heading -->
+                <img class="sec2-image sec3a-image" src="./planet-resources/jupiter-structure.png" alt="">
+                <div class="sec2-text sec3a-text">
+                    <p>
+                        The composition of Jupiter is similar to that of the Sun – <span class="textyellow">mostly
+                            hydrogen and helium</span>.
+                    </p>
+                    <p>
+                        Deep in the atmosphere, pressure and temperature increase, compressing the <strong>hydrogen
+                            gas</strong> into a
+                        <strong>liquid</strong>. This gives Jupiter the largest ocean in the solar system
+                    </p>
+                    <p>
+                        At depths halfway to the planet's center, the pressure becomes so great that electrons are
+                        squeezed off the hydrogen atoms, making the liquid <span class="textgreen">electrically
+                            conducting</span> like metal.
+                    </p>
+                    <p>
+                        Jupiter's fast rotation is thought to drive <span class="textyellow">electrical currents</span>
+                        in this region, generating the
+                        planet's powerful magnetic field.
+                    </p>
+                    <p>
+                        It is still unclear if deeper down, Jupiter has a central core of solid material or if it may be
+                        a thick, super-hot and dense soup.
+                    </p>
+                    <p>
+                        It could be up to <span class="textblue"> <b>90,032 degrees Fahrenheit </b>(50,000 degrees
+                            Celsius)</span> down there, made mostly of
+                        <span class="textyellow">iron</span> and <span class="textyellow">silicate</span> minerals
+                    </p>
+                </div> <!-- end of sec3 -text -->
+            </div> <!-- end of sec3 main container -->
+        </div> <!-- end of formation -->
+
+        <div class="section atmosphere">
             <div class="sec2-maincontainer sec4-maincontainer">
                 <div class="sec2-headings sec4-headings">
                     <h2>Jupiter</h2>
-                    <h1>Atmosphere & Magnetosphere</h1>
+                    <h1>Atmosphere</h1>
                 </div> <!-- end of sec4 - heading -->
-                <img class="sec2-image sec4-image" src="./mercury-resources/mercury-atmosphere-and-magnetosphere.png"
-                    alt="">
+                <img class="sec2-image sec4-image" src="./planet-resources/jupiter-atmosphere.png" alt="">
                 <div class="sec2-text">
                     <p>
-                        Instead of an atmosphere, Mercury possesses a thin
-                        exosphere made up of atoms blasted off the surface
-                        by the solar wind and striking meteoroids.
+                        Jupiter's atmosphere is one of the most <span class="textyellow">dynamic</span> and <span
+                            class="textyellow">complex</span> in the solar system. It is
+                        predominantly made up of molecular <span class="textgreen">hydrogen</span> and <span
+                            class="textgreen">helium</span>, but also contains traces of <span
+                            class="textgreen">ammonia</span>,
+                        <span class="textgreen">methane</span>, and <span class="textgreen">water vapor</span>.
                     </p>
                     <p>
-                        Mercury's exosphere is composed mostly of oxygen,
-                        sodium, hydrogen, helium, and potassium.
+                        One of the most striking features of Jupiter's atmosphere is its <strong>colorful bands of
+                            clouds</strong>.
                     </p>
                     <p>
-                        Mercury's magnetic field is offset relative to the
-                        planet's equator.
+                        These bands are made up of alternating <span class="textblue">light-colored zones</span> and
+                        <span class="textblue">dark-colored belts</span> that stretch
+                        across the planet's surface. The colors are due to variations in the composition, temperature,
+                        and altitude of the clouds.
                     </p>
                     <p>
-                        Mercury's magnetic field at the surface has just 1%
-                        the strength of Earth's
+                        Jupiter's atmosphere also features a number of <strong>powerful storms</strong>, including the
+                        famous <strong>Great Red
+                            Spot</strong>.
                     </p>
                     <p>
-                        It interacts with the magnetic field of the solar wind
-                        to sometimes create intense magnetic tornadoes that
-                        funnel the fast, hot solar wind plasma down to the
-                        surface of the planet.
+                        This enormous storm has been raging for at least <strong>350 years</strong> and is larger than
+                        the <strong>size of Earth</strong>.
                     </p>
                     <p>
-                        When the ions strike the surface, they knock off
-                        neutrally charged atoms and send them on a loop high
-                        into the sky.
+                        The atmosphere of Jupiter is very dynamic, with strong winds blowing in opposite directions in
+                        different parts of the planet. These winds can reach speeds of up to <span class="textred">600
+                            kilometers per hour</span>.
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
         </div> <!-- end of section4 - structure -->
 
-        <div class="section surface">
+        <div class="section magnetosphere">
             <div class="sec2-maincontainer sec5-maincontainer">
                 <div class="sec2-headings sec5-headings">
                     <h2>Jupiter</h2>
-                    <h1>Surface</h1>
+                    <h1>Magnetosphere</h1>
                 </div> <!-- end of sec5 - heading -->
-                <img class="sec2-image sec5-image" src="./mercury-resources/mercury-surface.png" alt="">
+                <img class="sec2-image sec5-image sec5-main-image" src="./planet-resources/jupiter-magnetosphere.png"
+                    alt="">
+                <img class="sec2-image sec5-image sec5-alternate-image" src="./planet-resources/jupiter-aurora.png"
+                    alt="">
                 <div class="sec2-text">
                     <p>
-                        Mercury's surface resembles that of Earth's Moon, scarred
-                        by many impact craters resulting from collisions with
-                        meteoroids and comets.
+                        The <strong>Jovian magnetosphere</strong> is the region of space influenced by Jupiter's
+                        powerful magnetic field.
                     </p>
                     <p>
-                        Very large impact basins were created by asteroid impacts
-                        on the planet's surface early in the solar system's history.
+                        It balloons <span class="textgreen"> <b>600,000 to 2 million miles</b> (1 to 3 million
+                            kilometers)</span> toward the Sun <span class="textyellow">(seven to 21
+                            times the diameter of Jupiter itself)</span> and tapers into a tadpole-shaped tail extending
+                        more than
+                        <span class="textblue"><b>600 million miles</b>(1 billion kilometers)</span> behind Jupiter,
+                        as far as Saturn's orbit.
                     </p>
                     <p>
-                        While there are large areas of smooth terrain, there are also
-                        cliffs, some hundreds of miles long and soaring up to a mile high.
+                        Jupiter's enormous magnetic field is <span class="textred">16 to 54 times</span> as powerful as
+                        that of the Earth.
                     </p>
                     <p>
-                        Most of Mercury's surface would appear greyish-brown to
-                        the human eye.
+                        It rotates with the planet and sweeps up particles that have an <span class="textblue">electric
+                            charge</span>.
                     </p>
-                    <p>
-                        Temperatures on Mercury are extreme
-                    </p>
-                    <p>
-                        Mercury may have water ice at its north and south poles
-                        inside deep craters, but only in regions in permanent shadows.
+                    <p id="aurora">
+                        Jupiter's magnetic field also causes some of the solar system's most spectacular
+                        <strong>aurorae</strong> at the
+                        planet's poles.
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
@@ -327,67 +382,65 @@
                 <div class="swiper imageSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/1-mercury'Caloris-basin.jpg" alt="">
+                            <img src="./planet-resources/image-sections/1_juno.jpg" alt="">
                             <p>
-                                Mercury does not have a thick atmosphere to protect it from space debris. The small
-                                planet is riddled with craters, but none as spectacular as the Caloris Basin.
+                                As NASA's Juno mission completed its 43rd close flyby of Jupiter on July 5, 2022, its
+                                JunoCam instrument captured this striking view of vortices – hurricane-like spiral wind
+                                patterns – near the planet's north pole.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/2-The-Impressive-Rays-of-Hokusai.jpg" alt="">
+                            <img src="./planet-resources/image-sections/2_jovian-system.jpg" alt="">
                             <p>
-                                This mosaic of images from NASA's MESSENGER spacecraft shows the impact crater Hokusai,
-                                located on Mercury at a latitude of 58°N. The crater has an impressive system of rays,
-                                which extend as much as a thousand kilometers (more than 600 miles) across the planet
-                                and are the longest that have yet been identified on Mercury.
+                                This "family portrait," a composite of the Jovian system, includes the edge of Jupiter
+                                with its Great Red Spot, and Jupiter's largest moons, known as the Galilean
+                                satellites.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/3-Cat'sEyeCrater.jpg" alt=""
-                                class="img3-section6">
+                            <img src="./planet-resources/image-sections/3_hubbleimage.jpg" alt="">
                             <p>
-                                Centered in this stunning image lies Eminescu crater on the planet Mercury, illuminated
-                                by a bright halo of material around its edge.
+                                This new Hubble Space Telescope view of Jupiter, taken on June 27, 2019, reveals the
+                                giant planet's trademark Great Red Spot, and a more intense color palette in the clouds
+                                swirling in Jupiter's turbulent atmosphere than seen in previous years.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/4-Lowlands-in-mercury's-north.jpg" alt="">
+                            <img src="./planet-resources/image-sections/4_jupiter_and_io.jpg" alt="">
                             <p>
-                                This image shows a perspective view, looking towards Mercury's north and colorized by
-                                the topographic height of the surface.
+                                This is a montage of New Horizons images of Jupiter and its volcanic moon Io, taken
+                                during the spacecraft's Jupiter flyby in early 2007.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/5-Colors of the Innermost Planet.jpg" alt="">
+                            <img src="./planet-resources/image-sections/5_cyclones.jpg" alt="">
                             <p>
-                                This colorful view of Mercury was produced by using images from the color base map
-                                imaging campaign during MESSENGER's primary mission.
+                                This composite of images from the JunoCam imager on NASA's Juno spacecraft shows eight
+                                circumpolar cyclones around a central cyclone at Jupiter's north pole. The cyclones
+                                range in size from 1,500 miles (2,400 kilometers) to 1,740 miles (2,800 kilometers)
+                                across
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/8-odin-platina.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/6_Juno_view.jpg" alt="">
                             <p>
-                                This area east of Mercury's giant Caloris Basin is thought to be related to ejecta from
-                                the basin impact event.
+                                This striking view of Jupiter was captured by NASA's Juno spacecraft on Feb. 12, 2019,
+                                as the spacecraft performed its 17th science pass of Jupiter.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/6-Degas and Friends.png" alt="">
+                            <img src="./planet-resources/image-sections/7_redspot.jpg" alt="">
                             <p>
-                                Located near the center of the image, the distinctive blue color of the low-reflectance
-                                material associated with Degas contrasts with the surrounding terrain and neighboring
-                                craters.
+                                This image of Jupiter's iconic Great Red Spot (GRS) was created by citizen scientist
+                                Björn Jónsson using data from the JunoCam imager on NASA's Juno spacecraft.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/7-Van Eyck and the Formation.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/8_south_map.jpg" alt="">
                             <p>
-                                The low Sun elevation in this scene emphasizes the topography of Van Eyck crater. The
-                                rim of Van Eyck has been profoundly cratered by material ejected from the Caloris basin.
-                                Smooth plains fill the floor of Van Eyck, but they too have been affected by cratering,
-                                from large primary impacts to deep, linear incisions by secondary crater chains.
+                                These color maps of Jupiter were constructed from images taken by the narrow-angle
+                                camera onboard NASA's Cassini spacecraft on Dec. 11 and 12, 2000, as the spacecraft
+                                neared Jupiter during its flyby of the giant planet.
                             </p>
                         </div>
 
@@ -431,6 +484,28 @@
         integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- end of script for pagepiling  -->
+
+    <!-- script for three js  -->
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            
+            "three": "../../Resources/three/build/three.module.js"
+          
+            }
+        }
+        </script>
+
+    <!-- These were used earlier from unpkg  -->
+    <!-- "three": "https://unpkg.com/three/build/three.module.js", -->
+    <!-- "three/addons/": "https://unpkg.com/three/examples/jsm/" -->
+
+
+    <script type="module" src="./jupiterThree.js"></script>
+    <!-- end of three js -->
+
 
     <!-- my js file  -->
     <script type="text/javascript" src="./jupiter.js"></script>
