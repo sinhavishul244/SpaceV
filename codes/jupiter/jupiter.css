@@ -20,6 +20,9 @@ html {
     --primary-yellow: #F3ED66;
     --planet-primary: #D7BCA4;
     --planet-primary-shadow: #BBAA99;
+    --side-nav-gradient: linear-gradient(90deg, rgb(222, 172, 124) 0%, hsla(28, 39%, 74%, 1) 100%);
+    --side-nav-gradient: linear-gradient(90deg, rgb(168, 129, 93) 0%, hsla(28, 39%, 74%, 1) 100%);
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');

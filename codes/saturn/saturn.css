@@ -20,6 +20,8 @@ html {
     --primary-yellow: #F3ED66;
     --planet-primary: #D3C191;
     --planet-primary-shadow: #BCA05D;
+    --side-nav-gradient: linear-gradient(90deg, rgb(125, 112, 86) 0%, hsla(43, 43%, 70%, 1) 100%);
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -669,7 +671,7 @@ end of pagepiling section  */
         /* border: 2px solid red; */
 
         /* height: min(80vh, 80vw); */
-        height: 40vh;
+        height: 50vh;
         width: 100vw;
         cursor: grab;
     }
