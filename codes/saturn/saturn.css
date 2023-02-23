@@ -196,15 +196,18 @@ html {
 .overview-page .hero1 {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    left: 25%;
+    transform: translate(-25%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0rem;
+    z-index: 2;
+    pointer-events: visibleStroke;
+    width: 35vw;
     /* width: 1021.61px;
     height: 550px; */
 }
@@ -217,8 +220,37 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+.hero1_container-ka-container {
+    pointer-events: none;
+
+}
+
+.hero1-container {
+    height: min(80vh, 80vw);
+    visibility: hidden;
+    /* display: inline-block; */
+    /* height: 100px; */
+    /* width: 100px; */
+    pointer-events: none;
+    width: min(80vh, 80vw);
+    /* width: 80vh; */
+    /* border: 2px solid yellow; */
+}
+
+/* class name is copied from sun's file model so named sun 3d model  */
+.sun_3d_model {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    /* border: 2px solid red; */
+
+    height: 100vh;
+    width: 80vw;
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -578,8 +610,10 @@ end of pagepiling section  */
     ########################################## */
     .overview-page .hero1 {
         flex-direction: column-reverse;
-        transform: translate(-50%, -50%);
-        opacity: 1;
+        /* transform: translate(-50%, -50%); */
+        bottom: 30%;
+        left: 50%;
+        transform: translate(-50%, 30%);
     }
 
     .overview-page .hero1 img {
@@ -623,6 +657,21 @@ end of pagepiling section  */
     .post-text p {
         font-size: 0.875rem;
         text-align: center;
+    }
+
+    /* class name is copied from sun's file model so named sun 3d model  */
+    .sun_3d_model {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1;
+        /* border: 2px solid red; */
+
+        /* height: min(80vh, 80vw); */
+        height: 40vh;
+        width: 100vw;
+        cursor: grab;
     }
 
 

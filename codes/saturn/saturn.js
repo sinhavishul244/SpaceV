@@ -182,22 +182,22 @@ let cross = document.querySelector(".cross-btn");
 cross.onclick = buttoncloser;
 
 
-// code for animating the hero element 
+// code for animating the hero element
 //#####################################################################################
-document.addEventListener('DOMContentLoaded', starter);
-function starter() {
-    let q = window.matchMedia("(max-width : 682px)");
-    if (q.matches) {
-        // console.log("hello there");
-    }
-    else {
-        window.addEventListener('load', () => {
-            let ov1 = document.querySelector('.hero1');
-            ov1.style.transform = 'translate(-50%,-50%)'
-            ov1.style.opacity = 1;
-        })
-    }
-}
+// document.addEventListener('DOMContentLoaded', starter);
+// function starter() {
+//     let q = window.matchMedia("(max-width : 682px)");
+//     if (q.matches) {
+//         // console.log("hello there");
+//     }
+//     else {
+//         window.addEventListener('load', () => {
+//             let ov1 = document.querySelector('.hero1');
+//             ov1.style.transform = 'translate(-50%,-50%)'
+//             ov1.style.opacity = 1;
+//         })
+//     }
+// }
 
 
 
