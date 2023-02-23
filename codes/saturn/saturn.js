@@ -1,3 +1,10 @@
+//variable for controling render of 3d model on screen 
+let overviewpage = document.querySelector(".overview-page");
+let hamburgerbtn = document.querySelector(".hamburger-btn");
+let blackscreen = document.querySelector(".blackscreen");
+let crossbtn = document.querySelector(".cross-btn");
+let active = document.querySelector(".active-sublist-item");
+
 //code for pagepiling 
 //#########################################################
 
@@ -7,14 +14,73 @@ $(document).ready(function () {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation and Structure', 'Atmosphere and Magnetosphere', 'Surface', 'Images']
+            'tooltips': ['Overview', 'Orbit and Rotation', 'Formation and Structure', 'Atmosphere', 'Surface and Magnetosphere', 'Rings', 'Images']
         },
         easing: 'linear',
+        afterRender: function () {
+            hamburgerbtn.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'false');
+            })
+
+            crossbtn.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'true');
+            })
+
+            blackscreen.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'true');
+            })
+
+            active.addEventListener("click", () => {
+                overviewpage.setAttribute('aria-hidden', 'true');
+            })
+        },
         afterLoad: function (anchorLink, index) {
-            //using index
             if (index == 1) {
-                // alert("Section 3 ended loading");
+                overviewpage.setAttribute('aria-hidden', 'true');
+                //stopping rendering while 3D model is not visible
+
+
+
+
+                hamburgerbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                crossbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'true');
+                })
+
+                blackscreen.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'true');
+                })
+
+                active.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'true');
+                })
             }
+
+        },
+
+        onLeave: function (index, nextIndex, direction) {
+            if (index == 1 && direction == 'down') {
+                overviewpage.setAttribute('aria-hidden', 'false');
+                hamburgerbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                crossbtn.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                blackscreen.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+
+                active.addEventListener("click", () => {
+                    overviewpage.setAttribute('aria-hidden', 'false');
+                })
+            }
+
         },
 
     });
@@ -199,5 +265,60 @@ cross.onclick = buttoncloser;
 //     }
 // }
 
+
+// animation for jetstream
+let aurora = document.querySelector('.aurora');
+aurora.addEventListener('mouseover', () => {
+    document.querySelector('.sec4-alternate-image').style.opacity = 1;
+    document.querySelector('.sec4-alternate-image').style.visibility = 'visible';
+    document.querySelector('.sec4-image').style.opacity = 0;
+    document.querySelector('.sec4-image').style.visibility = 'hidden';
+    // document.querySelector('.atmosphere').style.backgroundImage = 'linear-gradient(to right, #040204, #040204)';
+    document.querySelector('.sec4_blackbg').style.opacity = 1;
+})
+aurora.addEventListener('mouseout', () => {
+    document.querySelector('.sec4-alternate-image').style.opacity = 0;
+    document.querySelector('.sec4-alternate-image').style.visibility = 'hidden';
+    document.querySelector('.sec4-image').style.opacity = 1;
+    document.querySelector('.sec4-image').style.visibility = 'visible';
+    // document.querySelector('.atmosphere').style.backgroundImage = 'linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    document.querySelector('.sec4_blackbg').style.opacity = 0;
+})
+
+let aurora1 = document.querySelector('.aurora1');
+aurora1.addEventListener('mouseover', () => {
+    document.querySelector('.sec4-alternate-image').style.opacity = 1;
+    document.querySelector('.sec4-alternate-image').style.visibility = 'visible';
+    document.querySelector('.sec4-image').style.opacity = 0;
+    document.querySelector('.sec4-image').style.visibility = 'hidden';
+    // document.querySelector('.atmosphere').style.backgroundImage = 'linear-gradient(to right, #040204, #040204)';
+    document.querySelector('.sec4_blackbg').style.opacity = 1;
+})
+aurora1.addEventListener('mouseout', () => {
+    document.querySelector('.sec4-alternate-image').style.opacity = 0;
+    document.querySelector('.sec4-alternate-image').style.visibility = 'hidden';
+    document.querySelector('.sec4-image').style.opacity = 1;
+    document.querySelector('.sec4-image').style.visibility = 'visible';
+    // document.querySelector('.atmosphere').style.backgroundImage = 'linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    document.querySelector('.sec4_blackbg').style.opacity = 0;
+})
+
+let aurora2 = document.querySelector('.aurora2');
+aurora2.addEventListener('mouseover', () => {
+    document.querySelector('.sec5-alternate-image').style.opacity = 1;
+    document.querySelector('.sec5-alternate-image').style.visibility = 'visible';
+    document.querySelector('.sec5-image').style.opacity = 0;
+    document.querySelector('.sec5-image').style.visibility = 'hidden';
+    // document.querySelector('.atmosphere').style.backgroundImage = 'linear-gradient(to right, #040204, #040204)';
+    // document.querySelector('.sec4_blackbg').style.opacity = 1;
+})
+aurora2.addEventListener('mouseout', () => {
+    document.querySelector('.sec5-alternate-image').style.opacity = 0;
+    document.querySelector('.sec5-alternate-image').style.visibility = 'hidden';
+    document.querySelector('.sec5-image').style.opacity = 1;
+    document.querySelector('.sec5-image').style.visibility = 'visible';
+    // document.querySelector('.atmosphere').style.backgroundImage = 'linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    // document.querySelector('.sec4_blackbg').style.opacity = 0;
+})
 
 

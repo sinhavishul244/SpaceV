@@ -422,6 +422,7 @@ html {
 .mars-rotation-animate {
     animation: orbit 25s linear infinite;
     width: 90%;
+    z-index: -1;
     /* border: 2px solid red; */
 }
 

@@ -160,7 +160,7 @@ renderer.setAnimationLoop(function () {
 
     if (onscreen === "true") {
         Saturn.rotateY(0.003);
-        ring.rotateZ(0.003);
+        ring.rotateZ(-0.003);
         // console.log("rendering");
         renderer.render(scene, camera);
     }

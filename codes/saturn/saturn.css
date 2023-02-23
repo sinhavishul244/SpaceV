@@ -364,6 +364,7 @@ html {
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
     background-color: #04192e;
+    background-color: #110e1b;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -416,7 +417,25 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 90%;
+}
+
+.rotation-animate {
+    animation: orbit 25s linear infinite;
+    /* width: 90%; */
+    /* border: 2px solid red; */
+    z-index: -1;
+}
+
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec2-text {
@@ -427,6 +446,7 @@ html {
     gap: 1rem;
     font-family: 'Work Sans';
     font-style: normal;
+    align-self: center;
     font-weight: 500;
     font-size: 1.105625rem;
     line-height: 1.5625rem;
@@ -456,25 +476,73 @@ html {
     align-self: center;
 }
 
-/* code for section 4 - atmosphere and magnetosphere
+.sec3-image {
+    width: 105%;
+}
+
+/* code for section 4 - atmosphere
 ######################################### */
 
-.atmosphere-and-magnetosphere {
+.atmosphere {
     background-color: #140526;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 90%;
+
+}
+
+.sec4-alternate-image {
+    opacity: 1;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0 30px 40px rgba(0, 0, 0, .1); */
+}
+
+.sec4_blackbg {
+    background-color: #040204;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
 }
 
 
-/* code for section 5 - surface 
+/* code for hexagon image  */
+.aurora,
+.aurora1,
+.aurora2 {
+    transition: all 0.3s ease-in-out;
+
+}
+
+.aurora:hover,
+.aurora1:hover,
+.aurora2:hover {
+    /* background-color: rgba(0, 0, 0, 0.058); */
+    /* padding: 4px; */
+    cursor: default;
+    text-shadow: 0 0 9px var(--planet-primary);
+}
+
+
+/* code for section 5 - surface and magnetosphere
 ######################################### */
 
 
-.surface {
+.surface-and-magnetosphere {
     background-color: #000000;
 }
 
@@ -483,10 +551,30 @@ html {
 }
 
 .sec5-image {
-    width: 100%;
+    width: 90%;
+    transition: all 1s ease-in-out;
+
     /* padding-right: 2.5rem; */
 }
 
+.sec5-alternate-image {
+    opacity: 1;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    /* box-shadow: 0 30px 40px rgba(0, 0, 0, .1); */
+}
+
+/* code for section 5a - rings
+################################################################## */
+.rings {
+    background-color: #140526;
+    /* background-image: radial-gradient(circle 976px at 51.2% 51%, rgba(16, 66, 157, 1) 0%, rgba(11, 27, 103, 1) 101.4%); */
+    background-image: radial-gradient(circle 610px at 51.2% 51.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
+}
+
+.sec5a-image {
+    filter: drop-shadow(0px 210px 84px rgba(0, 0, 0, 0.02)) drop-shadow(0px 118px 71px rgba(0, 0, 0, 0.08)) drop-shadow(0px 52px 52px rgba(0, 0, 0, 0.14)) drop-shadow(0px 13px 29px rgba(0, 0, 0, 0.16)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.16));
+}
 
 /* code for section 6 - images  
 ###################################################################*/
@@ -718,13 +806,13 @@ end of pagepiling section  */
     /* code for section 3 
     ############################ */
     .sec3-image {
-        width: 110%;
+        width: 90%;
     }
 
     /* code for section 4 
     ################################## */
     .sec4-image {
-        width: 100%;
+        width: 90%;
         margin-right: 0rem;
         padding-right: 0rem;
     }
@@ -893,7 +981,29 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 70%;
+        }
+
+        .sec3-headings h1 {
+            font-size: 1.68063rem;
+            line-height: 1.6875rem;
+            margin-top: -0.5rem;
+        }
+
+        .sec5-headings h1 {
+            font-size: 1.48063rem;
+            line-height: 1.6875rem;
+            margin-top: -0.5rem;
+        }
+
+        .sec3-image,
+        .sec5-image {
+            width: 65%;
+        }
+
+        .sec4-image,
+        .sec5a-image {
+            width: 50%;
         }
     }
 
@@ -912,7 +1022,7 @@ end of pagepiling section  */
 
 @media screen and (max-height :682px) and (orientation : landscape) {
     * {
-        font-size: 14px;
+        font-size: 14.5px;
     }
 
     .hero1 img {
@@ -920,7 +1030,7 @@ end of pagepiling section  */
     }
 
     .sec2-image {
-        width: 100%;
+        width: 85%;
     }
 
 }
