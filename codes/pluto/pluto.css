@@ -19,7 +19,11 @@ html {
     --main-white-25: rgba(255, 254, 254, 0.25);
     --primary-yellow: #F3ED66;
     --planet-primary: #E1BD88;
+    --planet-primary: #a38971;
     --planet-primary-shadow: #DFBA87;
+    --side-nav-gradient: linear-gradient(90deg, hsla(30, 25%, 26%, 1) 0%, hsla(29, 21%, 54%, 1) 100%);
+    ;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -219,9 +223,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -239,8 +243,16 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+/* class name is copied from sun's file model so named sun 3d model  */
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -286,6 +298,7 @@ html {
     /* or 116% */
     /* width: 471.61px; */
     margin-bottom: -1.5rem;
+    margin-right: 8rem;
 
     /* Primary + sun primary */
 
@@ -352,6 +365,7 @@ html {
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
     background-color: #04192e;
+    background-color: #061520;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -404,7 +418,25 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 90%;
+}
+
+.rotation-animate {
+    animation: orbit 25s linear infinite;
+    width: 90%;
+    /* border: 2px solid red; */
+    z-index: -1;
+}
+
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec2-text {
@@ -419,7 +451,7 @@ html {
     font-size: 1.105625rem;
     line-height: 1.5625rem;
     /* or 128% */
-
+    align-self: center;
 
     color: #FFFFFF;
 }
@@ -429,6 +461,10 @@ html {
 
 .formation-and-structure {
     background-color: #000000;
+    background-image: radial-gradient(circle 957px at 8.7% 50.5%, rgba(246, 191, 13, 1) 0%, rgba(249, 47, 47, 1) 90%);
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    background-position: left;
+    background-size: 200%;
 }
 
 .sec3-maincontainer {
@@ -449,12 +485,13 @@ html {
 
 .atmosphere-and-magnetosphere {
     background-color: #140526;
+    background-color: #090909;
 }
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 90%;
+    /* margin-right: 7rem;
+    padding-right: 1rem; */
 }
 
 
@@ -464,6 +501,9 @@ html {
 
 .surface {
     background-color: #000000;
+    background-image: radial-gradient(circle 1093px at -13.5% -13.6%, rgba(254, 192, 193, 1) 6.2%, rgba(0, 67, 105, 1) 98.8%);
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+    background-position: left;
 }
 
 .sec5-maincontainer {
@@ -471,7 +511,7 @@ html {
 }
 
 .sec5-image {
-    width: 100%;
+    width: 90%;
     /* padding-right: 2.5rem; */
 }
 
@@ -720,6 +760,8 @@ end of pagepiling section  */
         /* width: 400px; */
         font-size: 5rem;
         margin-bottom: -2.75rem;
+        margin-right: 0rem;
+
     }
 
     .text1 h2 {
@@ -1047,7 +1089,14 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 60%;
+        }
+
+        .sec4-headings h1 {
+            font-size: 1.3580625rem;
+            line-height: 1.6875rem;
+            margin-top: -0.5rem;
+
         }
     }
 

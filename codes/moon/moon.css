@@ -219,9 +219,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -239,8 +239,16 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+/* class name is copied from sun's file model so named sun 3d model  */
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -286,6 +294,8 @@ html {
     /* or 116% */
     /* width: 471.61px; */
     margin-bottom: -1.5rem;
+    margin-right: 8rem;
+
 
     /* Primary + sun primary */
 
@@ -352,6 +362,7 @@ html {
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
     background-color: #04192e;
+    background-color: #110e1b;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -404,7 +415,25 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 90%;
+}
+
+.rotation-animate {
+    animation: orbit 25s linear infinite;
+    width: 90%;
+    /* border: 2px solid red; */
+    z-index: -1;
+}
+
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec2-text {
@@ -419,7 +448,7 @@ html {
     font-size: 1.105625rem;
     line-height: 1.5625rem;
     /* or 128% */
-
+    align-self: center;
 
     color: #FFFFFF;
 }
@@ -446,15 +475,44 @@ html {
 
 /* code for section 4 - atmosphere and magnetosphere
 ######################################### */
+.atmosphere-and-magnetosphere::before {
+    content: "";
+    background-image: url(./planet-resources/stars_background.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    /* background-size: cover; */
+    opacity: 0.1;
+    animation: blink 5s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.01;
+
+    }
+
+    50% {
+        opacity: 0.09;
+    }
+
+    100% {
+        opacity: 0.01;
+    }
+}
 
 .atmosphere-and-magnetosphere {
     background-color: #140526;
+    background: linear-gradient(90deg, #0c172d, #102548);
 }
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 90%;
+    /* margin-right: 7rem; */
+    /* padding-right: 1rem; */
 }
 
 
@@ -464,6 +522,7 @@ html {
 
 .surface {
     background-color: #000000;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 .sec5-maincontainer {
@@ -722,6 +781,8 @@ end of pagepiling section  */
         /* width: 400px; */
         font-size: 5rem;
         margin-bottom: -2.75rem;
+        margin-right: 0rem;
+
     }
 
     .text1 h2 {
@@ -1049,7 +1110,11 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 60%;
+        }
+
+        .sec5-image {
+            width: 50%;
         }
     }
 

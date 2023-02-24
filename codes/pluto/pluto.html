@@ -136,7 +136,7 @@
 
     <div id="pagepiling">
 
-        <div class="section overview-page">
+        <div class="section overview-page" aria-hidden="true">
             <div class="hero1">
                 <div class="text1">
                     <div class="headings">
@@ -144,21 +144,25 @@
                         <h2>Overview</h2>
                     </div> <!-- end of headings -->
                     <div class="post-text">
-                        <p>Composition : mainly made of silicate rocks
-                            or metals</p>
-                        <p>Surface Temperature : Sunny side reaches
-                            750 to 800 degrees F while nighttime temperature
-                            is nearly -330 degrees F</p>
-                        <p>Circumference : 15,329 km</p>
-                        <p>Mean Radius : 2,440 km</p>
-                        <p>Mass : 3.285 × 10<sup>23</sup> kg</p>
-                        <p>Type : Terrestrial Planet</p>
-                        <p>Day : About 59 Earth days</p>
-                        <p>Year : 88 Earth days</p>
-                        <p>Moons : 0</p>
+                        <p><strong>Composition :</strong> mainly contains molecular nitrogen along with methane and
+                            carbon monoxide</p>
+                        <p><strong>Surface Temperature :</strong> 375 to -400 degrees Fahrenheit (-226 to -240 degrees
+                            Celsius)</p>
+                        <p><strong>Circumference :</strong> 7,232 km</p>
+                        <p><strong>Mean Radius :</strong> 1,188.3 km</p>
+                        <p><strong>Mass :</strong> 1.309 × 10<sup>22</sup> kg</p>
+                        <p><strong>Type :</strong> Dwarf Planet</p>
+                        <p><strong>Day :</strong> 153 hours, or about 6 Earth days</p>
+                        <p><strong>Year :</strong> 248 Earth years</p>
+                        <p><strong>Moons :</strong> 5</p>
                     </div> <!-- end of post-text -->
                 </div> <!-- end of text -->
-                <img src="./mercury-resources/mercury-main.png" alt="">
+                <!-- <img src="./mercury-resources/mercury-main.png" alt=""> -->
+
+                <!-- 3d model container  -->
+                <canvas class="sun_3d_model"></canvas>
+                <!-- end of 3d model container -->
+
             </div> <!-- end of container -->
 
             <!-- code for video  -->
@@ -173,35 +177,37 @@
                     <h2>Pluto</h2>
                     <h1>Orbit and Rotation</h1>
                 </div> <!-- end of sec2 - heading -->
-                <img class="sec2-image" src="./mercury-resources/mercury-orbit-and-rotation.png" alt="">
+                <img class="sec2-image rotation-animate" src="./planet-resources/pluto_rotation.gif" alt="">
                 <div class="sec2-text">
                     <p>
-                        Mercury's highly eccentric, egg-shaped orbit takes the
-                        planet as close as 47 million kilometers and as far as
-                        70 million kilometers from the Sun.
+                        Pluto's orbit around the Sun is unusual compared to the planets: it's both <span
+                            class="textblue">elliptical</span> and
+                        <span class="textblue"><i>tilted</i></span>.
                     </p>
                     <p>
-                        It speeds around the Sun every 88 days, traveling through
-                        space at nearly 29 miles (47 kilometers) per second,
-                        faster than any other planet.
+                        Pluto's <strong>248-year-long</strong>, oval-shaped orbit can take it as far as <span
+                            class="textyellow"><b>49.3</b>
+                            astronomical units (AU)</span> from
+                        the Sun, and as close as <span class="textyellow">30 AU</span>.
                     </p>
                     <p>
-                        Mercury spins slowly on its axis and completes one
-                        rotation every 59 Earth days.
+                        <span class="white60"> (One AU is the mean distance between Earth and the Sun: about 93 million
+                            miles or 150 million
+                            kilometers.)</span>
                     </p>
                     <p>
-                        But when Mercury is moving fastest in its elliptical orbit
-                        around the Sun (and it is closest to the Sun), each rotation
-                        is not accompanied by sunrise and sunset like it is on most
-                        other planets.
+                        But on average, Pluto is <span class="textgreen"><b>3.7 billion miles</b> (5.9 billion
+                            kilometers)</span> away from the Sun, or <strong>39 AU</strong>.
                     </p>
                     <p>
-                        Mercury's axis of rotation is tilted just 2 degrees with
-                        respect to the plane of its orbit around the Sun.
+                        One day on Pluto takes about <strong>153 hours</strong>. Its axis of rotation is tilted
+                        <strong>57 degrees</strong> with respect
+                        to the plane of its orbit around the Sun, so it spins almost on its side.
                     </p>
                     <p>
-                        That means it spins nearly perfectly upright and so does
-                        not experience seasons as many other planets do.
+                        Pluto also exhibits a <span class="textblue">retrograde rotation</span>; spinning from <span
+                            class="textyellow">east to
+                            west</span> like Venus and Uranus.
                     </p>
                 </div> <!-- end of sec2 -text -->
             </div> <!-- end of sec2 main container -->
@@ -213,30 +219,31 @@
                     <h2>Pluto</h2>
                     <h1>Formation and Structure</h1>
                 </div> <!-- end of sec3 - heading -->
-                <img class="sec2-image sec3-image" src="./mercury-resources/formation-and-structure-mercury.png" alt="">
+                <img class="sec2-image sec3-image" src="./planet-resources/pluto_structure.png" alt="">
                 <div class="sec2-text sec3-text">
                     <p>
-                        Mercury formed about <strong>4.5 billion years</strong> ago when gravity
-                        pulled swirling gas and dust together to form this small
-                        planet nearest the Sun.
+                        Dwarf planet Pluto is a member of a group of objects that orbit in a disc-like zone beyond the
+                        orbit of Neptune called the <strong>Kuiper Belt</strong>.
                     </p>
                     <p>
-                        Mercury has a central core, a rocky mantle, and a solid crust.
+                        This distant realm is populated with thousands of miniature icy worlds, which formed early in
+                        the history of our solar system about <strong class="textgreen">4.5 billion</strong> years ago.
                     </p>
                     <p>
-                        Mercury is the second densest planet, after Earth.
+                        These icy, rocky bodies are called Kuiper Belt objects, transneptunian objects, or
+                        <strong>plutoids</strong>.
                     </p>
                     <p>
-                        It has a large metallic core with a radius of about 1,289 miles
-                        (2,074 kilometers), about 85 percent of the planet's radius.
+                        Pluto is about <span class="textyellow">two-thirds</span> the diameter of Earth's Moon and
+                        probably has a rocky core surrounded
+                        by a mantle of water ice.
                     </p>
                     <p>
-                        There is evidence that it is partly molten or liquid.
+                        Interesting ices like <span class="textgreen">methane</span> and <span
+                            class="textgreen">nitrogen</span> frost coat the surface.
                     </p>
                     <p>
-                        Mercury's outer shell, comparable to Earth's outer shell
-                        (called the mantle and crust), is only about 400 kilometers
-                        (250 miles) thick.
+                        Due to its lower density, Pluto's mass is about <strong>one-sixth</strong> that of Earth's Moon.
                     </p>
                 </div> <!-- end of sec3 -text -->
             </div> <!-- end of sec3 main container -->
@@ -248,36 +255,39 @@
                     <h2>Pluto</h2>
                     <h1>Atmosphere & Magnetosphere</h1>
                 </div> <!-- end of sec4 - heading -->
-                <img class="sec2-image sec4-image" src="./mercury-resources/mercury-atmosphere-and-magnetosphere.png"
-                    alt="">
+                <img class="sec2-image sec4-image" src="./planet-resources/pluto_atmosphere.png" alt="">
                 <div class="sec2-text">
                     <p>
-                        Instead of an atmosphere, Mercury possesses a thin
-                        exosphere made up of atoms blasted off the surface
-                        by the solar wind and striking meteoroids.
+                        Pluto has a thin, tenuous atmosphere that <strong>expands</strong> when it comes <span
+                            class="textgreen">closer</span> to the
+                        Sun and <strong>collapses</strong>
+                        as it moves farther <span class="textgreen">away</span> – similar to a comet.
                     </p>
                     <p>
-                        Mercury's exosphere is composed mostly of oxygen,
-                        sodium, hydrogen, helium, and potassium.
+                        The main constituent is molecular <span class="textyellow">nitrogen</span>, though molecules of
+                        <span class="textyellow">methane</span> and <span class="textyellow">carbon monoxide</span> have
+                        also been detected.
                     </p>
                     <p>
-                        Mercury's magnetic field is offset relative to the
-                        planet's equator.
+                        When Pluto is close to the Sun, its surface ices <span class="textblue"><b>sublimate</b>
+                            (changing directly
+                            from solid to gas)</span>
+                        and rise to temporarily form a <strong>thin atmosphere</strong>.
                     </p>
                     <p>
-                        Mercury's magnetic field at the surface has just 1%
-                        the strength of Earth's
+                        Pluto's <span class="textgreen">low gravity</span> (about 6% of Earth's) causes the atmosphere
+                        to be much more extended in
+                        altitude than our planet's atmosphere.
                     </p>
                     <p>
-                        It interacts with the magnetic field of the solar wind
-                        to sometimes create intense magnetic tornadoes that
-                        funnel the fast, hot solar wind plasma down to the
-                        surface of the planet.
+                        Pluto becomes much colder during the part of each year when it is traveling far away from the
+                        Sun. During this time, the bulk of the planet's atmosphere may <strong>freeze and fall</strong>
+                        as snow to the
+                        surface.
                     </p>
                     <p>
-                        When the ions strike the surface, they knock off
-                        neutrally charged atoms and send them on a loop high
-                        into the sky.
+                        It isn't known whether Pluto has a magnetic field, but its small size and slow rotation suggest
+                        little or none.
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
@@ -289,31 +299,39 @@
                     <h2>Pluto</h2>
                     <h1>Surface</h1>
                 </div> <!-- end of sec5 - heading -->
-                <img class="sec2-image sec5-image" src="./mercury-resources/mercury-surface.png" alt="">
+                <img class="sec2-image sec5-image" src="./planet-resources/pluto_surface.png" alt="">
                 <div class="sec2-text">
                     <p>
-                        Mercury's surface resembles that of Earth's Moon, scarred
-                        by many impact craters resulting from collisions with
-                        meteoroids and comets.
+                        Pluto's surface is characterized by <span class="textblue">mountains</span>, <span
+                            class="textgreen">valleys</span>, <span class="textpurple">plains</span>, and <span
+                            class="textyellow">craters</span>.
                     </p>
                     <p>
-                        Very large impact basins were created by asteroid impacts
-                        on the planet's surface early in the solar system's history.
+                        The temperature on Pluto can be as cold as <span class="textblue"><b>-375 to -400 degrees</b>
+                            Fahrenheit (-226 to -240 degrees
+                            Celsius)</span>.
                     </p>
                     <p>
-                        While there are large areas of smooth terrain, there are also
-                        cliffs, some hundreds of miles long and soaring up to a mile high.
+                        Pluto's tallest mountains are <span class="textgreen"><b>6,500 to 9,800 feet</b> (2 to 3
+                            kilometers)</span> in height.
                     </p>
                     <p>
-                        Most of Mercury's surface would appear greyish-brown to
-                        the human eye.
+                        The mountains are big blocks of <strong>water ice</strong>, sometimes with a coating of frozen
+                        gases like
+                        <strong>methane</strong>.
                     </p>
                     <p>
-                        Temperatures on Mercury are extreme
+                        Craters as large as <span class="textblue"><b>162 miles</b> (260 kilometers)</span> in diameter
+                        dot
+                        some of the landscape on Pluto,
+                        with some showing signs of erosion and filling. This suggests <span class="textgreen">tectonic
+                            forces</span> are slowly
+                        resurfacing Pluto.
                     </p>
                     <p>
-                        Mercury may have water ice at its north and south poles
-                        inside deep craters, but only in regions in permanent shadows.
+                        The most prominent plains observed on Pluto appear to be made of <span class="textblue">frozen
+                            nitrogen gas</span> and show no
+                        craters.
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
@@ -328,67 +346,65 @@
                 <div class="swiper imageSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/1-mercury'Caloris-basin.jpg" alt="">
+                            <img src="./planet-resources/image-sections/1_credcent.jpg" alt="">
                             <p>
-                                Mercury does not have a thick atmosphere to protect it from space debris. The small
-                                planet is riddled with craters, but none as spectacular as the Caloris Basin.
+                                This is the highest-resolution color departure shot of Pluto's receding crescent from
+                                NASA's New Horizons spacecraft, taken when the spacecraft was 120,000 miles (200,000
+                                kilometers) away from Pluto.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/2-The-Impressive-Rays-of-Hokusai.jpg" alt="">
+                            <img src="./planet-resources/image-sections/2_surface.jpg" alt="">
                             <p>
-                                This mosaic of images from NASA's MESSENGER spacecraft shows the impact crater Hokusai,
-                                located on Mercury at a latitude of 58°N. The crater has an impressive system of rays,
-                                which extend as much as a thousand kilometers (more than 600 miles) across the planet
-                                and are the longest that have yet been identified on Mercury.
+                                This enhanced color view from NASA's New Horizons spacecraft zooms in on the
+                                southeastern portion of Pluto's great ice plains, where at lower right the plains border
+                                rugged, dark highlands informally named Krun Macula.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/3-Cat'sEyeCrater.jpg" alt=""
-                                class="img3-section6">
+                            <img src="./planet-resources/image-sections/3_side.jpg" alt="">
                             <p>
-                                Centered in this stunning image lies Eminescu crater on the planet Mercury, illuminated
-                                by a bright halo of material around its edge.
+                                This ethereal scene captured by NASA's New Horizons spacecraft tells yet another story
+                                of Pluto's diversity of geological and compositional features -- this time in an
+                                enhanced color image of the north polar area.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/4-Lowlands-in-mercury's-north.jpg" alt="">
+                            <img src="./planet-resources/image-sections/6_truecolors.jpg" alt="">
                             <p>
-                                This image shows a perspective view, looking towards Mercury's north and colorized by
-                                the topographic height of the surface.
+                                This is the most accurate natural color images of Pluto taken by NASA's New Horizons
+                                spacecraft in 2015.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/5-Colors of the Innermost Planet.jpg" alt="">
+                            <img src="./planet-resources/image-sections/4_heart.jpg" alt="">
                             <p>
-                                This colorful view of Mercury was produced by using images from the color base map
-                                imaging campaign during MESSENGER's primary mission.
+                                This geological map covers a portion of Pluto's surface that measures 1,290 miles (2,070
+                                kilometers) from top to bottom, and includes the vast nitrogen-ice plain informally
+                                named Sputnik Planum and surrounding terrain.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/8-odin-platina.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/5_mosiac.jpg" alt="">
                             <p>
-                                This area east of Mercury's giant Caloris Basin is thought to be related to ejecta from
-                                the basin impact event.
+                                This enhanced color mosaic combines some of the sharpest views of Pluto that NASA's New
+                                Horizons spacecraft obtained during its July 14 flyby.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/6-Degas and Friends.png" alt="">
+                            <img src="./planet-resources/image-sections/7_charon.jpg" alt="">
                             <p>
-                                Located near the center of the image, the distinctive blue color of the low-reflectance
-                                material associated with Degas contrasts with the surrounding terrain and neighboring
-                                craters.
+                                This composite of enhanced color images of Pluto (lower right) and Charon (upper left),
+                                was taken by NASA’s New Horizons spacecraft as it passed through the Pluto system on
+                                July 14, 2015.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/7-Van Eyck and the Formation.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/8_enhanced colors.jpg" alt="">
                             <p>
-                                The low Sun elevation in this scene emphasizes the topography of Van Eyck crater. The
-                                rim of Van Eyck has been profoundly cratered by material ejected from the Caloris basin.
-                                Smooth plains fill the floor of Van Eyck, but they too have been affected by cratering,
-                                from large primary impacts to deep, linear incisions by secondary crater chains.
+                                NASA’s New Horizons spacecraft captured this high-resolution enhanced color view of
+                                Pluto on July 14, 2015. The image combines blue, red and infrared images taken by the
+                                Ralph/Multispectral Visual Imaging Camera (MVIC).
                             </p>
                         </div>
 
@@ -432,6 +448,27 @@
         integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- end of script for pagepiling  -->
+
+    <!-- script for three js  -->
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            
+            "three": "../../Resources/three/build/three.module.js"
+          
+            }
+        }
+        </script>
+
+    <!-- These were used earlier from unpkg  -->
+    <!-- "three": "https://unpkg.com/three/build/three.module.js", -->
+    <!-- "three/addons/": "https://unpkg.com/three/examples/jsm/" -->
+
+
+    <script type="module" src="./plutoThree.js"></script>
+    <!-- end of three js -->
 
     <!-- my js file  -->
     <script type="text/javascript" src="./pluto.js"></script>
