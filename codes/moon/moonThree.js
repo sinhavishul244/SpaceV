@@ -62,7 +62,7 @@ scene.add(Moon);
 
 // Mercury.rotateZ(358);
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
 
 
