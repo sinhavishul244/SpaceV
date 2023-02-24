@@ -1130,7 +1130,7 @@ end of pagepiling section  */
 
 @media screen and (max-height :682px) and (orientation : landscape) {
     * {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .hero1 img {
@@ -1138,7 +1138,7 @@ end of pagepiling section  */
     }
 
     .sec2-image {
-        width: 100%;
+        width: 85%;
     }
 
 }

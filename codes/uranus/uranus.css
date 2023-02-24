@@ -20,6 +20,10 @@ html {
     --primary-yellow: #F3ED66;
     --planet-primary: #67B2EA;
     --planet-primary-shadow: #7BDCE9;
+    --side-nav-gradient: linear-gradient(90deg, hsla(206, 76%, 66%, 1) 0%, hsla(206, 100%, 82%, 1) 100%);
+    --side-nav-gradient: linear-gradient(90deg, rgb(15, 92, 150) 0%, hsla(206, 76%, 66%, 1)100%);
+    /* --side-nav-gradient: linear-gradient(90deg, hsla(206, 76%, 66%, 1) 0%, rgb(0, 145, 255) 100%); */
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -219,9 +223,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -239,8 +243,16 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+/* class name is copied from sun's file model so named sun 3d model  */
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -352,6 +364,7 @@ html {
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
     background-color: #04192e;
+    background-color: #061520;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -404,7 +417,25 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 90%;
+}
+
+.rotation-animate {
+    animation: orbit 25s linear infinite;
+    width: 90%;
+    /* border: 2px solid red; */
+    z-index: -1;
+}
+
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec2-text {
@@ -418,17 +449,26 @@ html {
     font-weight: 500;
     font-size: 1.105625rem;
     line-height: 1.5625rem;
+    align-self: center;
     /* or 128% */
 
 
     color: #FFFFFF;
 }
 
-/* code for section 3 - formation and structure
+/* code for section 3 - formation and surface
 ######################################### */
 
-.formation-and-structure {
+.formation-and-surface {
     background-color: #000000;
+    /* background-image: linear-gradient(132.6deg, rgb(58, 115, 177) 23.3%, rgb(28, 159, 155) 84.7%); */
+    /* background-image: linear-gradient(0deg, rgba(0, 126, 154, 1) 0.7%, rgba(67, 85, 99, 1) 153.1%); */
+    /* background-image: radial-gradient(circle farthest-corner at 22.4% 21.7%, rgba(4, 189, 228, 1) 0%, rgba(2, 83, 185, 1) 100.2%); */
+    background-image: linear-gradient(171.8deg, rgba(5, 111, 146, 1) 13.5%, rgba(6, 57, 84, 1) 78.6%);
+    background-image: linear-gradient(171.8deg, rgba(5, 111, 146, 1) 13.5%, rgba(6, 57, 84, 1) 78.6%);
+    /* background-size: 150%;
+    background-position: left; */
+
 }
 
 .sec3-maincontainer {
@@ -444,37 +484,59 @@ html {
     align-self: center;
 }
 
+.sec3-text p {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.516);
+}
+
 /* code for section 4 - atmosphere and magnetosphere
 ######################################### */
 
 .atmosphere-and-magnetosphere {
     background-color: #140526;
+    background-image: linear-gradient(178.1deg, rgba(60, 55, 106, 1) 8.5%, rgba(23, 20, 69, 1) 82.4%);
 }
+
+
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 90%;
+    /* margin-right: 7rem;
+    padding-right: 1rem; */
 }
 
 
-/* code for section 5 - surface 
+/* code for section 5 - structure 
 ######################################### */
 
 
-.surface {
+.structure {
     background-color: #000000;
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    background-size: 150%;
+    background-position: left;
 }
 
 .sec5-maincontainer {
-    grid-gap: 1.625rem;
+    grid-template-areas:
+        "heading heading heading heading heading"
+        "text text text image image";
+    /* grid-gap: 1.625rem; */
+
 }
 
+
 .sec5-image {
-    width: 100%;
+    width: 95%;
     /* padding-right: 2.5rem; */
 }
 
+/* code for section 5a - rings
+################################################################### */
+.rings {
+    background-color: black;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3%);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(69, 86, 102, 1) 0%, rgba(34, 34, 34, 1) 90%);
+}
 
 /* code for section 6 - images  
 ###################################################################*/
@@ -869,7 +931,7 @@ end of pagepiling section  */
     /* code for section 4 
     ################################## */
     .sec4-image {
-        width: 100%;
+        width: 90%;
         margin-right: 0rem;
         padding-right: 0rem;
     }
@@ -1038,7 +1100,27 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 60%;
+        }
+
+        .sec3-headings h1 {
+            font-size: 1.780625rem;
+            line-height: 1.6875rem;
+            margin-top: -0.34rem;
+        }
+
+        .sec4-headings h1 {
+            font-size: 1.380625rem;
+            /* line-height: 1.0875rem; */
+            margin-top: -0.34rem;
+        }
+
+        .sec3-image {
+            width: 55%;
+        }
+
+        .sec4-image {
+            width: 50%;
         }
     }
 
@@ -1057,7 +1139,7 @@ end of pagepiling section  */
 
 @media screen and (max-height :682px) and (orientation : landscape) {
     * {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .hero1 img {
@@ -1065,7 +1147,7 @@ end of pagepiling section  */
     }
 
     .sec2-image {
-        width: 100%;
+        width: 85%;
     }
 
 }

@@ -137,7 +137,7 @@ strong {
 .sidenav::before {
     content: "";
     background: url(../Resources/sidenav-bg.png);
-    opacity: 0.2;
+    opacity: 0.4;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -185,7 +185,7 @@ strong {
     left: 0px;
     z-index: -1;
     width: 100%;
-    transform: translate(22rem, 30rem);
+    transform: translate(22rem, 20rem);
     opacity: 0.3;
 }
 

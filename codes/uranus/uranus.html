@@ -135,7 +135,7 @@
 
     <div id="pagepiling">
 
-        <div class="section overview-page">
+        <div class="section overview-page" aria-hidden="true">
             <div class="hero1">
                 <div class="text1">
                     <div class="headings">
@@ -143,21 +143,26 @@
                         <h2>Overview</h2>
                     </div> <!-- end of headings -->
                     <div class="post-text">
-                        <p>Composition : mainly made of silicate rocks
-                            or metals</p>
-                        <p>Surface Temperature : Sunny side reaches
-                            750 to 800 degrees F while nighttime temperature
-                            is nearly -330 degrees F</p>
-                        <p>Circumference : 15,329 km</p>
-                        <p>Mean Radius : 2,440 km</p>
-                        <p>Mass : 3.285 × 10<sup>23</sup> kg</p>
-                        <p>Type : Terrestrial Planet</p>
-                        <p>Day : About 59 Earth days</p>
-                        <p>Year : 88 Earth days</p>
-                        <p>Moons : 0</p>
+                        <p> <strong>Composition : </strong> Mostly made up of a hot dense fluid of "icy" materials –
+                            water, methane, and
+                            ammonia
+                        </p>
+                        <p><strong>Surface Temperature :</strong> around -353 degrees F (-213.9 degrees C)</p>
+                        <p><strong>Circumference :</strong> 160,590 km</p>
+                        <p><strong>Mean Radius :</strong> 25,362 km</p>
+                        <p><strong>Mass :</strong> 8.681 × 10<sup>25</sup> kg</p>
+                        <p><strong>Type :</strong> Gaseous Planet</p>
+                        <p><strong>Day :</strong> About 17 hours and 14 minutes</p>
+                        <p><strong>Year :</strong> 84 Earth years</p>
+                        <p><strong>Moons :</strong> 27</p>
                     </div> <!-- end of post-text -->
                 </div> <!-- end of text -->
-                <img src="./mercury-resources/mercury-main.png" alt="">
+                <!-- <img src="./mercury-resources/mercury-main.png" alt=""> -->
+
+                <!-- 3d model container  -->
+                <canvas class="sun_3d_model"></canvas>
+                <!-- end of 3d model container -->
+
             </div> <!-- end of container -->
 
             <!-- code for video  -->
@@ -172,74 +177,116 @@
                     <h2>Uranus</h2>
                     <h1>Orbit and Rotation</h1>
                 </div> <!-- end of sec2 - heading -->
-                <img class="sec2-image" src="./mercury-resources/mercury-orbit-and-rotation.png" alt="">
+                <img class="sec2-image rotation-animate" src="./planet-resources/uranus-orbit.gif" alt="">
                 <div class="sec2-text">
                     <p>
-                        Mercury's highly eccentric, egg-shaped orbit takes the
-                        planet as close as 47 million kilometers and as far as
-                        70 million kilometers from the Sun.
+                        One day on Uranus takes about <strong>17 hours</strong> (the time it takes for Uranus to rotate
+                        or spin once).
                     </p>
                     <p>
-                        It speeds around the Sun every 88 days, traveling through
-                        space at nearly 29 miles (47 kilometers) per second,
-                        faster than any other planet.
+                        And Uranus makes a complete orbit around the Sun (a year in Uranian time) in about <span
+                            class="textgreen"> <b>84
+                                Earth
+                                years</b> (30,687 Earth days)</span>.
                     </p>
                     <p>
-                        Mercury spins slowly on its axis and completes one
-                        rotation every 59 Earth days.
+                        Uranus is the only planet whose equator is nearly at a right angle to its orbit, with a tilt of
+                        <span class="textyellow">97.77 degrees</span> – possibly the result of a collision with an
+                        Earth-sized object long ago.
                     </p>
                     <p>
-                        But when Mercury is moving fastest in its elliptical orbit
-                        around the Sun (and it is closest to the Sun), each rotation
-                        is not accompanied by sunrise and sunset like it is on most
-                        other planets.
+                        This unique tilt causes the most extreme seasons in the solar system.
                     </p>
                     <p>
-                        Mercury's axis of rotation is tilted just 2 degrees with
-                        respect to the plane of its orbit around the Sun.
+                        For nearly a quarter of each Uranian year, the Sun shines directly over each pole, plunging the
+                        other half of the planet into a <strong>21-year-long</strong>, dark winter.
                     </p>
                     <p>
-                        That means it spins nearly perfectly upright and so does
-                        not experience seasons as many other planets do.
+                        Uranus is also one of just two planets that rotate in the opposite direction than most of the
+                        planets (Venus is the other one), from <strong>east to west</strong>.
                     </p>
                 </div> <!-- end of sec2 -text -->
             </div> <!-- end of sec2 main container -->
         </div> <!-- end of section 2 = orbit and rotation -->
 
-        <div class="section formation-and-structure">
+        <div class="section formation-and-surface">
             <div class="sec2-maincontainer sec3-maincontainer">
-                <div class="sec2-headings">
+                <div class="sec2-headings sec3-headings">
                     <h2>Uranus</h2>
-                    <h1>Formation and Structure</h1>
+                    <h1>Formation and Surface</h1>
                 </div> <!-- end of sec3 - heading -->
-                <img class="sec2-image sec3-image" src="./mercury-resources/formation-and-structure-mercury.png" alt="">
+                <img class="sec2-image sec3-image" src="./planet-resources/uranus_surface.png" alt="">
                 <div class="sec2-text sec3-text">
                     <p>
-                        Mercury formed about <strong>4.5 billion years</strong> ago when gravity
-                        pulled swirling gas and dust together to form this small
-                        planet nearest the Sun.
+                        Uranus took shape when the rest of the solar system formed about <strong>4.5 billion</strong>
+                        years ago – when
+                        gravity pulled swirling gas and dust in to become this ice giant.
                     </p>
                     <p>
-                        Mercury has a central core, a rocky mantle, and a solid crust.
+                        Like its neighbor Neptune, Uranus likely formed closer to the Sun and moved to the outer solar
+                        system about <span class="textgreen">4 billion</span> years ago, where it is the seventh planet
+                        from the Sun.
                     </p>
                     <p>
-                        Mercury is the second densest planet, after Earth.
+                        As an ice giant, Uranus doesn’t have a <span class="textgreen">true surface</span>.
                     </p>
                     <p>
-                        It has a large metallic core with a radius of about 1,289 miles
-                        (2,074 kilometers), about 85 percent of the planet's radius.
+                        The planet is mostly <span class="textyellow">swirling fluids</span>.
                     </p>
                     <p>
-                        There is evidence that it is partly molten or liquid.
+                        While a spacecraft would have nowhere to land on Uranus, it wouldn’t be able to fly through its
+                        atmosphere unscathed either.
                     </p>
                     <p>
-                        Mercury's outer shell, comparable to Earth's outer shell
-                        (called the mantle and crust), is only about 400 kilometers
-                        (250 miles) thick.
+                        The extreme <span class="textgreen">pressures and temperatures</span> would destroy a metal
+                        spacecraft.
                     </p>
                 </div> <!-- end of sec3 -text -->
             </div> <!-- end of sec3 main container -->
         </div> <!-- end of formation -->
+
+
+        <!-- note that section 5 and 4 are interchanged!!
+        ##############################################################
+        ############################################################## -->
+
+        <div class="section structure">
+            <div class="sec2-maincontainer sec5-maincontainer">
+                <div class="sec2-headings sec5-headings">
+                    <h2>Uranus</h2>
+                    <h1>Structure</h1>
+                </div> <!-- end of sec5 - heading -->
+                <img class="sec2-image sec5-image" src="./planet-resources/structure_uranus.png" alt="">
+                <div class="sec2-text">
+                    <p>
+                        Uranus is one of two <strong>ice giants</strong> in the outer solar system (the other is
+                        Neptune).
+                    </p>
+                    <p>
+                        Most (80% or more) of the planet's mass is made up of a hot dense fluid of <strong>"icy"
+                            materials</strong> –
+                        <span class="textyellow">water</span>, <span class="textyellow">methane </span>, and ammonia –
+                        above a small rocky core.
+                    </p>
+                    <p>
+                        Near the core, it heats up to <span class="textgreen"> <b>9,000 degrees Fahrenheit</b> (4,982
+                            degrees Celsius)</span>.
+                    </p>
+                    <p>
+                        Uranus is slightly larger in diameter than its neighbor Neptune, yet smaller in mass. It is the
+                        second least dense planet; Saturn is the least dense of all.
+                    </p>
+                    <p>
+                        Uranus gets its <strong>blue-green</strong> color from methane gas in the atmosphere.
+                    </p>
+                    <p>
+                        Sunlight passes through the atmosphere and is reflected back out by Uranus' cloud tops. <span
+                            class="textgreen">Methane</span>
+                        gas absorbs the red portion of the light, resulting in a <strong>blue-green</strong> color.
+                    </p>
+                </div> <!-- end of sec4 -text -->
+            </div> <!-- end of sec4 main container -->
+        </div> <!-- end of section 5 - structure -->
 
         <div class="section atmosphere-and-magnetosphere">
             <div class="sec2-maincontainer sec4-maincontainer">
@@ -247,76 +294,72 @@
                     <h2>Uranus</h2>
                     <h1>Atmosphere & Magnetosphere</h1>
                 </div> <!-- end of sec4 - heading -->
-                <img class="sec2-image sec4-image" src="./mercury-resources/mercury-atmosphere-and-magnetosphere.png"
-                    alt="">
+                <img class="sec2-image sec4-image" src="./planet-resources/uranus_magnetosphere.png" alt="">
                 <div class="sec2-text">
                     <p>
-                        Instead of an atmosphere, Mercury possesses a thin
-                        exosphere made up of atoms blasted off the surface
-                        by the solar wind and striking meteoroids.
+                        Uranus' atmosphere is mostly <strong>hydrogen and helium</strong>, with a small amount of
+                        <strong>methane</strong> and traces of
+                        <strong>water</strong> and <strong>ammonia</strong>.
                     </p>
                     <p>
-                        Mercury's exosphere is composed mostly of oxygen,
-                        sodium, hydrogen, helium, and potassium.
+                        Uranus' planetary atmosphere, with a minimum temperature of <span class="textgreen">49K (-224.2
+                            degrees Celsius)</span> makes
+                        it even <strong>colder</strong> than Neptune in some places.
                     </p>
                     <p>
-                        Mercury's magnetic field is offset relative to the
-                        planet's equator.
+                        Wind speeds can reach up to <span class="textyellow">560 miles per hour (900 kilometers per
+                            hour)</span> on Uranus. Winds are
+                        <span class="textgreen">retrograde</span> at the <span class="textblue">equator</span>, blowing
+                        in the reverse direction of
+                        the planet’s rotation.But closer
+                        to the <span class="textblue">poles</span>, winds shift to a <span
+                            class="textgreen">prograde</span> direction, flowing with
+                        Uranus' rotation.
                     </p>
                     <p>
-                        Mercury's magnetic field at the surface has just 1%
-                        the strength of Earth's
+                        Uranus' magnetic field is <span class="textyellow"></span>:
+                        the magnetic axis is tilted nearly <strong>60 degrees</strong> from the planet's axis of
+                        rotation, and is also
+                        offset from the center of the planet by one-third of the planet's radius.
                     </p>
                     <p>
-                        It interacts with the magnetic field of the solar wind
-                        to sometimes create intense magnetic tornadoes that
-                        funnel the fast, hot solar wind plasma down to the
-                        surface of the planet.
-                    </p>
-                    <p>
-                        When the ions strike the surface, they knock off
-                        neutrally charged atoms and send them on a loop high
-                        into the sky.
+                        Auroras on Uranus are not in line with the poles (like they are on Earth, Jupiter, and Saturn)
+                        due to the lopsided magnetic field.
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
         </div> <!-- end of section4 - structure -->
 
-        <div class="section surface">
-            <div class="sec2-maincontainer sec5-maincontainer">
-                <div class="sec2-headings sec5-headings">
+        <div class="section rings">
+            <div class="sec2-maincontainer sec5a-maincontainer">
+                <div class="sec2-headings sec5a-headings">
                     <h2>Uranus</h2>
-                    <h1>Surface</h1>
-                </div> <!-- end of sec5 - heading -->
-                <img class="sec2-image sec5-image" src="./mercury-resources/mercury-surface.png" alt="">
-                <div class="sec2-text">
+                    <h1>Rings</h1>
+                </div> <!-- end of sec3 - heading -->
+                <img class="sec2-image sec5a-image" src="./planet-resources/uranus_rings.png" alt="">
+                <div class="sec2-text sec5a-text">
                     <p>
-                        Mercury's surface resembles that of Earth's Moon, scarred
-                        by many impact craters resulting from collisions with
-                        meteoroids and comets.
+                        Uranus has two sets of rings.
                     </p>
                     <p>
-                        Very large impact basins were created by asteroid impacts
-                        on the planet's surface early in the solar system's history.
+                        The inner system of <strong>nine rings</strong> consists mostly of narrow, dark grey rings.
                     </p>
                     <p>
-                        While there are large areas of smooth terrain, there are also
-                        cliffs, some hundreds of miles long and soaring up to a mile high.
+                        There are <strong>two outer rings</strong>: the innermost one is <span
+                            class="textred">reddish</span> like dusty rings
+                        elsewhere in the solar
+                        system, and the outer ring is <span class="textblue">blue</span> like Saturn's E ring.
                     </p>
                     <p>
-                        Most of Mercury's surface would appear greyish-brown to
-                        the human eye.
+                        In order of increasing distance from the planet, the rings are called <span
+                            class="textgreen">Zeta, 6, 5, 4, Alpha,
+                            Beta, Eta, Gamma, Delta, Lambda, Epsilon, Nu, and Mu</span>. Some of the larger rings are
+                        surrounded by
+                        belts of fine dust.
                     </p>
-                    <p>
-                        Temperatures on Mercury are extreme
-                    </p>
-                    <p>
-                        Mercury may have water ice at its north and south poles
-                        inside deep craters, but only in regions in permanent shadows.
-                    </p>
-                </div> <!-- end of sec4 -text -->
-            </div> <!-- end of sec4 main container -->
-        </div> <!-- end of section 5 - surface -->
+                </div> <!-- end of sec3 -text -->
+            </div> <!-- end of sec3 main container -->
+        </div> <!-- end of formation -->
 
         <div class="section images-of-sun">
             <div class="images-main-container">
@@ -327,67 +370,63 @@
                 <div class="swiper imageSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/1-mercury'Caloris-basin.jpg" alt="">
+                            <img src="./planet-resources/image-sections/1_uranus_carousel_1.jpg" alt="">
                             <p>
-                                Mercury does not have a thick atmosphere to protect it from space debris. The small
-                                planet is riddled with craters, but none as spectacular as the Caloris Basin.
+                                This is an image of the planet Uranus taken by the spacecraft Voyager 2 on January 14th
+                                1986 from a distance of approximately 7.8 milllion miles ( 12.7 million km ).
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/2-The-Impressive-Rays-of-Hokusai.jpg" alt="">
+                            <img src="./planet-resources/image-sections/2_uranus.jpg" alt="">
                             <p>
-                                This mosaic of images from NASA's MESSENGER spacecraft shows the impact crater Hokusai,
-                                located on Mercury at a latitude of 58°N. The crater has an impressive system of rays,
-                                which extend as much as a thousand kilometers (more than 600 miles) across the planet
-                                and are the longest that have yet been identified on Mercury.
+                                This is a view of Uranus taken by Voyager 2. This image was taken through three color
+                                filters and recombined to produce the color image. JPL manages and controls the Voyager
+                                project for NASA's Office of Space Science.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/3-Cat'sEyeCrater.jpg" alt=""
-                                class="img3-section6">
+                            <img src="./planet-resources/image-sections/3_uranus_rings.jpg" alt="">
                             <p>
-                                Centered in this stunning image lies Eminescu crater on the planet Mercury, illuminated
-                                by a bright halo of material around its edge.
+                                This false-color view of the rings of Uranus was made from images taken by Voyager 2 on
+                                Jan. 21, 1986, from a distance of 4.17 million kilometers (2.59 million miles). All nine
+                                known rings are visible here
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/4-Lowlands-in-mercury's-north.jpg" alt="">
+                            <img src="./planet-resources/image-sections/4_uranus_atmosphere.jpg" alt="">
                             <p>
-                                This image shows a perspective view, looking towards Mercury's north and colorized by
-                                the topographic height of the surface.
+                                Hubble Space Telescope has peered deep into Uranus' atmosphere to see clear and hazy
+                                layers created by a mixture of gases. Using infrared filters, Hubble captured detailed
+                                features of three layers of Uranus' atmosphere.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/5-Colors of the Innermost Planet.jpg" alt="">
+                            <img src="./planet-resources/image-sections/5_uranus.jpg" alt="">
                             <p>
-                                This colorful view of Mercury was produced by using images from the color base map
-                                imaging campaign during MESSENGER's primary mission.
+                                A paired picture of Uranus, the sharpest, most detailed picture of the distant planet to
+                                date, reveals a raft of new details about the planet's enigmatic atmosphere.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/8-odin-platina.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/6_hubbles_uranus.jpg" alt="">
                             <p>
-                                This area east of Mercury's giant Caloris Basin is thought to be related to ejecta from
-                                the basin impact event.
+                                This 2006 image taken by the Hubble Space Telescope shows bands and a new dark spot in
+                                Uranus' atmosphere.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/6-Degas and Friends.png" alt="">
+                            <img src="./planet-resources/image-sections/7_atmos.jpg" alt="">
                             <p>
-                                Located near the center of the image, the distinctive blue color of the low-reflectance
-                                material associated with Degas contrasts with the surrounding terrain and neighboring
-                                craters.
+                                Processing brings out Uranus' atmosphere.
+                                JPL manages the Voyager project for NASA's Office of Space Science.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/7-Van Eyck and the Formation.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/8_bright_clouds.jpg" alt="">
                             <p>
-                                The low Sun elevation in this scene emphasizes the topography of Van Eyck crater. The
-                                rim of Van Eyck has been profoundly cratered by material ejected from the Caloris basin.
-                                Smooth plains fill the floor of Van Eyck, but they too have been affected by cratering,
-                                from large primary impacts to deep, linear incisions by secondary crater chains.
+                                A recent Hubble Space Telescope view reveals Uranus surrounded by its four major rings
+                                and by 10 of its 17 known satellites. This false-color image was generated by Erich
+                                Karkoschka using data taken on August 8, 1998, with Hubble's Near Infrared Camera
                             </p>
                         </div>
 
@@ -431,6 +470,27 @@
         integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- end of script for pagepiling  -->
+
+    <!-- script for three js  -->
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            
+            "three": "../../Resources/three/build/three.module.js"
+          
+            }
+        }
+        </script>
+
+    <!-- These were used earlier from unpkg  -->
+    <!-- "three": "https://unpkg.com/three/build/three.module.js", -->
+    <!-- "three/addons/": "https://unpkg.com/three/examples/jsm/" -->
+
+
+    <script type="module" src="./uranusThree.js"></script>
+    <!-- end of three js -->
 
     <!-- my js file  -->
     <script type="text/javascript" src="./uranus.js"></script>
