@@ -20,6 +20,9 @@ html {
     --primary-yellow: #F3ED66;
     --planet-primary: #3E61EF;
     --planet-primary-shadow: #4370FD;
+    --side-nav-gradient: linear-gradient(90deg, hsla(228, 81%, 27%, 1) 0%, hsla(228, 85%, 59%, 1) 100%);
+
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Work+Sans:wght@500&display=swap');
@@ -219,9 +222,9 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
     transition: all 1s;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -239,8 +242,16 @@ html {
     gap: 0rem;
 }
 
-.overview-page .hero1 img {
+/* .overview-page .hero1 img {
     animation: planet-main-animation 8s infinite linear;
+} */
+
+/* class name is copied from sun's file model so named sun 3d model  */
+.sun_3d_model {
+    /* border: 2px solid red; */
+    height: min(80vh, 80vw);
+    width: min(80vh, 80vw);
+    cursor: grab;
 }
 
 @keyframes planet-main-animation {
@@ -352,6 +363,7 @@ html {
 .orbit-and-rotation {
     /* background-color: #f3ed66; */
     background-color: #04192e;
+    background-color: #110e1b;
     /* background-image: url(../../Resources/mobilebg.png); */
     /* background-size: 100%;   */
     /* background-size: cover; */
@@ -404,7 +416,25 @@ html {
 
 .sec2-image {
     grid-area: image;
-    width: 110%;
+    width: 90%;
+}
+
+.rotation-animate {
+    animation: orbit 25s linear infinite;
+    width: 90%;
+    /* border: 2px solid red; */
+    z-index: -1;
+}
+
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec2-text {
@@ -418,6 +448,7 @@ html {
     font-weight: 500;
     font-size: 1.105625rem;
     line-height: 1.5625rem;
+    align-self: center;
     /* or 128% */
 
 
@@ -427,8 +458,10 @@ html {
 /* code for section 3 - formation and structure
 ######################################### */
 
-.formation-and-structure {
+.formation-and-surface {
     background-color: #000000;
+    background-image: radial-gradient(circle 610px at 5.2% 51.6%, rgba(5, 8, 114, 1) 0%, rgba(7, 3, 53, 1) 97.5%);
+
 }
 
 .sec3-maincontainer {
@@ -449,20 +482,29 @@ html {
 
 .atmosphere-and-magnetosphere {
     background-color: #140526;
+    /* background-image: linear-gradient(109.6deg, rgba(45, 116, 213, 1) 11.2%, rgba(121, 137, 212, 1) 91.2%); */
+    /* background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 152, 155, 1) 0.1%, rgba(0, 94, 120, 1) 94.2%); */
+    background-image: linear-gradient(to left, rgba(115, 18, 81, 1) 10.6%, rgba(28, 28, 28, 1) 118%);
+    background-image: linear-gradient(178.2deg, rgba(118, 8, 23, 1) 10.9%, rgba(158, 12, 33, 1) 62.6%);
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+    background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+
+    /* background-size: 170%; */
+    /* background-position: left; */
 }
 
 .sec4-image {
-    width: 100%;
-    margin-right: 7rem;
-    padding-right: 1rem;
+    width: 90%;
+    /* margin-right: 7rem; */
+    /* padding-right: 1rem; */
 }
 
 
-/* code for section 5 - surface 
+/* code for section 5 - structure 
 ######################################### */
 
 
-.surface {
+.structure {
     background-color: #000000;
 }
 
@@ -473,6 +515,19 @@ html {
 .sec5-image {
     width: 100%;
     /* padding-right: 2.5rem; */
+}
+
+
+/* code for section 5a - rings
+################################################################### */
+.rings {
+    background: #140526;
+    /* background-image: linear-gradient(110.3deg, rgba(73, 93, 109, 1) 4.3%, rgba(49, 55, 82, 1) 96.7%); */
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+    background-image: linear-gradient(109.1deg, rgba(181, 73, 91, 1) 7.1%, rgba(225, 107, 140, 1) 86.4%);
+    background-image: linear-gradient(112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
+    background-size: 150%;
+    background-position: left;
 }
 
 
@@ -1039,7 +1094,15 @@ end of pagepiling section  */
         }
 
         .sec2-image {
-            width: 80%;
+            width: 55%;
+        }
+
+        .sec3-headings h1,
+        .sec4-headings h1 {
+
+            font-size: 1.780625rem;
+            line-height: 1.6875rem;
+            margin-top: 0rem;
         }
     }
 

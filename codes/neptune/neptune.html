@@ -135,7 +135,7 @@
 
     <div id="pagepiling">
 
-        <div class="section overview-page">
+        <div class="section overview-page" aria-hidden="true">
             <div class="hero1">
                 <div class="text1">
                     <div class="headings">
@@ -143,21 +143,24 @@
                         <h2>Overview</h2>
                     </div> <!-- end of headings -->
                     <div class="post-text">
-                        <p>Composition : mainly made of silicate rocks
-                            or metals</p>
-                        <p>Surface Temperature : Sunny side reaches
-                            750 to 800 degrees F while nighttime temperature
-                            is nearly -330 degrees F</p>
-                        <p>Circumference : 15,329 km</p>
-                        <p>Mean Radius : 2,440 km</p>
-                        <p>Mass : 3.285 × 10<sup>23</sup> kg</p>
-                        <p>Type : Terrestrial Planet</p>
-                        <p>Day : About 59 Earth days</p>
-                        <p>Year : 88 Earth days</p>
-                        <p>Moons : 0</p>
+                        <p><strong>Composition :</strong> about 83 percent hydrogen, 15 percent helium and two percent
+                            methane</p>
+                        <p><strong>Surface Temperature :</strong> cold -373 degrees F (-225 degrees Celcius)</p>
+                        <p><strong>Circumference :</strong> 155,600 km</p>
+                        <p><strong>Mean Radius :</strong> 24,622 km</p>
+                        <p><strong>Mass :</strong> 1.024 × 10<sup>26</sup> kg</p>
+                        <p><strong>Type :</strong> Gaseous Planet</p>
+                        <p><strong>Day :</strong> 16 hours 6 minutes</p>
+                        <p><strong>Year :</strong> 165 Earth years</p>
+                        <p><strong>Moons :</strong> 14</p>
                     </div> <!-- end of post-text -->
                 </div> <!-- end of text -->
-                <img src="./mercury-resources/mercury-main.png" alt="">
+                <!-- <img src="./mercury-resources/mercury-main.png" alt=""> -->
+
+                <!-- 3d model container  -->
+                <canvas class="sun_3d_model"></canvas>
+                <!-- end of 3d model container -->
+
             </div> <!-- end of container -->
 
             <!-- code for video  -->
@@ -172,74 +175,123 @@
                     <h2>Neptune</h2>
                     <h1>Orbit and Rotation</h1>
                 </div> <!-- end of sec2 - heading -->
-                <img class="sec2-image" src="./mercury-resources/mercury-orbit-and-rotation.png" alt="">
+                <img class="sec2-image rotation-animate" src="./planet-resources/neptune_rotation.gif" alt="">
                 <div class="sec2-text">
                     <p>
-                        Mercury's highly eccentric, egg-shaped orbit takes the
-                        planet as close as 47 million kilometers and as far as
-                        70 million kilometers from the Sun.
+                        One day on Neptune takes about <strong>16 hours</strong> (the time it takes for Neptune to
+                        rotate or spin once).
                     </p>
                     <p>
-                        It speeds around the Sun every 88 days, traveling through
-                        space at nearly 29 miles (47 kilometers) per second,
-                        faster than any other planet.
+                        And Neptune makes a complete orbit around the Sun (a year in Neptunian time) in about <span
+                            class="textblue"> <b>165 Earth</b>
+                            years (60,190 Earth days)</span>.
                     </p>
                     <p>
-                        Mercury spins slowly on its axis and completes one
-                        rotation every 59 Earth days.
+                        Sometimes Neptune is even farther from the Sun than dwarf planet Pluto. Pluto's highly
+                        eccentric, oval-shaped orbit brings it inside Neptune's orbit for a <span
+                            class="textyellow">20-year period every 248
+                            Earth years</span>.
                     </p>
                     <p>
-                        But when Mercury is moving fastest in its elliptical orbit
-                        around the Sun (and it is closest to the Sun), each rotation
-                        is not accompanied by sunrise and sunset like it is on most
-                        other planets.
+                        Neptune’s axis of rotation is tilted <strong class="textgreen">28 degrees</strong> with respect
+                        to
+                        the plane of its orbit around
+                        the Sun, which is similar to the axial tilts of Mars and Earth.
                     </p>
                     <p>
-                        Mercury's axis of rotation is tilted just 2 degrees with
-                        respect to the plane of its orbit around the Sun.
+                        This means that Neptune experiences seasons just like we do on Earth
                     </p>
                     <p>
-                        That means it spins nearly perfectly upright and so does
-                        not experience seasons as many other planets do.
+                        However, since its year is so long, each of the four seasons lasts for over <strong>40
+                            years</strong>.
                     </p>
                 </div> <!-- end of sec2 -text -->
             </div> <!-- end of sec2 main container -->
         </div> <!-- end of section 2 = orbit and rotation -->
 
-        <div class="section formation-and-structure">
+        <div class="section formation-and-surface">
             <div class="sec2-maincontainer sec3-maincontainer">
-                <div class="sec2-headings">
+                <div class="sec2-headings sec3-headings">
                     <h2>Neptune</h2>
-                    <h1>Formation and Structure</h1>
+                    <h1>Formation and Surface</h1>
                 </div> <!-- end of sec3 - heading -->
-                <img class="sec2-image sec3-image" src="./mercury-resources/formation-and-structure-mercury.png" alt="">
+                <img class="sec2-image sec3-image" src="./planet-resources/neptune_formation.png" alt="">
                 <div class="sec2-text sec3-text">
                     <p>
-                        Mercury formed about <strong>4.5 billion years</strong> ago when gravity
-                        pulled swirling gas and dust together to form this small
-                        planet nearest the Sun.
+                        Neptune took shape when the rest of the solar system formed about <strong>4.5 billion</strong>
+                        years ago when
+                        gravity pulled swirling gas and dust in to become this ice giant.
                     </p>
                     <p>
-                        Mercury has a central core, a rocky mantle, and a solid crust.
+                        Like its neighbor Uranus, Neptune likely formed closer to the Sun and moved to the outer solar
+                        system about <strong class="textgreen">4 billion</strong> years ago.
                     </p>
                     <p>
-                        Mercury is the second densest planet, after Earth.
+                        Neptune is a gas giant planet, which means that it doesn't have a solid surface like Earth or
+                        other rocky planets.
                     </p>
                     <p>
-                        It has a large metallic core with a radius of about 1,289 miles
-                        (2,074 kilometers), about 85 percent of the planet's radius.
+                        Instead, the atmosphere of Neptune gradually transitions into a dense fluid layer of icy
+                        materials and gases. This layer is sometimes referred to as the <strong
+                            class="textblue">"surface"</strong> of Neptune, although
+                        it's not a solid surface.
                     </p>
                     <p>
-                        There is evidence that it is partly molten or liquid.
+                        The depth of this fluid layer is believed to be around <strong>1,000 kilometers</strong>, and
+                        the pressure at the
+                        bottom of this layer is estimated to be around <strong>7 million</strong> times the pressure at
+                        the surface of
+                        Earth.
                     </p>
-                    <p>
-                        Mercury's outer shell, comparable to Earth's outer shell
-                        (called the mantle and crust), is only about 400 kilometers
-                        (250 miles) thick.
-                    </p>
+                    <!-- <p>
+                        Because of these extreme conditions, it's not possible for spacecraft to land on Neptune's
+                        "surface".
+                    </p> -->
                 </div> <!-- end of sec3 -text -->
             </div> <!-- end of sec3 main container -->
         </div> <!-- end of formation -->
+
+        <!-- note that section 4 and 5 are interchanged here, but not in css  -->
+
+        <div class="section structure">
+            <div class="sec2-maincontainer sec5-maincontainer">
+                <div class="sec2-headings sec5-headings">
+                    <h2>Neptune</h2>
+                    <h1>Structure</h1>
+                </div> <!-- end of sec5 - heading -->
+                <img class="sec2-image sec5-image" src="./planet-resources/neptune_structure.png" alt="">
+                <div class="sec2-text">
+                    <p>
+                        Neptune is one of two <span class="textgreen">ice giants</span> in the outer solar system (the
+                        other is Uranus).
+                    </p>
+                    <p>
+                        Most (80% or more) of the planet's mass is made up of a hot dense fluid of <span
+                            class="textblue">"icy"</span> materials –
+                        <span class="textyellow">water, methane, and ammonia</span> – above a small, rocky core.
+                    </p>
+                    <p>
+                        Of the giant planets, Neptune is the <strong>densest</strong>.
+                    </p>
+                    <p>
+                        Scientists think there might be an ocean of super hot water under Neptune's cold clouds. It does
+                        not boil away because incredibly high pressure keeps it locked inside.
+                    </p>
+                    <p>
+                        Overall, Neptune's internal structure is similar to that of other gas giants, with a
+                        <strong class="textgreen">rocky core</strong>
+                        surrounded by a <strong class="textgreen">fluid mantle</strong> and an <strong
+                            class="textgreen">outer atmosphere</strong> composed
+                        mostly of
+                        <strong>hydrogen and helium</strong>.
+                    </p>
+                    <!-- <p>
+                        Its internal structure is believed to be composed of several distinct layers including a core,
+                        frozen mantle and a dense atmosphere.
+                    </p> -->
+                </div> <!-- end of sec4 -text -->
+            </div> <!-- end of sec4 main container -->
+        </div> <!-- end of section 5 - surface -->
 
         <div class="section atmosphere-and-magnetosphere">
             <div class="sec2-maincontainer sec4-maincontainer">
@@ -247,76 +299,79 @@
                     <h2>Neptune</h2>
                     <h1>Atmosphere & Magnetosphere</h1>
                 </div> <!-- end of sec4 - heading -->
-                <img class="sec2-image sec4-image" src="./mercury-resources/mercury-atmosphere-and-magnetosphere.png"
-                    alt="">
+                <img class="sec2-image sec4-image" src="./planet-resources/neptune_magnetosphere.png" alt="">
                 <div class="sec2-text">
                     <p>
-                        Instead of an atmosphere, Mercury possesses a thin
-                        exosphere made up of atoms blasted off the surface
-                        by the solar wind and striking meteoroids.
+                        Neptune's atmosphere is made up mostly of <span class="textyellow">hydrogen and helium</span>
+                        with just a little bit of <span class="textyellow">methane</span>.
                     </p>
                     <p>
-                        Mercury's exosphere is composed mostly of oxygen,
-                        sodium, hydrogen, helium, and potassium.
+                        Neptune's neighbor Uranus is a <span class="textblue">blue-green</span> color due to such
+                        atmospheric methane, but Neptune is
+                        a more <strong>vivid, brighter blue,</strong> so there must be an unknown component that causes
+                        the more intense
+                        color.
                     </p>
                     <p>
-                        Mercury's magnetic field is offset relative to the
-                        planet's equator.
+                        Neptune is our solar system's windiest world. Neptune's winds can be <span
+                            class="textgreen">three times stronger</span> than
+                        Jupiter's and <span class="textgreen">nine times stronger</span> than Earth's.
                     </p>
                     <p>
-                        Mercury's magnetic field at the surface has just 1%
-                        the strength of Earth's
+                        The main axis of Neptune's magnetic field is tipped over by about <strong>47 degrees</strong>
+                        compared with the
+                        planet's rotation axis.
                     </p>
                     <p>
-                        It interacts with the magnetic field of the solar wind
-                        to sometimes create intense magnetic tornadoes that
-                        funnel the fast, hot solar wind plasma down to the
-                        surface of the planet.
+                        Neptune's magnetosphere undergoes wild variations during each rotation because of this
+                        misalignment.
                     </p>
                     <p>
-                        When the ions strike the surface, they knock off
-                        neutrally charged atoms and send them on a loop high
-                        into the sky.
+                        The magnetic field of Neptune is about <strong>27 times</strong> more powerful than that of
+                        Earth.​
                     </p>
                 </div> <!-- end of sec4 -text -->
             </div> <!-- end of sec4 main container -->
         </div> <!-- end of section4 - structure -->
 
-        <div class="section surface">
-            <div class="sec2-maincontainer sec5-maincontainer">
-                <div class="sec2-headings sec5-headings">
+        <div class="section rings">
+            <div class="sec2-maincontainer sec5a-maincontainer">
+                <div class="sec2-headings sec5a-headings">
                     <h2>Neptune</h2>
-                    <h1>Surface</h1>
-                </div> <!-- end of sec5 - heading -->
-                <img class="sec2-image sec5-image" src="./mercury-resources/mercury-surface.png" alt="">
-                <div class="sec2-text">
+                    <h1>Rings</h1>
+                </div> <!-- end of sec3 - heading -->
+                <img class="sec2-image sec5a-image" src="./planet-resources/neptune_rings.png" alt="">
+                <div class="sec2-text sec5a-text">
                     <p>
-                        Mercury's surface resembles that of Earth's Moon, scarred
-                        by many impact craters resulting from collisions with
-                        meteoroids and comets.
+                        Neptune has at least <strong>five main rings</strong> and four prominent ring arcs that we know
+                        of so far.
                     </p>
                     <p>
-                        Very large impact basins were created by asteroid impacts
-                        on the planet's surface early in the solar system's history.
+                        Starting near the planet and moving outward, the main rings are named <span
+                            class="textyellow">Galle, Leverrier, Lassell,
+                            Arago, and Adams</span>.
                     </p>
                     <p>
-                        While there are large areas of smooth terrain, there are also
-                        cliffs, some hundreds of miles long and soaring up to a mile high.
+                        The rings are thought to be relatively <span class="textgreen">young</span> and <span
+                            class="textgreen">short-lived</span>.
                     </p>
                     <p>
-                        Most of Mercury's surface would appear greyish-brown to
-                        the human eye.
+                        Neptune's ring system also has peculiar clumps of dust called <strong>arcs</strong>.
                     </p>
                     <p>
-                        Temperatures on Mercury are extreme
+                        Four prominent arcs named <span class="textyellow">Liberté (Liberty), Egalité (Equality),
+                            Fraternité (Fraternity)</span>, and
+                        Courage are in the outermost ring, <span class="textyellow">Adams</span>.
                     </p>
                     <p>
-                        Mercury may have water ice at its north and south poles
-                        inside deep craters, but only in regions in permanent shadows.
+                        The <strong>arcs</strong> are strange because the laws of motion would predict that they would
+                        spread out evenly
+                        rather than stay clumped together. Scientists now think the gravitational effects of Galatea, a
+                        moon just inward from the ring, stabilizes these arcs.
                     </p>
-                </div> <!-- end of sec4 -text -->
-            </div> <!-- end of sec4 main container -->
-        </div> <!-- end of section 5 - surface -->
+                </div> <!-- end of sec3 -text -->
+            </div> <!-- end of sec3 main container -->
+        </div> <!-- end of formation -->
 
         <div class="section images-of-sun">
             <div class="images-main-container">
@@ -327,67 +382,61 @@
                 <div class="swiper imageSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/1-mercury'Caloris-basin.jpg" alt="">
+                            <img src="./planet-resources/image-sections/1_carousel_neptune_1.jpg" alt="">
                             <p>
-                                Mercury does not have a thick atmosphere to protect it from space debris. The small
-                                planet is riddled with craters, but none as spectacular as the Caloris Basin.
+                                This picture of Neptune was produced from the last whole planet images taken through the
+                                green and orange filters on the Voyager 2 narrow angle camera.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/2-The-Impressive-Rays-of-Hokusai.jpg" alt="">
+                            <img src="./planet-resources/image-sections/2_neptune_carousel_2.jpg" alt="">
                             <p>
-                                This mosaic of images from NASA's MESSENGER spacecraft shows the impact crater Hokusai,
-                                located on Mercury at a latitude of 58°N. The crater has an impressive system of rays,
-                                which extend as much as a thousand kilometers (more than 600 miles) across the planet
-                                and are the longest that have yet been identified on Mercury.
+                                These NASA Hubble Space Telescope views of the blue-green planet Neptune provide three
+                                snapshots of changing weather conditions.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/3-Cat'sEyeCrater.jpg" alt=""
-                                class="img3-section6">
+                            <img src="./planet-resources/image-sections/3_neptune_carousel_4.jpg" alt="">
                             <p>
-                                Centered in this stunning image lies Eminescu crater on the planet Mercury, illuminated
-                                by a bright halo of material around its edge.
+                                Voyager 2's post-encounter view of Neptune's south pole as the spacecraft sped away on a
+                                southward trajectory.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/4-Lowlands-in-mercury's-north.jpg" alt="">
+                            <img src="./planet-resources/image-sections/4_carousel_neptune_5.jpg" alt="">
                             <p>
-                                This image shows a perspective view, looking towards Mercury's north and colorized by
-                                the topographic height of the surface.
+                                This Voyager 2 high resolution color image, taken 2 hours before closest approach,
+                                provides obvious evidence of vertical relief in Neptune's bright cloud streaks
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/5-Colors of the Innermost Planet.jpg" alt="">
+                            <img src="./planet-resources/image-sections/5_crescent.jpg" alt="">
                             <p>
-                                This colorful view of Mercury was produced by using images from the color base map
-                                imaging campaign during MESSENGER's primary mission.
+                                This dramatic view of the crescents of Neptune and Triton was acquired by Voyager 2
+                                approximately 3 days, 6 and one-half hours after its closest approach to Neptune (north
+                                is to the right).
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/8-odin-platina.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/6_titron.jpg" alt="">
                             <p>
-                                This area east of Mercury's giant Caloris Basin is thought to be related to ejecta from
-                                the basin impact event.
+                                This computer generated montage shows Neptune as it would appear from a spacecraft
+                                approaching Triton, Neptune's largest moon at 2706 km (1683 mi) in diameter.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/6-Degas and Friends.png" alt="">
+                            <img src="./planet-resources/image-sections/7_rings.jpg" alt="">
                             <p>
-                                Located near the center of the image, the distinctive blue color of the low-reflectance
-                                material associated with Degas contrasts with the surrounding terrain and neighboring
-                                craters.
+                                This wide-angle Voyager 2 image, taken through the camera's clear filter, is the first
+                                to show Neptune's rings in detail.The two main rings, about 53,000 km (33,000 miles) and
+                                63,000 km (39,000 miles) from Neptune, are 5 to 10 times brighter in this image.
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="./mercury-resources/images-section/7-Van Eyck and the Formation.jpg" alt=""
-                                class="img8-section6">
+                            <img src="./planet-resources/image-sections/8_neptune.jpg" alt="">
                             <p>
-                                The low Sun elevation in this scene emphasizes the topography of Van Eyck crater. The
-                                rim of Van Eyck has been profoundly cratered by material ejected from the Caloris basin.
-                                Smooth plains fill the floor of Van Eyck, but they too have been affected by cratering,
-                                from large primary impacts to deep, linear incisions by secondary crater chains.
+                                This image of the planet Neptune was obtained during the testing of the Narrow-Field
+                                adaptive optics mode of the MUSE/GALACSI instrument on ESO’s Very Large Telescope.
                             </p>
                         </div>
 
@@ -431,6 +480,27 @@
         integrity="sha512-5d8vqNar4es3c5P8GOy4SzaFJKEIIjDJhoaO/akcn/u+Ynj5gukMF7FgG1AEAPSIDVjEeFh+dpT6j42s6vxCkg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- end of script for pagepiling  -->
+
+    <!-- script for three js  -->
+    <!-- <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> -->
+
+    <script type="importmap">
+        {
+            "imports": {
+            
+            "three": "../../Resources/three/build/three.module.js"
+          
+            }
+        }
+        </script>
+
+    <!-- These were used earlier from unpkg  -->
+    <!-- "three": "https://unpkg.com/three/build/three.module.js", -->
+    <!-- "three/addons/": "https://unpkg.com/three/examples/jsm/" -->
+
+
+    <script type="module" src="./neptuneThree.js"></script>
+    <!-- end of three js -->
 
     <!-- my js file  -->
     <script type="text/javascript" src="./neptune.js"></script>
