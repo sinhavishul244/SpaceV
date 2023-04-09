@@ -248,12 +248,15 @@
     <script>var loader = document.getElementById("preloader");
 
         const loading_func = () => {
-            loader.style.display = "none";
+            // loader.style.display = "none";
+            loader.style.opacity = "0";
+            loader.style.visibility = "hidden";
         }
 
-        const temp = () => { setTimeout(loading_func, 2000); }
+        // const temp = () => { setTimeout(loading_func, 100); }
 
-        window.addEventListener("load", temp);
+        // window.addEventListener("load", temp);
+        window.addEventListener("load", loading_func);
 
         //adding code for rotation in mobile devices only
         // #####################################################################

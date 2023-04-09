@@ -3,7 +3,7 @@
 
 
 #preloader {
-    /* transition: all 2s ease; */
+    transition: all 0.3s;
     display: flex;
     overflow: hidden;
     height: 100%;
@@ -12,6 +12,9 @@
     justify-content: center;
     position: fixed;
     top: 0;
+    opacity: 1;
+    visibility: visible;
+
     /* border: 2px solid yellow; */
     background-color: #000000;
     /* color: blueviolet; */

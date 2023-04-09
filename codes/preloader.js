@@ -1,7 +1,9 @@
 var loader = document.getElementById("preloader");
 
 const loading_func = () => {
-    loader.style.display = "none";
+    // loader.style.display = "none";
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
 }
 
 const temp = () => { setTimeout(loading_func, 500); }
