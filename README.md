@@ -1,2 +1,2 @@
 # SpaceV
-A fun way to learn about space ! 
+SpaceV is a meticulously crafted web development project designed to provide a comprehensive and enjoyable learning experience about the planets in our solar system. Developed using core HTML, CSS, and JavaScript, this website boasts of a lightweight and intuitive interface that is easily accessible from both desktop and mobile devices. The responsive design, coupled with a modern and aesthetically pleasing UI, offers users a seamless and visually stunning journey into the depths of space. With SpaceV, learning about our solar system has never been more engaging and informative.
